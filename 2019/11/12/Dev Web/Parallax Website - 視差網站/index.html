@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Parallax Website - 視差網站 | Jen-Chieh Shen&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="web development" />
+  
+  
+  
+  
+  <meta name="description" content="Parallax Website - 視差網站Link: MapleStory Survival Kit 這是我學校第一堂網頁設計課所做的網頁. 因為之前是做遊戲的, 所以想挑戰看看網頁設計能夠做到什麼地步來做到近乎渲染遊戲的方式. 這個網站有以下幾個亮點, This is the final project from the first class of web development from">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Parallax Website - 視差網站">
+<meta property="og:url" content="https://jcs090218.github.io/blog/2019/11/12/Dev%20Web/Parallax%20Website%20-%20%E8%A6%96%E5%B7%AE%E7%B6%B2%E7%AB%99/index.html">
+<meta property="og:site_name" content="Jen-Chieh Shen&#39;s Blog">
+<meta property="og:description" content="Parallax Website - 視差網站Link: MapleStory Survival Kit 這是我學校第一堂網頁設計課所做的網頁. 因為之前是做遊戲的, 所以想挑戰看看網頁設計能夠做到什麼地步來做到近乎渲染遊戲的方式. 這個網站有以下幾個亮點, This is the final project from the first class of web development from">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png">
+<meta property="article:published_time" content="2019-11-12T11:07:20.000Z">
+<meta property="article:modified_time" content="2021-09-14T13:58:08.707Z">
+<meta property="article:author" content="Jen-Chieh Shen">
+<meta property="article:tag" content="development">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Jen-Chieh Shen&#39;s Blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/blog/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+
+  
+<script src="/blog/js/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/blog/css/bootstrap.css" >
+  <link rel="stylesheet" href="/blog/css/fashion.css" >
+  <link rel="stylesheet" href="/blog/css/glyphs.css" >
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/blog/' + imgUrls[random];
+          document.getElementById("blurBg").src='/blog/' + imgUrls[random];
+        }
+    </script>
+
+
+
+
+<header id="allheader" class="site-header" role="banner" 
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/blog/" title="Jen-Chieh Shen&#39;s Blog" rel="home"> Jen-Chieh Shen&#39;s Blog </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">My personal blog</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="/"> <a class="" href="/blog/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="archives"> <a class="" href="/blog/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="categories"> <a class="" href="/blog/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="tags"> <a class="" href="/blog/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="about"> <a class="" href="/blog/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Dev Web/Parallax Website - 視差網站" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" target="_blank" href="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png" rel="gallery_cktk54ji20009ggngb2k90qjv noopener">
+        <img src="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Parallax Website - 視差網站
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/blog/2019/11/12/Dev%20Web/Parallax%20Website%20-%20%E8%A6%96%E5%B7%AE%E7%B6%B2%E7%AB%99/" class="article-date">
+	  <time datetime="2019-11-12T11:07:20.000Z" itemprop="datePublished">November 12, 2019</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/blog/categories/Web-Development-%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/">Web Development - 網頁開發</a>
+ 
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Parallax-Website-視差網站"><a href="#Parallax-Website-視差網站" class="headerlink" title="Parallax Website - 視差網站"></a>Parallax Website - 視差網站</h1><p><strong>Link:</strong> <a target="_blank" rel="noopener" href="http://www.jcs-profile.com/public/AAU/wnm249/m15/wnm249_final/">MapleStory Survival Kit</a></p>
+<p>這是我學校第一堂網頁設計課所做的網頁. 因為之前是做遊戲的, 所以想挑戰看看<br>網頁設計能夠做到什麼地步來做到近乎渲染遊戲的方式. 這個網站有以下幾個亮點,</p>
+<p>This is the final project from the first class of web development from our<br>school. I joined this class as a elective class so I could have a peek of how<br>web development works. List below are few highlight I would like to show from<br>this project.</p>
+<table>
+  <tr>
+    <td>1.</td>
+    <td>視差 Parallax Effect</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>聲音 Use of Sound</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>轉蛋機 Gashapon</td>
+  </tr>
+</table>
+
+
+<h2 id="視差-Parallax-Effect"><a href="#視差-Parallax-Effect" class="headerlink" title="視差 Parallax Effect"></a>視差 Parallax Effect</h2><p>我看大多範例的視差效果都是一張圖在後面, 身為一個遊戲工程師不經覺得這<br>樣的設計有些粗糙. 也想要設計看看CSS能夠做到什麼地步. 很幸運地在自己多<br>方琢磨之後,了解到CSS的動畫機制. 可以有機會的展示CSS的強大動畫效果. 視<br>差的動畫效果可以由左上方小小的控制板來操作.</p>
+<p>Most parallax effect I have seen aren’t quite satisfied to me. Generally they<br>will have a image at the back of other components then have it semi-stationary<br>to sit still at the place. In this project I would like to have a peek of how<br>CSS can do on 2016. Fortunately, after being learning animation system from<br>CSS I am for sure that the parallax effect I was to imagine are possible to<br>accomplish by just the CSS without using JavaScript. You can use the small<br>panel on the top left corner to navigate through the four pages from this website.</p>
+<h2 id="聲音-Use-of-Sound"><a href="#聲音-Use-of-Sound" class="headerlink" title="聲音 Use of Sound"></a>聲音 Use of Sound</h2><p>這是我第一次使用JavaScript裡面的聲效引擎. 在完全不了解的情況下,我選擇<br>使用第一個出現在我面前的一個函式庫<br><a target="_blank" rel="noopener" href="https://github.com/IonDen/ion.sound">ion.sound</a>.<br>這個函式庫非常簡單且強大, 看一下範例就可以清楚知道要怎麼使用.</p>
+<p>I did not have any experiences with using JavaScript to play sound in the<br>web browser. I simply searched on google and see if there is a method to<br>play sound using JavaScript. Luckly, I found a JavaScript library,<br><a target="_blank" rel="noopener" href="https://github.com/IonDen/ion.sound">ion.sound</a><br>which is very simple to use and they have great demo and great examples on<br>their website.</p>
+<h2 id="轉蛋機-Gashapon"><a href="#轉蛋機-Gashapon" class="headerlink" title="轉蛋機 Gashapon"></a>轉蛋機 Gashapon</h2><p>如果你有拜訪我的這個作品網站,你會在最左邊的網站看到三台轉蛋機.<br>當你用鼠標指著他的時候, 他就會開始掉落物品! 這是一個簡單的展示<br>使用JavaScript, 以每秒30偵的速度去渲染掉落動畫.</p>
+<p>If you had visited this website, then you will know there are three<br>gashapons on the mostleft page. Once you hover either of these gashapons,<br>gashapon will start dropping items. This is a simple animation using pure<br>JavaScript renders in 30 FPS.</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/blog/categories/Web-Development-%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/">Web Development - 網頁開發</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/development/" rel="tag">development</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2019/11/12/Dev%20Web/API-Reference-Template%20-%20API%E5%8F%83%E8%80%83%E6%A8%A1%E6%9D%BF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          API-Reference-Template - API參考模板
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2019/11/12/Editor/Best%20Editor%20Ever%20-%20%E6%9C%80%E5%A5%BD%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Best Editor Ever - 最好的編輯器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Parallax-Website-%E8%A6%96%E5%B7%AE%E7%B6%B2%E7%AB%99"><span class="nav-number">1.</span> <span class="nav-text">Parallax Website - 視差網站</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A6%96%E5%B7%AE-Parallax-Effect"><span class="nav-number">1.1.</span> <span class="nav-text">視差 Parallax Effect</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%81%B2%E9%9F%B3-Use-of-Sound"><span class="nav-number">1.2.</span> <span class="nav-text">聲音 Use of Sound</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%89%E8%9B%8B%E6%A9%9F-Gashapon"><span class="nav-number">1.3.</span> <span class="nav-text">轉蛋機 Gashapon</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/blog/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2021 Jen-Chieh Shen&#39;s Blog All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
+    
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+
+  
+<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+<script src="/blog/js/bootstrap.js"></script>
+
+
+<script src="/blog/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>

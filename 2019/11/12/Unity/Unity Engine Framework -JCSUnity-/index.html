@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Unity Engine Framework -JCSUnity- | Jen-Chieh Shen&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="unity" />
+  
+  
+  
+  
+  <meta name="description" content="Unity Engine Framework -JCSUnity-JCSUnity Repo: https:&#x2F;&#x2F;github.com&#x2F;jcs090218&#x2F;JCSUnity Acknowledge:I have developed this tool for 3 years. Starting from the third year of my college years. Compare to o">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unity Engine Framework -JCSUnity-">
+<meta property="og:url" content="https://jcs090218.github.io/blog/2019/11/12/Unity/Unity%20Engine%20Framework%20-JCSUnity-/index.html">
+<meta property="og:site_name" content="Jen-Chieh Shen&#39;s Blog">
+<meta property="og:description" content="Unity Engine Framework -JCSUnity-JCSUnity Repo: https:&#x2F;&#x2F;github.com&#x2F;jcs090218&#x2F;JCSUnity Acknowledge:I have developed this tool for 3 years. Starting from the third year of my college years. Compare to o">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png">
+<meta property="article:published_time" content="2019-11-12T11:07:20.000Z">
+<meta property="article:modified_time" content="2021-09-14T13:58:08.711Z">
+<meta property="article:author" content="Jen-Chieh Shen">
+<meta property="article:tag" content="development">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Jen-Chieh Shen&#39;s Blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/blog/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+
+  
+<script src="/blog/js/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/blog/css/bootstrap.css" >
+  <link rel="stylesheet" href="/blog/css/fashion.css" >
+  <link rel="stylesheet" href="/blog/css/glyphs.css" >
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/blog/' + imgUrls[random];
+          document.getElementById("blurBg").src='/blog/' + imgUrls[random];
+        }
+    </script>
+
+
+
+
+<header id="allheader" class="site-header" role="banner" 
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/blog/" title="Jen-Chieh Shen&#39;s Blog" rel="home"> Jen-Chieh Shen&#39;s Blog </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">My personal blog</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="/"> <a class="" href="/blog/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="archives"> <a class="" href="/blog/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="categories"> <a class="" href="/blog/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="tags"> <a class="" href="/blog/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="about"> <a class="" href="/blog/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Unity/Unity Engine Framework -JCSUnity-" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" target="_blank" href="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png" rel="gallery_cktk54jim001cggng1qt6fwup noopener">
+        <img src="https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Unity Engine Framework -JCSUnity-
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/blog/2019/11/12/Unity/Unity%20Engine%20Framework%20-JCSUnity-/" class="article-date">
+	  <time datetime="2019-11-12T11:07:20.000Z" itemprop="datePublished">November 12, 2019</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/blog/categories/Unity/">Unity</a>
+ 
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Unity-Engine-Framework-JCSUnity"><a href="#Unity-Engine-Framework-JCSUnity" class="headerlink" title="Unity Engine Framework -JCSUnity-"></a>Unity Engine Framework -JCSUnity-</h1><p><strong>JCSUnity Repo:</strong> <a target="_blank" rel="noopener" href="https://github.com/jcs090218/JCSUnity">https://github.com/jcs090218/JCSUnity</a></p>
+<h2 id="Acknowledge"><a href="#Acknowledge" class="headerlink" title="Acknowledge:"></a>Acknowledge:</h2><p>I have developed this tool for 3 years. Starting from the third year of my college years. Compare to other framework I had developed, this tool have much more completeness. I have been using Unity Engine for 2 years while I decide to develop this framework. I have made cetain of games in this 2 years and I reckon I gained enough experiences to develop a framework for Unity Engine. In the retrospect, that was the time I have just done studying “Data Structure”, “Algorithms”, “Design Patterns”. What I presume that Design Patterns are the vital part to a game development because game are often built by multiple components or modules. What I meant multiple are refer as really a lot of those. On the other hand, most software development would not requires that many of the systems, generally the reasons are most of the environment have been wrap or encapsulate by the former developers. For instances, .NET Frameowrk, Visual BASIC/C++/C#, NetBean Graphic, etc.</p>
+<p>On top of these concepts, this is the third framework I built. I could not remember what I built for the previous two framworks. I presume that I have some knowledge about building a framework, library, etc. At the beginning of the JCSUnity development process, I have had studied the basis of the game engine architecture but not quite fully understand the Unity Engine itself. For instance, Unity Engine’s Scripting API, and some controls specific for Unity Eninge. Because of this, you might realized some of the code or design are a bit fiddle and inconsistent.</p>
+<p>When I am writing this article, the framework itself has been developed to the state that is convoluted and hard to maintain. Within this framework, there are around 400 to 500 scripts, most of the scripts are self executed which mean a script is a component that could run by it own. By this idea, one Self-Runnable Script benefits the design and increase the variation possibility but it also brings the cost of unnecessary performance.</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a>Introduction:</h2><p>JCSUnity is a component driven framework built to allow users to quickly generate commonly used game mechanics or features. The architecture design of JCSUnity come alone to Unity Engine’s design, which makes the framework highly compatible with Unity Engine itself. Every time the Unity Engine release an update, there should not be any issues to JCSUnity. This framework increases the productivity of game developers and enhances the game development process. Base my own experiences, the game originally that would spend my 15 weeks, I could compress development time to around 3 to 4 weeks. JCSUnity has most of the game presets that Unity Engine does not usually provide. For instance, switch scene with fade in and out, background music player, automatically adjust the screen to aspect ratio, etc. With all these presets, allow the game developers are more likely can be more focus on the design of the game instead of worrying all these trivial features.</p>
+<h2 id="Self-Runnable-Script"><a href="#Self-Runnable-Script" class="headerlink" title="Self-Runnable Script:"></a>Self-Runnable Script:</h2><p>Therefore, what is Self-Runnable Script? For example, here is a list of three SRSs.</p>
+<table>
+  <tr>
+    <td>1.</td>
+    <td>Circle Action</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Shake Effect</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Wave Action</td>
+  </tr>
+</table>
+
+<p>Above example scripts are all self-runnable without any dependencies and<br>will not influence to each other scripts. Base on this design patterns,<br>how many unique behaviours if we make all these scripts interact with each other?</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">7 behaviours = 3 basic behaviours +</span><br><span class="line">               (Circle Action + Shake Effect) +</span><br><span class="line">               (Circle Action + Wave Action) +</span><br><span class="line">               (Shake Effect + Wave Effect) +</span><br><span class="line">               (Circle Action + Shake Effect + Wave Action)</span><br></pre></td></tr></table></figure>
+
+<p>I presume if anyone who has the necessary knowledge about game engine architecture.<br>Design the components this way could avoid decoupling between the scripts, and<br>added the flexibility to the designers. Designers are no longer limit to specific<br>design; they can test and play with each component easily. The side effects are<br>this could cost a lot of additional performance and memory usage.</p>
+<div style="text-align: center">
+  <img alt="demo_circle" src="./_images/demo_circle.gif" width="300" height="180"/>
+  <img alt="demo_shake" src="./_images/demo_shake.gif" width="300" height="180"/>
+  <img alt="demo_wave" src="./_images/demo_wave.gif" width="300" height="180"/>
+  <h4>3 Basic Actions</h4>
+
+  <img alt="demo_circle_shake" src="./_images/demo_circle_shake.gif" width="300" height="180"/>
+  <img alt="demo_circle_wave" src="./_images/demo_circle_wave.gif" width="300" height="180"/>
+  <img alt="demo_shake_wave" src="./_images/demo_shake_wave.gif" width="300" height="180"/>
+  <h4>(Circle Action + Shake Effect) + (Circle Action + Wave Action) + (Shake Effect + Wave Effect)</h4>
+
+  <img alt="demo_circle_shake_wave" src="./images/Unity/JCSUnity/demo_circle_shake_wave.gif" width="300" height="180"/>
+  <h4>(Circle Action + Shake Effect + Wave Action)</h4>
+</div>
+
+
+<h2 id="Scripting-Design"><a href="#Scripting-Design" class="headerlink" title="Scripting Design:"></a>Scripting Design:</h2><p>Having the script design this way, there should be a script principle so<br>people could contribute or extend to the project easier. I chose to use<br>‘Header’ attribute to accomplish this task and here are the definition of<br>all the terminology in JCSUnity.</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">if</span> UNITY_EDITOR</span></span><br><span class="line"></span><br><span class="line">    [<span class="meta">Header(<span class="meta-string">&quot;** Helper Variables (JCS_ExampleScript) **&quot;</span>)</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> -<span class="doctag">&lt;-summary-&gt;</span>-</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> Variable only happens in developer mode, so it won&#x27;t exist in the final build. Usually the helper tool in for level designer.</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> -<span class="doctag">&lt;-/summary-&gt;</span>-</span></span><br><span class="line">    <span class="built_in">float</span> helperVar = <span class="number">0.0f</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    [<span class="meta">Header(<span class="meta-string">&quot;** Check Variables (JCS_ExampleScript) **&quot;</span>)</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> -<span class="doctag">&lt;-summary-&gt;</span>-</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> Variable only for checking, do not adjust the value of the variables, but you can use to check to see the effect during runtime.</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> -<span class="doctag">&lt;-/summary-&gt;</span>-</span></span><br><span class="line">    <span class="built_in">float</span> checkVar = <span class="number">0.0f</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    [<span class="meta">Header(<span class="meta-string">&quot;** Initialize Variables (JCS_ExampleScript) **&quot;</span>)</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> -<span class="doctag">&lt;-summary-&gt;</span>-</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> Variable only being use in game initialize time, set these kind of variable before hitting play button in order to get the result.</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> -<span class="doctag">&lt;-/summary-&gt;</span>-</span></span><br><span class="line">    <span class="built_in">float</span> initVar = <span class="number">0.0f</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    [<span class="meta">Header(<span class="meta-string">&quot;** Runtime Variables (JCS_ExampleScript) **&quot;</span>)</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> -<span class="doctag">&lt;-summary-&gt;</span>-</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> Variable will work on both initialize time and runtime, you can adjust the variable during runtime and see the effect.</span></span><br><span class="line">    <span class="comment"><span class="doctag">///</span> -<span class="doctag">&lt;-/summary-&gt;</span>-</span></span><br><span class="line">    <span class="built_in">float</span> rtVar = <span class="number">0.0f</span>;</span><br></pre></td></tr></table></figure>
+
+<p>For more information, you can click <a href="https://jcs090218.github.io/JCSUnity/Manual/index.html?page=Naming_sp_Manual">here</a>!</p>
+<h2 id="Using-‘JCS-’-Filename-not-Namespace"><a href="#Using-‘JCS-’-Filename-not-Namespace" class="headerlink" title="Using ‘JCS_’ Filename, not Namespace:"></a>Using ‘JCS_’ Filename, not Namespace:</h2><p>In the early version of Unity, when I try to have the same file name in the<br>project, it occurs error. To address this issue, I chose to have a particular<br>file name prefix in front of every file in the project, which is ‘JCS_’.</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/blog/categories/Unity/">Unity</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/development/" rel="tag">development</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2019/11/12/Industry/%E7%BE%8E%E5%9C%8B%E8%BB%9F%E9%AB%94%E8%A1%8C%E6%A5%AD%20-%20Software%20Industry%20in%20US/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          美國軟體行業 - Software Industry in US
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2019/11/12/Unity/Unity%E5%BC%95%E6%93%8E%E6%A1%86%E6%9E%B6%20-JCSUnity-/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Unity引擎框架 -JCSUnity-</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Unity-Engine-Framework-JCSUnity"><span class="nav-number">1.</span> <span class="nav-text">Unity Engine Framework -JCSUnity-</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Acknowledge"><span class="nav-number">1.1.</span> <span class="nav-text">Acknowledge:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.2.</span> <span class="nav-text">Introduction:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Self-Runnable-Script"><span class="nav-number">1.3.</span> <span class="nav-text">Self-Runnable Script:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">3 Basic Actions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.3.0.2.</span> <span class="nav-text">(Circle Action + Shake Effect) + (Circle Action + Wave Action) + (Shake Effect + Wave Effect)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.3.0.3.</span> <span class="nav-text">(Circle Action + Shake Effect + Wave Action)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Scripting-Design"><span class="nav-number">1.4.</span> <span class="nav-text">Scripting Design:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Using-%E2%80%98JCS-%E2%80%99-Filename-not-Namespace"><span class="nav-number">1.5.</span> <span class="nav-text">Using ‘JCS_’ Filename, not Namespace:</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/blog/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2021 Jen-Chieh Shen&#39;s Blog All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
+    
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+
+  
+<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+<script src="/blog/js/bootstrap.js"></script>
+
+
+<script src="/blog/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>

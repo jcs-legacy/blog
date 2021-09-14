@@ -17,6 +17,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
     
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -36,12 +38,6 @@ jobs:
       with:
         path: 'gh-pages'
         ref: gh-pages
-        submodules: 'recursive'
-
-    - name: Log info
-      run: |
-        ls ./themes/
-        ls ./themes/hipaper/
 
     - name: Move .git to build
       run: mv './gh-pages/.git' './public'

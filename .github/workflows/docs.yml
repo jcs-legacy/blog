@@ -30,6 +30,7 @@ jobs:
 
     - name: Build website
       run: |
+        mv './_config.haipaper.yml' './themes/hipaper/_config.yml'
         npm install
         hexo generate
 

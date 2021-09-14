@@ -117,7 +117,7 @@ JCSUnity是一個可快速搭建自己遊戲成品的高完成度框架. 由於�
     float rtVar = 0.0f;
 ```
 
-官方說明請看, [這裡](http://www.jcs-profile.com:3001/Manual/index.html?page=Naming_sp_Manual).
+官方說明請看, [這裡](https://jcs090218.github.io/JCSUnity/Manual/index.html?page=Naming_sp_Manual).
 
 
 ## 使用 JCS_ 檔名,不使用Namespace:

@@ -126,7 +126,7 @@ all the terminology in JCSUnity.
     float rtVar = 0.0f;
 ```
 
-For more information, you can click [here](http://www.jcs-profile.com:3001/Manual/index.html?page=Naming_sp_Manual)!
+For more information, you can click [here](https://jcs090218.github.io/JCSUnity/Manual/index.html?page=Naming_sp_Manual)!
 
 
 ## Using 'JCS_' Filename, not Namespace:

@@ -36,7 +36,7 @@ jobs:
       with:
         path: 'gh-pages'
         ref: gh-pages
-        submodules: true
+        submodules: recursive
 
     - name: Move .git to build
       run: mv './gh-pages/.git' './public'

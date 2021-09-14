@@ -1,6 +1,6 @@
-# blog
-
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+# blog
 
 My blog.
 

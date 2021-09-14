@@ -56,12 +56,13 @@ widgets:
 # Key is the name of FontAwsome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
-  Github: https://github.com/iTimeTraveler
-  Weibo: 
-  Twitter: 
-  Facebook: 
-  Google-plus: 
-  Instagram: 
+  Github: https://github.com/jcs090218
+  gitlab: https://gitlab.com/jcs090218
+  Twitter: https://twitter.com/jenchieh94
+  linkedin: https://twitter.com/jenchieh94
+  envelope: mailto:jcs090218@gmail.com
+  user: http://www.jcs-profile.com/
+  rss: #
 
 
 # Search

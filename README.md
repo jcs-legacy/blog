@@ -1,4 +1,5 @@
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+[![Docs](https://github.com/jcs090218/blog/actions/workflows/docs.yml/badge.svg)](https://github.com/jcs090218/blog/actions/workflows/docs.yml)
 
 # blog
 

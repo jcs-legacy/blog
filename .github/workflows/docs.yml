@@ -39,7 +39,7 @@ jobs:
         submodules: recursive
 
     - name: Log info
-      run: la ./themes/hipaper/
+      run: ls ./themes/hipaper/
 
     - name: Move .git to build
       run: mv './gh-pages/.git' './public'

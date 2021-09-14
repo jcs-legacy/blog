@@ -59,14 +59,14 @@ JCSUnity是一個可快速搭建自己遊戲成品的高完成度框架. 由於�
 如果了解引擎架構的人大概都會選擇這樣的想法, 這樣能夠避免耦合(decoupling). 也能夠讓設計師們隨時隨地的使用來搭配它們自己想要的效果. 可以減輕不少程式設計師的工作負荷. 缺點則顯而易見, 就是沒辦法最大化的提升效能. 至於為什麼等下會提到.
 
 <div align="center">
-  <img alt="demo_circle" src="./images/Unity/JCSUnity/demo_circle.gif" width="300" height="180"/>
-  <img alt="demo_shake" src="./images/Unity/JCSUnity/demo_shake.gif" width="300" height="180"/>
-  <img alt="demo_wave" src="./images/Unity/JCSUnity/demo_wave.gif" width="300" height="180"/>
+  <img alt="demo_circle" src="./_images/demo_circle.gif" width="300" height="180"/>
+  <img alt="demo_shake" src="./_images/demo_shake.gif" width="300" height="180"/>
+  <img alt="demo_wave" src="./_images/demo_wave.gif" width="300" height="180"/>
   <h4>本身3種</h4>
 
-  <img alt="demo_circle_shake" src="./images/Unity/JCSUnity/demo_circle_shake.gif" width="300" height="180"/>
-  <img alt="demo_circle_wave" src="./images/Unity/JCSUnity/demo_circle_wave.gif" width="300" height="180"/>
-  <img alt="demo_shake_wave" src="./images/Unity/JCSUnity/demo_shake_wave.gif" width="300" height="180"/>
+  <img alt="demo_circle_shake" src="./_images/demo_circle_shake.gif" width="300" height="180"/>
+  <img alt="demo_circle_wave" src="./_images/demo_circle_wave.gif" width="300" height="180"/>
+  <img alt="demo_shake_wave" src="./_images/demo_shake_wave.gif" width="300" height="180"/>
   <h4>(繞圓+震動) + (繞圓+上下搖擺) + (震動+上下搖擺)</h4>
 
   <img alt="demo_circle_shake_wave" src="./images/Unity/JCSUnity/demo_circle_shake_wave.gif" width="300" height="180"/>

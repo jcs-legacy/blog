@@ -67,14 +67,14 @@ design; they can test and play with each component easily. The side effects are
 this could cost a lot of additional performance and memory usage.
 
 <div style="text-align: center">
-  <img alt="demo_circle" src="./images/Unity/JCSUnity/demo_circle.gif" width="300" height="180"/>
-  <img alt="demo_shake" src="./images/Unity/JCSUnity/demo_shake.gif" width="300" height="180"/>
-  <img alt="demo_wave" src="./images/Unity/JCSUnity/demo_wave.gif" width="300" height="180"/>
+  <img alt="demo_circle" src="./_images/demo_circle.gif" width="300" height="180"/>
+  <img alt="demo_shake" src="./_images/demo_shake.gif" width="300" height="180"/>
+  <img alt="demo_wave" src="./_images/demo_wave.gif" width="300" height="180"/>
   <h4>3 Basic Actions</h4>
 
-  <img alt="demo_circle_shake" src="./images/Unity/JCSUnity/demo_circle_shake.gif" width="300" height="180"/>
-  <img alt="demo_circle_wave" src="./images/Unity/JCSUnity/demo_circle_wave.gif" width="300" height="180"/>
-  <img alt="demo_shake_wave" src="./images/Unity/JCSUnity/demo_shake_wave.gif" width="300" height="180"/>
+  <img alt="demo_circle_shake" src="./_images/demo_circle_shake.gif" width="300" height="180"/>
+  <img alt="demo_circle_wave" src="./_images/demo_circle_wave.gif" width="300" height="180"/>
+  <img alt="demo_shake_wave" src="./_images/demo_shake_wave.gif" width="300" height="180"/>
   <h4>(Circle Action + Shake Effect) + (Circle Action + Wave Action) + (Shake Effect + Wave Effect)</h4>
 
   <img alt="demo_circle_shake_wave" src="./images/Unity/JCSUnity/demo_circle_shake_wave.gif" width="300" height="180"/>

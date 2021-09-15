@@ -8,7 +8,7 @@ categories: [Others - 其他]
 keywords: myself
 description: 
 photos:
-	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
+	- https://doqvf81n9htmm.cloudfront.net/data/AllenLin_169/11.2/11.5/11.13/11.21/11.25/12.3/12.10/12.17/12.23/12.26/1.3/1.8/1.10/1.20/1.31/2.5/2.11/2.17/2.22/2.27/3.5/3.12/3.18/3.27/4.3/4.14/shutterstock_378493135.jpg
 ---
 
 > 2019-12-17, 我的遺書

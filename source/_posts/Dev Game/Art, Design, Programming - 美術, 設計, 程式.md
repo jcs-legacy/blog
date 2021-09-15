@@ -8,7 +8,7 @@ categories: [Game Development - 遊戲開發]
 keywords: game development
 description: 
 photos:
-	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
+	- https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/147813452/original/5398a09e9d6399ccceafb482f112f6a0aaca407f/create-a-2d-game-for-you.jpg
 ---
 
 When get started to the game development, people will somehow face some sort 

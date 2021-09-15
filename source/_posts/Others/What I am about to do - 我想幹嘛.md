@@ -8,7 +8,7 @@ categories: [Others - 其他]
 keywords: myself
 description: 
 photos:
-	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
+	- https://wallpaper.dog/large/909133.jpg
 ---
 
 > 給予那些想跟我合作, 但並不完全信任或了解我的人.

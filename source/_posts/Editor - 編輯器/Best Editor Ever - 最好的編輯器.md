@@ -1,7 +1,7 @@
 ---
 title: Best Editor Ever - 最好的編輯器
 layout: post
-date: 2019-11-12 11:07:20
+date: 2017-11-12 11:07:20
 comments: true
 tags: [life]
 categories: [Editor - 編輯器]

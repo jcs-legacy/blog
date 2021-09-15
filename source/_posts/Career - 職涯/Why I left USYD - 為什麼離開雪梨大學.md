@@ -13,7 +13,17 @@ photos:
 
 我一直在尋求著,
 
+## 💬 Past experience 經驗
+
+N/A
+
 ## 💫 Puzzled 迷茫
+
+N/A
+
+## ❗ Awakening 指引
+
+N/A
 
 ## 💬 Future 決定
 

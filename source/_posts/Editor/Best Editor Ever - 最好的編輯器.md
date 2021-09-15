@@ -18,6 +18,8 @@ so I am not going to tell anyone to use any particular text
 editor. I believed text editor is just tool to help programmer 
 make a software and get their job done.
 
+<!-- more -->
+
 At my previous post '
 [Framework I have been working... (Part 2)](?page=Framework_sp_I_sp_have_sp_been_sp_working_sp_-Part_sp_2-)
 ' I mentioned I watched a few episodes of '

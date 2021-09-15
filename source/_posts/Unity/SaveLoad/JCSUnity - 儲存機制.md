@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# JCSUnity - 儲存機制
-
 這是一個簡易介紹給予展示 JCSUnity 是如何做到遊戲儲存機制.
 
 在Unity Engine裡面, 有三個主要方式做遊戲資料儲存使用C#語言.

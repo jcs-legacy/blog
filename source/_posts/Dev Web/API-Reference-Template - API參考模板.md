@@ -25,6 +25,8 @@ resolve this issue, I spent a few hours to design a small website that I
 could drop the HTML file in the target folder and it will show the file on 
 the website. The following list is the list of technologies I used in the project.
 
+<!-- more -->
+
 ### 前端 Front-end
 
 <table>

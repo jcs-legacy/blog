@@ -33,6 +33,8 @@ either Emacs over Vim or Vim over Emacs.
 在我對於我的工具不滿意的時候我才會選擇去修改我的工具. 不是很必要的我就不會
 特地去強求. 畢竟我不是要再造一個輪子,也沒打算讓Emacs或Vim分個高下.
 
+<!-- more -->
+
 Lead to the conclusion; I use Emacs more often than Vim. 
 Before Vim users left the website, I would like to hold 
 onto the basis, why I chose Emacs for my most frequently 

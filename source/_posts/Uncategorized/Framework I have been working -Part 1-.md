@@ -16,6 +16,8 @@ our class in college. It is a collaborative class that all kind of experts
 work on the same project, and of course for game development students we 
 decide to make a AR game.
 
+<!-- more -->
+
 Well, the dream always big and great, but when it get into reality it always 
 not going to be fun, especially when you are making a game and work in the game 
 industry. Game is a hard thing to work on , both on the programming side and 

@@ -23,6 +23,8 @@ blog post '
 ', then you might already know what I am going to write about for the rest of 
 this article.
 
+<!-- more -->
+
 So what essentially methods that we could do to improve the productivity for 
 ourselves as a software engineer? First of all, I would say build your tools.
 Anything that could speed up the development process will increase the productivity 

@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# JCSUnity - Save System
-
 This is a introduction of how JCSUnity does for the game data save/load system.
 
 There are main three ways that you could do `saving` and `loading` in Unity

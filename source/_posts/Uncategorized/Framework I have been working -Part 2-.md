@@ -27,6 +27,8 @@ company. (I will discuss a bit more 'productivity' in another post.) This
 changes me think differently instead of just thinking about algorithm and
 data structure. What makes you different than other programmers?
 
+<!-- more -->
+
 Then I realize, being productive is important and advance as a programmer.
 Then I figure out that how to make myself productive as much as possible
 is to write your own tool. The reason is simple, the majority of people

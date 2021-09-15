@@ -21,6 +21,8 @@ school. I joined this class as a elective class so I could have a peek of how
 web development works. List below are few highlight I would like to show from 
 this project.
 
+<!-- more -->
+
 <table>
   <tr>
     <td>1.</td>

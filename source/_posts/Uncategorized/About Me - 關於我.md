@@ -24,6 +24,8 @@ step in.
 像誰會特地來看這「關於我」的文章. 至此, 我不打算寫一個太過沉長的自我介紹. 
 我現齡24歲, 活得不長也不短，但也足夠讓一個人回顧自己過往的經歷.
 
+<!-- more -->
+
 The story always starts sad; it was entirely a disaster in my early life. I'm 
 very pessimistic, give up things quickly, and not knowing how to be persistent. 
 Wonder where are the differences between success and failure. Maybe I do have 

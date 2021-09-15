@@ -94,6 +94,12 @@ include:
 exclude:
 ignore:
 
+# Markdown
+## https://github.com/chjj/marked
+marked:
+  gfm: false
+  breaks: false
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/

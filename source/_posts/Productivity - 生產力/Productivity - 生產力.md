@@ -3,9 +3,9 @@ title: Productivity - 生產力
 layout: post
 date: 2017-10-24 11:07:20
 comments: true
-tags: [tool]
-categories: [Uncategorized - 無分類]
-keywords: myself
+tags: [framework, software, productivity]
+categories: [Productivity - 生產力]
+keywords: productivity software
 description: 
 photos:
 	- https://marketplace.canva.com/EAEeGVm4QKc/1/0/1600w/canva-dark-slate-gray-and-black-photo-grids-dark-mode-organizer-planner-desktop-wallpaper-ApBxiB2jPR8.jpg

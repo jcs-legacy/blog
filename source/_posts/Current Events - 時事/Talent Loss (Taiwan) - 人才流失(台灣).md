@@ -1,11 +1,11 @@
 ---
-title: Talent Loss - 人才流失(台灣)
+title: Talent Loss (Taiwan) - 人才流失(台灣)
 layout: post
 date: 2019-12-17 11:07:20
 comments: true
-tags: [life]
-categories: [Others - 其他]
-keywords: myself
+tags: [events]
+categories: [Current Events - 時事]
+keywords: trendency
 description: 
 photos:
 	- https://static6.depositphotos.com/1014550/624/i/600/depositphotos_6241267-stock-photo-human-resources-puzzle.jpg

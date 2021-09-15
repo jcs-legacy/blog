@@ -3,9 +3,9 @@ title: Framework I have been working - Part 2-
 layout: post
 date: 2017-10-24 11:07:20
 comments: true
-tags: [framework]
-categories: [Uncategorized - 無分類]
-keywords: myself
+tags: [framework, software, productivity]
+categories: [Productivity - 生產力]
+keywords: productivity software
 description: 
 photos:
 	- https://i.pinimg.com/originals/d0/9e/e0/d09ee0d18e39ce4564f97084b17e527f.jpg

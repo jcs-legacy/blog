@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# Framework I have been working - Part 1-
-
 The story start when I have difficulty when I was working inside one of 
 our class in college. It is a collaborative class that all kind of experts 
 work on the same project, and of course for game development students we 

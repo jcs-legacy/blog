@@ -11,10 +11,8 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# Start blog announcment
-
 <p align="center">
-  <img alt="blog-img" src="../images/blog_pic.png" width="319" height="181" style="margin: auto position: absolute" />
+  <img alt="blog-img" src="./_images/blog_pic.png" width="319" height="181" />
 </p>
 
 I have heard about people saying that writing a blog is a good idea. And 

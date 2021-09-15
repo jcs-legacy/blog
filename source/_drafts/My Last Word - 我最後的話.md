@@ -11,7 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# My Last Word - 我最後的話
 > 2019-12-17, 我的遺書
 
 今天我原本是很開心的要去整理一下自己的頭髮, 沒想到回到家後. 事情又發生在我身上.

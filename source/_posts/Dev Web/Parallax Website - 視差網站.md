@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# Parallax Website - 視差網站
-
 **Link:** [MapleStory Survival Kit](http://www.jcs-profile.com/public/AAU/wnm249/m15/wnm249_final/)
 
 這是我學校第一堂網頁設計課所做的網頁. 因為之前是做遊戲的, 所以想挑戰看看

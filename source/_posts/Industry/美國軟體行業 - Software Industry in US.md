@@ -11,6 +11,4 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# 美國軟體行業 - Software Industry in US
-
-
+N/A

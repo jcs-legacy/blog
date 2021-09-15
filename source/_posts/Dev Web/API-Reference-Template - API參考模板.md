@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# API-Reference-Template - API參考模板
-
 **Demo:** http://www.jcs-profile.com:3000/Manual/index.html
 
 **GitHub Repo:** https://github.com/jcs090218/API-Reference-Template

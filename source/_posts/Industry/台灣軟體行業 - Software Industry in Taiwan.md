@@ -11,7 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# 台灣軟體行業 - Software Industry in Taiwan
 > 2019-11-12, 看時間來取決於文章的資訊新舊.
 
 已經好久沒有寫部落格了, 我打算寫寫我觀察到的台灣軟體業的一些相關事實.

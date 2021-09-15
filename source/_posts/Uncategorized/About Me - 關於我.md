@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# About Me - 關於我
-
 I'm not fond of talking about myself. Primarily I'm nobody, not phenomenal, 
 and never been onto news or other media, not any of those. Is hard to think 
 that who will spend their precious time reading this 'About Me' article. I 

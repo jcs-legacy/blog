@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# Productivity - 生產力
-
 Productivity is topic that often is ignored by a lot programmer. I have 
 seen a bunch of documents out there talking about algorithm and data structure,
 so I would like to post a topic about productivity for an advanced programmer 

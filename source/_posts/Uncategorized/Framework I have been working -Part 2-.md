@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# Framework I have been working - Part 2-
-
 <div class="panel-text-left">
 At the 'Framework I have been working... (Part 1)', I have talked about the
 reasons why I started writing tools and libraries. At this time, one of my

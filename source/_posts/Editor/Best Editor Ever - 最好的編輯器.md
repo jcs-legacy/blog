@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# Best Editor Ever - 最好的編輯器
-
 First the foremost, this article is all subjective opinions 
 by me, and there are all kind of text editor for any kind of 
 programmer. I think some programmer have some kind of religion, 

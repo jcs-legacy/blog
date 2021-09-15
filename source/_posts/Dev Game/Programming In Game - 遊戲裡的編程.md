@@ -11,8 +11,6 @@ photos:
 	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
 ---
 
-# Programming In Game - 遊戲裡的編程
-
 遊戲裡的編程可能是因為我就讀藝術學校, 很多人覺得我計算機領域很厲害. 
 我很幸運在大學裡認識了各行各界的人, 有的是大公司來進修的，有的是從
 別的領域過來的. 其中做遊戲的科系很特別，因為遊戲需要的人太雜, 主要

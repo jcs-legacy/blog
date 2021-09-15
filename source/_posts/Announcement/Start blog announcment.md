@@ -3,8 +3,8 @@ title: Start blog announcment
 layout: post
 date: 2017-09-01 11:07:20
 comments: true
-tags: [tool]
-categories: [Uncategorized - 無分類]
+tags: [general]
+categories: [Announcement - 公告]
 keywords: myself
 description: 
 photos:

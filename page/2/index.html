@@ -59,32 +59,10 @@
 
 
   
-  
-  <div class="site-header-image">
-    <img id="originBg" width="100%" alt="Hike News" src="">
-  </div>
-
-  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
-    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
-  </div>
-
-  <script>
-        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
-        var random = Math.floor((Math.random() * imgUrls.length ));
-        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-          document.getElementById("originBg").src=imgUrls[random];
-          document.getElementById("blurBg").src=imgUrls[random];
-        } else {
-          document.getElementById("originBg").src='/blog/' + imgUrls[random];
-          document.getElementById("blurBg").src='/blog/' + imgUrls[random];
-        }
-    </script>
-
-
 
 
 <header id="allheader" class="site-header" role="banner" 
-   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+   >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -363,7 +341,7 @@ Vim
       
         
           <div class="entry-thumbnail">
-            <a href="/blog/2019/11/12/Unity/Unity%20Framework%20-JCSUnity-%20(%E5%BC%95%E6%93%8E%E6%A1%86%E6%9E%B6)/"><img src="https://lh3.googleusercontent.com/proxy/vPQ4U1z_HyH6pGraBuXEFdBGgFO86SrOB6FUiWwKrhAATgYIdSw6QOAHWepi2Qu298hUWV2_HvOdxgNPTG8mQc644eAvLi_j6HBs1FuGuwhE-PO1Nur6Hg" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
+            <a href="/blog/2019/11/12/Unity/Unity%20Framework%20-JCSUnity-%20(%E5%BC%95%E6%93%8E%E6%A1%86%E6%9E%B6)/"><img src="https://gameframework.cn/image/gameframework.png" class="attachment-thumb-featured size-thumb-featured wp-post-image" alt=""></a>
           </div>
           <div class="entry-summary">
           JCSUnity Repo: https://github.com/jcs090218/JCSUnity
@@ -1118,9 +1096,6 @@ jobs and tasks to the programmer and what does programmer does?</p>
 
 
     <!-- headerblur min height -->
-    
-      var headerblur = document.getElementById("header-blur");
-      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>

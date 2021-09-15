@@ -8,7 +8,7 @@ categories: [Industry - 軟體業]
 keywords: myself
 description: 
 photos:
-	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
+	- https://www.incimages.com/uploaded_files/image/1920x1080/getty_463157577_970631970450087_93484.jpg
 ---
 
 N/A

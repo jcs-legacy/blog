@@ -8,7 +8,7 @@ categories: [Web Development - 網頁開發]
 keywords: web development
 description: 
 photos:
-	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
+	- https://img.craftpix.net/2017/09/Free-Horizontal-2D-Game-Backgrounds-4.jpg
 ---
 
 **Link:** [MapleStory Survival Kit](http://www.jcs-profile.com/public/AAU/wnm249/m15/wnm249_final/)

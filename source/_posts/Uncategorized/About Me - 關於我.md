@@ -8,7 +8,7 @@ categories: [Uncategorized - 無分類]
 keywords: myself
 description: 
 photos:
-	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
+	- https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTICiH4IGCVLZ6ZSJY1cI1JaLDP2R7U4FqNUw&usqp=CAU
 ---
 
 I'm not fond of talking about myself. Primarily I'm nobody, not phenomenal, 

@@ -8,7 +8,7 @@ categories: [Uncategorized - 無分類]
 keywords: myself
 description: 
 photos:
-	- https://itimetraveler.github.io/hexo-theme-hiker/2016/10/24/Hiker%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/homepage-index.png
+	- https://i.pinimg.com/originals/d0/9e/e0/d09ee0d18e39ce4564f97084b17e527f.jpg
 ---
 
 <div class="panel-text-left">

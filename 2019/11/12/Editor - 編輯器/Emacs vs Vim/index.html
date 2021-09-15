@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Emacs vs Vim | Jen-Chieh Shen&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="myself" />
+  
+  
+  
+  
+  <meta name="description" content="Precisely that I am neither an Emacs nor Vim expert. I am  just an amateur that knows about the two editors with just  amount of knowledge. If you check out two of my Emacs and Vim repo, this could be">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Emacs vs Vim">
+<meta property="og:url" content="https://jcs090218.github.io/blog/2019/11/12/Editor%20-%20%E7%B7%A8%E8%BC%AF%E5%99%A8/Emacs%20vs%20Vim/index.html">
+<meta property="og:site_name" content="Jen-Chieh Shen&#39;s Blog">
+<meta property="og:description" content="Precisely that I am neither an Emacs nor Vim expert. I am  just an amateur that knows about the two editors with just  amount of knowledge. If you check out two of my Emacs and Vim repo, this could be">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.ytimg.com/vi/VaBdlcYaZLQ/maxresdefault.jpg">
+<meta property="article:published_time" content="2019-11-12T11:07:20.000Z">
+<meta property="article:modified_time" content="2021-09-15T13:41:55.985Z">
+<meta property="article:author" content="Jen-Chieh Shen">
+<meta property="article:tag" content="life">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.ytimg.com/vi/VaBdlcYaZLQ/maxresdefault.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Jen-Chieh Shen&#39;s Blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/blog/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+
+  
+<script src="/blog/js/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/blog/css/bootstrap.css" >
+  <link rel="stylesheet" href="/blog/css/fashion.css" >
+  <link rel="stylesheet" href="/blog/css/glyphs.css" >
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/blog/' + imgUrls[random];
+          document.getElementById("blurBg").src='/blog/' + imgUrls[random];
+        }
+    </script>
+
+
+
+
+<header id="allheader" class="site-header" role="banner" 
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/blog/" title="Jen-Chieh Shen&#39;s Blog" rel="home"> Jen-Chieh Shen&#39;s Blog </a>
+            
+          </h1>
+          
+          
+            <div class="site-description">My personal blog</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="/"> <a class="" href="/blog/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="archives"> <a class="" href="/blog/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="categories"> <a class="" href="/blog/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="tags"> <a class="" href="/blog/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663" linktext="about"> <a class="" href="/blog/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Editor - 編輯器/Emacs vs Vim" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" target="_blank" href="https://i.ytimg.com/vi/VaBdlcYaZLQ/maxresdefault.jpg" rel="gallery_cktljzh4m000eeiosauod6zmf noopener">
+        <img src="https://i.ytimg.com/vi/VaBdlcYaZLQ/maxresdefault.jpg" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Emacs vs Vim
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/blog/2019/11/12/Editor%20-%20%E7%B7%A8%E8%BC%AF%E5%99%A8/Emacs%20vs%20Vim/" class="article-date">
+	  <time datetime="2019-11-12T11:07:20.000Z" itemprop="datePublished">November 12, 2019</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/blog/categories/Editor-%E7%B7%A8%E8%BC%AF%E5%99%A8/">Editor - 編輯器</a>
+ 
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Precisely that I am neither an Emacs nor Vim expert. I am 
+just an amateur that knows about the two editors with just 
+amount of knowledge. If you check out two of my
+<a target="_blank" rel="noopener" href="https://github.com/jcs090218/jcs-emacs">Emacs</a>
+and
+<a target="_blank" rel="noopener" href="https://github.com/jcs090218/jcs-vim">Vim</a>
+repo, this could be the worst experience of all time. I hold 
+onto an idea that the editors are just a tool. Unless there 
+are issues that hamper or paster my workflow, I will avoid 
+changing the configuration to my editor. Only because I am 
+not going to remake the wheel, indeed, I am not going judge 
+either Emacs over Vim or Vim over Emacs.</p>
+<p>實際上,我並不是個Emacs或Vim專家.我只是單純剛好在這兩個編輯器上面都有些了解. 
+如果你查看我的兩個
+<a target="_blank" rel="noopener" href="https://github.com/jcs090218/jcs-emacs">Emacs</a>
+和
+<a target="_blank" rel="noopener" href="https://github.com/jcs090218/jcs-vim">Vim</a>
+的repo,那可能是最糟的經驗. 我秉持著一個想法, 那就是編輯器對我只是個工具. 
+在我對於我的工具不滿意的時候我才會選擇去修改我的工具. 不是很必要的我就不會
+特地去強求. 畢竟我不是要再造一個輪子,也沒打算讓Emacs或Vim分個高下.</p>
+<span id="more"></span>
+
+<p>Lead to the conclusion; I use Emacs more often than Vim. 
+Before Vim users left the website, I would like to hold 
+onto the basis, why I chose Emacs for my most frequently 
+used text editor. First and foremost, I organized the editor 
+users into two groups. Base on my own experiences, people 
+who use Emacs are most likely work in the software development 
+industry. On the other hand, the majority of Vim users works 
+either in cybersecurity or a free hacker. The reasons are pretty 
+much straightforward, as a software engineer, I would much 
+appreciate Emacs’ design. Emacs’ architecture brings a lot more 
+spaces and flexibilities to the software development workflow, 
+and it maximizes the changing possibilities to the software 
+engineer. Most of the software development is most likely to 
+stay in a program that could likeliest achieve most of the 
+tasks. Does it sound familiar to you? Yes, it is just another 
+way of saying the Integrated Development Environment (IDE). Of 
+course, Vim could possibly do what Emacs does, extends to Vim’s 
+original design, I found that conflict Vim is an editor design 
+for fast editing file in terminal. Comparing the two editors, 
+Emacs had been built the way what software developer wants; Vim 
+would most likely lose in this battle on this aspect. Vice versa, 
+Vim are very popular to those who do not need an IDE to do their 
+job and often require to exit text editor to jump to other 
+software, do not even argues that Vim is moving towards to Emacs’ 
+design. Well, this leads to a problem that I could not find a 
+good reason for having the conflict between the original design 
+fast editing file in terminal and having multiple plugins or 
+configurations in Vim. Though, if Vim starts moving towards to 
+Emacs’s design, does that mean Vim will lose the advantage on 
+fast editing file in terminal? Many of Vim users complains Emacs 
+was too big and cost so much of its’ starting time, but now they 
+want more plugins or configurations to their Vim settings? Emacs 
+was designed between the lightweight text editor and heavyweight 
+IDE, resulting Emacs could not going to be faster than Vim on the 
+starting time, but it brings benefits to people who will like a 
+‘lightweight IDE’, it retains most functionalities from any IDE, 
+or even better, program yourself one!</p>
+<p>先說結論,我是Emacs的使用者. 但為什麼我是Emacs使用者不是Vim使用者對我來講是
+有一套根據的. 首先我對於開發者的理念以及角度做了一個簡單的對比. 依照我的個人
+經驗以及橫跨世界的開發者角度來看,使用Emacs的通常都是開發軟體(Software 
+Engineering)的較多. 則使用Vim的大多是駭客(Hacker)或者從事資訊安全(Cyber 
+Security). 其實這個道理很簡單,相信可能已經很多人都發現了. 身為軟體工程的我
+會更喜歡Emacs本身設計師的理念, 他讓了軟體設計師有了強大的韌性以及空間去做最
+大幅度上的修改. 因為軟體工程師的工作大多都需要在一個軟體待得很久, 這樣聽起來
+是不是對某個東西很熟悉呢? 沒錯, 那就是一個Integrated Development 
+Environment (IDE). 當然一定會有人開始要爭論Vim也做得到, 但是那並不是Vim
+本身的設計理念. Vim本身是為了快速地能夠在終端修改文本而產生的編輯器. 他是為了
+快速而生的, 所以在建造這個Vim的時候並沒有在修改上有其專門性. 在這方面在Emacs
+面前較會略為遜色, 相反的Vim在速度以及需要跨足到其他軟體的行業來講是非常受到
+歡迎的,以及近年來改的版本也越來越傾向於Emacs那樣的設計了! 但同時也衍生了一
+個問題,如果Vim是為了快速修改文本,再增加每一個插件的同時,也帶來了效能上的消耗. 
+打開文本的速度會越來越慢. 這樣的衝突實在讓我百思不得其解… 至於Emacs本身設計
+的同時就打算在這上面有所顧忌了,所以他一開始就沒打算跟Vim去比速度. 這也是為什麼
+大多Vim使用者覺得Emacs太肥,因為Emacs本身的設計就不是為了速度. 他是選擇夾在類
+Vim跟大多的IDE中間. 這剛好滿足了軟體工程師討厭的肥大的IDE,以及同時保留了IDE大
+多數或者更棒的功能!</p>
+<p>If Emacs is that good why still not many people using it? The 
+reason could be straightforward, I learned Emacs from scratch 
+without any in-between supports like Spacemacs or Doom-emacs. 
+I found that Emacs main website is not that friendly compared 
+to other many sites. Plus, you could barely saw videos online 
+that are about Emacs. Furthermore, compares to Vim’s shortcuts 
+design, Emacs have less cognitive shortcuts consequent people 
+having a hard time learning Emacs’ shortcuts comparing learning 
+Vim’s shortcuts. I would doubt anyone would likely to learn Emacs 
+by having all these kind of challenges or difficulties in front 
+of them. The learning curve is steep, and the cost of learning a 
+new language for editing Emacs’ configuration, which is EmacsLisp, 
+could be an extra cost of time. If you notice programming language 
+Lisp, then maybe this would be too obscure to you. In my case, I 
+have no experience with programming language Lisp which leads me 
+many hassles while learning EmacsLisp. I have been using Emacs 
+for 4 years, and I still could not say that I am an expert to 
+Emacs. I am not trying to, and I reckon developing routine is 
+most likely imperative comparing to fixing the editor’s 
+configuration.</p>
+<p>但是這麼棒的東西為什麼還是這麼少人用? 原因很簡單, 我個人學Emacs的時候是學
+Raw Emacs, 也就是什麼都沒有開始建起來. 我特別能夠感受到Emacs它的獨特性以
+及它的不友善性… 它官方的文檔我覺得做的不算好,教學視頻也不是很多, 也沒有
+Vim口令那樣的設計巧思. 根本就是一塊石頭. 在這樣的情況下,有誰會想用它? 在
+學習曲線這麼陡的道路上,以及大多數的功能還要自己去寫,寫之前還得要去學Emacs
+它們搭建的腳本層的語言/語法(Emacs Lisp),這些都是不少的工程以及時間上的花費. 
+我學到現在第四年了,我依然還沒辦法很精通它. 也沒打算精通了,畢竟平時開發上我
+認為比較重要.</p>
+<p>Lastly, I would say these are just my personal experiences; 
+this means all of these are just my subjective thoughts. Some 
+could be right, and some could be wrong. Emacs have its’ own 
+benefits, which Vim also does. I often use Vim editing files 
+while I connect to the remote server. Indeed, one more advantage 
+to Vim is that Vim is pre-installed on the most system. This 
+lead to the conclusion that there is no best editor, the only 
+wise man knows how to use the right tool on the right circumstance.</p>
+<p>最後我想補充一些想法, 這些都是我的個人經驗不代表我說的一定都是對的. Emacs有
+Emacs的好處, Vim也有Vim的優點. 我也時常在服務端的時候使用Vim, 因為這是最
+快的手段,而且還是大多系統built-in的. 所以我想結論是沒有最棒的編輯器,只有善加
+利用工具的使用者!</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/blog/categories/Editor-%E7%B7%A8%E8%BC%AF%E5%99%A8/">Editor - 編輯器</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/life/" rel="tag">life</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2019/11/12/Editor%20-%20%E7%B7%A8%E8%BC%AF%E5%99%A8/Best%20Editor%20Ever%20-%20%E6%9C%80%E5%A5%BD%E7%9A%84%E7%B7%A8%E8%BC%AF%E5%99%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Best Editor Ever - 最好的編輯器
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2019/11/12/Game%20Development%20-%20%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/Art,%20Design,%20Programming%20-%20%E7%BE%8E%E8%A1%93,%20%E8%A8%AD%E8%A8%88,%20%E7%A8%8B%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Art, Design, Programming - 美術, 設計, 程式</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav">None</ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/blog/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/blog/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/blog/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2021 Jen-Chieh Shen&#39;s Blog All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
+    
+    
+</script>
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+
+  
+<script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+<script src="/blog/js/bootstrap.js"></script>
+
+
+<script src="/blog/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>

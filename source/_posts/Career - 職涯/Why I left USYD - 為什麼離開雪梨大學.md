@@ -13,6 +13,8 @@ photos:
 
 我一直在尋求著,
 
+<!-- more -->
+
 ## 💬 Past experience 經驗
 
 N/A

@@ -20,6 +20,8 @@ Engine with C#.
 
 在Unity Engine裡面, 有三個主要方式做遊戲資料儲存使用C#語言.
 
+<!-- more -->
+
 * [JCS_BinGameData](https://jcs090218.github.io/JCSUnity/ScriptReference/index.html?page=SaveLoad_sl_JCS_BinGameData)
   - In binary format. 二進制格式
 * [JCS_XMLGameData](https://jcs090218.github.io/JCSUnity/ScriptReference/index.html?page=SaveLoad_sl_JCS_XMLGameData)

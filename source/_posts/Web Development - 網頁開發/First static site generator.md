@@ -1,5 +1,5 @@
 ---
-title: First site generator - 第一個網頁生產器
+title: First static site generator - 第一個靜態網頁生產器
 layout: post
 date: 2021-09-26 11:07:20
 comments: true

@@ -75,5 +75,5 @@ workflow 之中. 並且遵循這些步驟, 請看[這裡](https://github.com/jcs
 
 ## 🔗 Links
 
-* [unity-license-activate](https://github.com/jcs090218/unity-license-activate)
-* [unity-verify-code](https://github.com/jcs090218/unity-verify-code)
+* [unity-license-activate](https://github.com/game-ci/unity-license-activate)
+* [unity-verify-code](https://github.com/game-ci/unity-verify-code)

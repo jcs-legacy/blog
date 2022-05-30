@@ -33,36 +33,6 @@ enableEmoji = true
   email = "jcs090218@gmail.com"
   link = "https://www.jcs-profile.com/"
 
-# Menu config
-[menu]
-  [[menu.main]]
-    weight = 1
-    identifier = "posts"
-    # you can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
-    # you can add extra information after the name (HTML format is supported), such as icons
-    post = ""
-    name = "Posts"
-    url = "https://jcs090218.github.io/blog/posts/"
-    # title will be shown when you hover on this menu link
-    title = ""
-  [[menu.main]]
-    weight = 2
-    identifier = "tags"
-    pre = ""
-    post = ""
-    name = "Tags"
-    url = "https://jcs090218.github.io/blog/tags/"
-    title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "https://jcs090218.github.io/blog/categories/"
-    title = ""
-
 [params]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
@@ -642,7 +612,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "Posts"
-        url = "/posts/"
+        url = "../blog/posts/"
         title = ""
       [[languages.en.menu.main]]
         weight = 2

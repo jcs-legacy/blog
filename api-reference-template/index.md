@@ -1,0 +1,42 @@
+# API Reference Template
+
+
+**Demo:** http://www.jcs-profile.com:3000/Manual/index.html
+
+**GitHub Repo:** https://github.com/jcs090218/API-Reference-Template
+  
+Many of my works are about making API. I always have their trouble making 
+API documents for myself and for people to read what each API does. To 
+resolve this issue, I spent a few hours to design a small website that I 
+could drop the HTML file in the target folder and it will show the file on 
+the website. The following list is the list of technologies I used in the project.
+
+<!-- more -->
+
+### 前端 Front-end
+
+<table>
+  <tr>
+    <td>*</td>
+    <td>Basic HTML/CSS</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>Basic JavaScript and jQuery</td>
+  </tr>
+</table>
+
+### 後端 Back-end
+
+<table>
+  <tr>
+    <td>*</td>
+    <td>Express.js</td>
+  </tr>
+</table>
+
+## 範例 Examples
+
+* [JCSUnity Scripting Reference](http://www.jcs-profile.com:3001/Manual/index.html)
+* [JCSEgret Scripting Reference](http://www.jcs-profile.com:3002/Manual/index.html)
+

@@ -8,6 +8,8 @@ on:
     paths:
       - '**.yml'
       - '**.toml'
+      - '**.md'
+      - content/**
   workflow_dispatch:
 
 concurrency:

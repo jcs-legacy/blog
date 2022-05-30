@@ -10,4 +10,4 @@
 
 cd ..
 
-hexo generate
+hugo --destination ../public --minify

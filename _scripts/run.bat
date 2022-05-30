@@ -10,4 +10,4 @@
 
 cd ..
 
-hexo server
+hugo server

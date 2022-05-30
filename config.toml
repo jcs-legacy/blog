@@ -1,4 +1,4 @@
-baseURL = "http://example.com/blog/"
+baseURL = "http://example.com/"
 
 theme = "LoveIt"
 

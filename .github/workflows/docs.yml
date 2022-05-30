@@ -31,7 +31,6 @@ jobs:
 
     - name: Build doc artifacts with Hugo
       run: hugo --destination ../gh-pages --minify
-      working-directory: docs
 
     # TODO: Generate better commit message
     - name: Publish doc artifacts

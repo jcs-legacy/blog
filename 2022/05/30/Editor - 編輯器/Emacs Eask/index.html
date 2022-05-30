@@ -3,28 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>❓ 媽媽, 要幫還是不幫? (短) | Jen-Chieh Shen&#39;s Blog</title>
+  <title>Emacs Eask | Jen-Chieh Shen&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    <meta name="keywords" content="myself mom argue help" />
+    <meta name="keywords" content="myself" />
   
   
   
   
-  <meta name="description" content="這是一篇又來記錄我生活上問到難題的文章. 不想接收負能量請離開! 進入正題, 這種情況已經不只一次了, 這是一個平時工作日的下午, 陰天沒有陽光, 濕氣非常沉重. “我升降桌大後天要來了, 要把舊的書桌撤掉!”. 這是已經預定好了行程. 我已經跟我 媽商量好, 要一起把原先的舊桌子給移除. 然後把新的升降桌移入. 這是一項大工程, 原先的桌子也不是便於攜帶的款式. 一開始也是透過組裝才能移進我的">
+  <meta name="description" content="我來分享下近期寫的專案, Emacs Eask  介紹Eask的名字源自於Emacs Cask; 如果你已經有使用過Cask的經驗, 那基本上你可以跳過這階段. 對於不了解或沒使用過的人, 在此我還是加減介紹一下: (NOTE: 原則上這裡的Eask和Cask是可以互相替換的) Eask是個Emacs的套件管理工具, 有點類似於Node.js的npm, 但不全然是. 畢竟工具還不夠齊全, 而且E">
 <meta property="og:type" content="article">
-<meta property="og:title" content="❓ 媽媽, 要幫還是不幫? (短)">
-<meta property="og:url" content="https://jcs090218.github.io/blog/2022/05/03/Life%20-%20%E7%94%9F%E6%B4%BB/%E5%AA%BD%E5%AA%BD,%20%E8%A6%81%E5%B9%AB%E9%82%84%E6%98%AF%E4%B8%8D%E5%B9%AB/index.html">
+<meta property="og:title" content="Emacs Eask">
+<meta property="og:url" content="https://jcs090218.github.io/blog/2022/05/30/Editor%20-%20%E7%B7%A8%E8%BC%AF%E5%99%A8/Emacs%20Eask/index.html">
 <meta property="og:site_name" content="Jen-Chieh Shen&#39;s Blog">
-<meta property="og:description" content="這是一篇又來記錄我生活上問到難題的文章. 不想接收負能量請離開! 進入正題, 這種情況已經不只一次了, 這是一個平時工作日的下午, 陰天沒有陽光, 濕氣非常沉重. “我升降桌大後天要來了, 要把舊的書桌撤掉!”. 這是已經預定好了行程. 我已經跟我 媽商量好, 要一起把原先的舊桌子給移除. 然後把新的升降桌移入. 這是一項大工程, 原先的桌子也不是便於攜帶的款式. 一開始也是透過組裝才能移進我的">
+<meta property="og:description" content="我來分享下近期寫的專案, Emacs Eask  介紹Eask的名字源自於Emacs Cask; 如果你已經有使用過Cask的經驗, 那基本上你可以跳過這階段. 對於不了解或沒使用過的人, 在此我還是加減介紹一下: (NOTE: 原則上這裡的Eask和Cask是可以互相替換的) Eask是個Emacs的套件管理工具, 有點類似於Node.js的npm, 但不全然是. 畢竟工具還不夠齊全, 而且E">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://www.newsnetnebraska.org/wp-content/uploads/2021/07/1625629121_What-are-they-and-how-not-to-confuse-them-1024x610.jpg">
-<meta property="article:published_time" content="2022-05-03T11:07:20.000Z">
-<meta property="article:modified_time" content="2022-05-30T09:56:32.162Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/emacs-eask/eask/master/docs/static/logo.png">
+<meta property="article:published_time" content="2022-05-30T16:51:20.000Z">
+<meta property="article:modified_time" content="2022-05-30T09:56:32.158Z">
 <meta property="article:author" content="Jen-Chieh Shen">
-<meta property="article:tag" content="life">
+<meta property="article:tag" content="cli">
+<meta property="article:tag" content="emacs">
+<meta property="article:tag" content="ci">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.newsnetnebraska.org/wp-content/uploads/2021/07/1625629121_What-are-they-and-how-not-to-confuse-them-1024x610.jpg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/emacs-eask/eask/master/docs/static/logo.png">
   
     <link rel="alternate" href="/atom.xml" title="Jen-Chieh Shen&#39;s Blog" type="application/atom+xml">
   
@@ -135,14 +137,14 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-Life - 生活/媽媽, 要幫還是不幫" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-Editor - 編輯器/Emacs Eask" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" target="_blank" href="https://www.newsnetnebraska.org/wp-content/uploads/2021/07/1625629121_What-are-they-and-how-not-to-confuse-them-1024x610.jpg" rel="gallery_cl3sk3kyf0016foos428i95k9 noopener">
-        <img src="https://www.newsnetnebraska.org/wp-content/uploads/2021/07/1625629121_What-are-they-and-how-not-to-confuse-them-1024x610.jpg" itemprop="image">
+      <a class="article-gallery-img fancybox" target="_blank" href="https://raw.githubusercontent.com/emacs-eask/eask/master/docs/static/logo.png" rel="gallery_cl3sk3ky3000jfoos5dim1qxb noopener">
+        <img src="https://raw.githubusercontent.com/emacs-eask/eask/master/docs/static/logo.png" itemprop="image">
       </a>
     
   </div>
@@ -153,7 +155,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      ❓ 媽媽, 要幫還是不幫? (短)
+      Emacs Eask
     </h1>
   
 
@@ -161,13 +163,13 @@
     
     <div class="article-meta">
       
-	<a href="/blog/2022/05/03/Life%20-%20%E7%94%9F%E6%B4%BB/%E5%AA%BD%E5%AA%BD,%20%E8%A6%81%E5%B9%AB%E9%82%84%E6%98%AF%E4%B8%8D%E5%B9%AB/" class="article-date">
-	  <time datetime="2022-05-03T11:07:20.000Z" itemprop="datePublished">May 3, 2022</time>
+	<a href="/blog/2022/05/30/Editor%20-%20%E7%B7%A8%E8%BC%AF%E5%99%A8/Emacs%20Eask/" class="article-date">
+	  <time datetime="2022-05-30T16:51:20.000Z" itemprop="datePublished">May 30, 2022</time>
 	</a>
 
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/blog/categories/Life-%E7%94%9F%E6%B4%BB/">Life - 生活</a>
+    <a class="article-category-link" href="/blog/categories/Editor-%E7%B7%A8%E8%BC%AF%E5%99%A8/">Editor - 編輯器</a>
  
       
 	<span id="busuanzi_container_page_pv">
@@ -177,32 +179,39 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>這是一篇又來記錄我生活上問到難題的文章. 不想接收負能量請離開!</p>
-<p>進入正題,</p>
-<p>這種情況已經不只一次了, 這是一個平時工作日的下午, 陰天沒有陽光, 濕氣非常沉重.
-“我升降桌大後天要來了, 要把舊的書桌撤掉!”. 這是已經預定好了行程. 我已經跟我
-媽商量好, 要一起把原先的舊桌子給移除. 然後把新的升降桌移入.</p>
-<p>這是一項大工程, 原先的桌子也不是便於攜帶的款式. 一開始也是透過組裝才能移進我的
-房間. 問題來了, 我媽淡淡地說道: “那桌子我不幫忙, 自己搞定!” 這時我是錯愕的,
-一開始講好一起弄, 然後又突然撒下一句<strong>我不弄</strong>. 我不懂她幫忙的定義.</p>
-<p>我可以接受別人不幫忙, 但不能接受要幫又不幫, 這種模糊的答案. 不要那我就要自己
-安排清理家具的公司. 那些都要時間, 突然不要, 直接把我打到牆上. 這都讓我的心情
-起伏很大. <strong>相處起來很累人</strong>.</p>
-<p>如果不想幫忙, 請早點說, 不然就什麼都不要說. 😕 然後我不需要妳, 妳也不需要我,
-我也長這麼大了. 那就不用互相往來, 各過各的或許是種不錯的生活方式? 那種<strong>要幫不幫</strong>
-的生活態度, 對我這人好像太過困難了…</p>
-<p>所以最後是怎樣? 妳想幫就幫到底, 不然就閉嘴? 🙄</p>
+        <blockquote>
+<p>我來分享下近期寫的專案, Emacs Eask</p>
+</blockquote>
+<h2 id="介紹"><a href="#介紹" class="headerlink" title="介紹"></a>介紹</h2><p>Eask的名字源自於<a target="_blank" rel="noopener" href="https://github.com/cask/cask">Emacs Cask</a>; 如果你已經有使用過Cask的經驗,
+那基本上你可以跳過這階段. 對於不了解或沒使用過的人, 在此我還是加減介紹一下:</p>
+<p>(<strong>NOTE:</strong> 原則上這裡的Eask和Cask是可以互相替換的)</p>
+<p>Eask是個Emacs的套件管理工具, 有點類似於<code>Node.js</code>的<code>npm</code>, 但不全然是. 畢竟工具還不夠齊全,
+而且Emacs生態也不適合<code>npm</code>那樣的模式. 所以簡單來說, Eask可以是個劣化版的<code>npm</code>. 下面連結
+的Why Cask? 有著更好的解釋</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://cask.readthedocs.io/en/latest/guide/introduction.html#introduction-why-cask">Why Cask?</a></li>
+</ul>
+<h2 id="優點與缺點"><a href="#優點與缺點" class="headerlink" title="優點與缺點"></a>優點與缺點</h2><h3 id="rm-優點"><a href="#rm-優點" class="headerlink" title="rm 優點"></a>rm 優點</h3><p>WIP</p>
+<h3 id="rm-缺點"><a href="#rm-缺點" class="headerlink" title="rm 缺點"></a>rm 缺點</h3><p>WIP</p>
+<h3 id="rm-結語"><a href="#rm-結語" class="headerlink" title="rm 結語"></a>rm 結語</h3><p>WIP</p>
+<hr>
+<blockquote>
+<p>話說我因此學到了<a target="_blank" rel="noopener" href="https://gohugo.io/">Hugo</a>; 有空再來分享一下!</p>
+</blockquote>
+<h2 id="🔗-Links"><a href="#🔗-Links" class="headerlink" title="🔗 Links"></a>🔗 Links</h2><ul>
+<li>https:&#x2F;&#x2F;github.com&#x2F;emacs-eask&#x2F;eask</li>
+</ul>
 
       
     </div>
     <footer class="entry-meta entry-footer">
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/blog/categories/Life-%E7%94%9F%E6%B4%BB/">Life - 生活</a>
+    <a class="article-category-link" href="/blog/categories/Editor-%E7%B7%A8%E8%BC%AF%E5%99%A8/">Editor - 編輯器</a>
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/life/" rel="tag">life</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/ci/" rel="tag">ci</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/cli/" rel="tag">cli</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/emacs/" rel="tag">emacs</a></li></ul>
 
       
         
@@ -237,19 +246,10 @@
     
 <nav id="article-nav">
   
-    <a href="/blog/2022/05/30/Editor%20-%20%E7%B7%A8%E8%BC%AF%E5%99%A8/Emacs%20Eask/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Emacs Eask
-        
-      </div>
-    </a>
   
-  
-    <a href="/blog/2021/09/26/Web%20Development%20-%20%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC/First%20static%20site%20generator/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/blog/2022/05/03/Life%20-%20%E7%94%9F%E6%B4%BB/%E5%AA%BD%E5%AA%BD,%20%E8%A6%81%E5%B9%AB%E9%82%84%E6%98%AF%E4%B8%8D%E5%B9%AB/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">First static site generator - 第一個靜態網頁生產器</div>
+      <div class="article-nav-title">❓ 媽媽, 要幫還是不幫? (短)</div>
     </a>
   
 </nav>
@@ -263,7 +263,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav">None</ol>
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8B%E7%B4%B9"><span class="nav-number">1.</span> <span class="nav-text">介紹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%84%AA%E9%BB%9E%E8%88%87%E7%BC%BA%E9%BB%9E"><span class="nav-number">2.</span> <span class="nav-text">優點與缺點</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#rm-%E5%84%AA%E9%BB%9E"><span class="nav-number">2.1.</span> <span class="nav-text">rm 優點</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rm-%E7%BC%BA%E9%BB%9E"><span class="nav-number">2.2.</span> <span class="nav-text">rm 缺點</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rm-%E7%B5%90%E8%AA%9E"><span class="nav-number">2.3.</span> <span class="nav-text">rm 結語</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%94%97-Links"><span class="nav-number">3.</span> <span class="nav-text">🔗 Links</span></a></li></ol>
     
     </div>
   </aside>

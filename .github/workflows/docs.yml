@@ -1,53 +1,48 @@
 name: Docs
 
 on:
-  push: 
-    branches: [ master ]
-  pull_request: 
-    branches: [ master ]
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  push:
+    branches:
+      - master
+      - docs
+    paths:
+      - '**.yml'
+      - docs/**
+  workflow_dispatch:
 
 jobs:
-  build:
+  publish-doc:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
-        submodules: 'recursive'
-    
-    - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+        submodules: true
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
       with:
-        node-version: '16'
+        hugo-version: '0.91.2'
 
-    - name: Install Hexo
-      run: npm install --global hexo-cli
+    - name: Check out GitHub page repo
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.PAT }}
+        ref: 'gh-pages'
 
-    - name: Build website
+    - name: Build doc artifacts with Hugo
+      run: hugo --destination ../emacs-eask.github.io --minify
+      working-directory: docs
+
+    # TODO: Generate better commit message
+    - name: Publish doc artifacts
       run: |
-        mv './_config.haipaper.yml' './themes/hipaper/_config.yml'
-        npm install
-        hexo generate
-
-    - name: Clone branch gh-pages
-      uses: actions/checkout@v2
-      with:
-        path: 'gh-pages'
-        ref: gh-pages
-
-    - name: Move .git to build
-      run: mv './gh-pages/.git' './public'
-
-    - name: Push to pages
-      continue-on-error: true
-      run: |
-        cd './public'
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
-        git commit -m "Update pages"
+        git commit -F- <<-_UBLT_COMMIT_MSG_
+        auto: ${{ github.event.head_commit.message }}
+
+        SourceCommit: https://github.com/emacs-eask/eask/commit/${{ github.sha }}
+        _UBLT_COMMIT_MSG_
         git push
+      working-directory: emacs-eask.github.io

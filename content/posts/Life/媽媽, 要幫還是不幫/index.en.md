@@ -12,8 +12,8 @@ resources:
 - name: "featured-image"
   src: "featured-image.png"
 
-tags: ["xxx"]
-categories: ["xxx"]
+tags: ["Life"]
+categories: ["Life"]
 
 lightgallery: true
 ---

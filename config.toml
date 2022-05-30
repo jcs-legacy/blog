@@ -620,7 +620,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "Tags"
-        url = "/tags/"
+        url = "../blog/tags/"
         title = ""
       [[languages.en.menu.main]]
         weight = 3
@@ -628,7 +628,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "Categories"
-        url = "/categories/"
+        url = "../blog/categories/"
         title = ""
       [[languages.en.menu.main]]
         weight = 5
@@ -636,7 +636,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "About"
-        url = "/about/"
+        url = "../blog/about/"
         title = ""
       [[languages.en.menu.main]]
         weight = 6
@@ -694,7 +694,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "所有文章"
-        url = "/posts/"
+        url = "../blog/posts/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 2
@@ -702,7 +702,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "標籤"
-        url = "/tags/"
+        url = "../blog/tags/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 3
@@ -710,14 +710,14 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "分類"
-        url = "/categories/"
+        url = "../blog/categories/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 4
         identifier = "documentation"
         pre = ""
         name = "文檔"
-        url = "/categories/documentation/"
+        url = "../blog/categories/documentation/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 5
@@ -725,7 +725,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "關於"
-        url = "/about/"
+        url = "../blog/about/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 6

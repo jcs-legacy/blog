@@ -713,13 +713,6 @@ enableEmoji = true
         url = "../../blog/zh-tw/categories/"
         title = ""
       [[languages.zh-tw.menu.main]]
-        weight = 4
-        identifier = "documentation"
-        pre = ""
-        name = "文檔"
-        url = "../../blog/zh-tw/categories/documentation/"
-        title = ""
-      [[languages.zh-tw.menu.main]]
         weight = 5
         identifier = "about"
         pre = ""

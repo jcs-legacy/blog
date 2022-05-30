@@ -8,7 +8,7 @@ categories: [Unity]
 keywords: unity CI CD license
 description: 
 photos:
-	- https://avatars.githubusercontent.com/u/66185740?s=200&v=4
+	- https://raw.githubusercontent.com/game-ci/.github/main/profile/game-ci-github-banner.png
 ---
 
 Following up the thread, [My disappointing experience using Unity in a CI pipeline](https://forum.unity.com/threads/my-disappointing-experience-using-unity-in-a-ci-pipeline.737678/)

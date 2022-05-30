@@ -26,11 +26,11 @@ jobs:
     - name: Check out GitHub page repo
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.PAT }}
+        path: 'gh-pages'
         ref: 'gh-pages'
 
     - name: Build doc artifacts with Hugo
-      run: hugo --destination ../emacs-eask.github.io --minify
+      run: hugo --destination ../gh-pages --minify
       working-directory: docs
 
     # TODO: Generate better commit message
@@ -42,7 +42,7 @@ jobs:
         git commit -F- <<-_UBLT_COMMIT_MSG_
         auto: ${{ github.event.head_commit.message }}
 
-        SourceCommit: https://github.com/emacs-eask/eask/commit/${{ github.sha }}
+        SourceCommit: https://github.com/jcs090218/blog/commit/${{ github.sha }}
         _UBLT_COMMIT_MSG_
         git push
-      working-directory: emacs-eask.github.io
+      working-directory: gh-pages

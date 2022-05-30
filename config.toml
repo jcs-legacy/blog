@@ -694,7 +694,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "所有文章"
-        url = "../blog/zh-tw/posts/"
+        url = "../../blog/zh-tw/posts/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 2
@@ -702,7 +702,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "標籤"
-        url = "../blog/zh-tw/tags/"
+        url = "../../blog/zh-tw/tags/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 3
@@ -710,14 +710,14 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "分類"
-        url = "../blog/zh-tw/categories/"
+        url = "../../blog/zh-tw/categories/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 4
         identifier = "documentation"
         pre = ""
         name = "文檔"
-        url = "../blog/zh-tw/categories/documentation/"
+        url = "../../blog/zh-tw/categories/documentation/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 5
@@ -725,7 +725,7 @@ enableEmoji = true
         pre = ""
         post = ""
         name = "關於"
-        url = "../blog/zh-tw/about/"
+        url = "../../blog/zh-tw/about/"
         title = ""
       [[languages.zh-tw.menu.main]]
         weight = 6

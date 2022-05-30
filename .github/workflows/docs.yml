@@ -10,6 +10,10 @@ on:
       - docs/**
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   publish-doc:
     runs-on: ubuntu-latest
@@ -30,7 +34,7 @@ jobs:
         ref: 'gh-pages'
 
     - name: Build doc artifacts with Hugo
-      run: hugo --destination ../gh-pages --minify
+      run: hugo --destination gh-pages --minify
 
     # TODO: Generate better commit message
     - name: Publish doc artifacts

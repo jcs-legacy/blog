@@ -1,15 +1,15 @@
 # Emacs Eask - Alternative to Emacs Cask
 
 
-## Introduction
+## 🔰 Introduction
 
 WIP
 
-## Then why Eask, and not Cask?
+## ❓ Then why Eask, and not Cask?
 
 WIP
 
-## Conclusion
+## 🧙‍♂️ Conclusion
 
 WIP
 

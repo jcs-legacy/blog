@@ -9,9 +9,9 @@
 
 (**NOTE:** 原則上這裡的`Eask`和`Cask`是可以互相替換的)
 
-Eask是個Emacs的套件管理工具, 有點類似於`Node.js`的`npm`, 但不全然是. 畢竟工具還不
-夠齊全, 而且Emacs生態也不適合`npm`那樣的模式. 所以簡單來說, Eask可以是個劣化版的`npm`.
-下面連結的 **Why Cask?** 有著更好的解釋
+`Eask`是個`Emacs`的套件管理工具, 有點類似於`Node.js`的`npm`, 但不全然是. 畢竟
+工具還不夠齊全, 而且`Emacs`生態也不適合`npm`那樣的模式. 所以簡單來說, Eask可以是個
+劣化版的`npm`. 下面連結的 **Why Cask?** 有著更好的解釋
 
 * [Why Cask?](https://cask.readthedocs.io/en/latest/guide/introduction.html#introduction-why-cask)
 

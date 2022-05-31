@@ -28,29 +28,16 @@ lightgallery: true
 
 <!-- more -->
 
-### 前端 Front-end
+### 前端
 
-<table>
-  <tr>
-    <td>*</td>
-    <td>Basic HTML/CSS</td>
-  </tr>
-  <tr>
-    <td>*</td>
-    <td>Basic JavaScript and jQuery</td>
-  </tr>
-</table>
+* Basic HTML/CSS
+* Basic JavaScript and jQuery
 
-### 後端 Back-end
+### 後端
 
-<table>
-  <tr>
-    <td>*</td>
-    <td>Express.js</td>
-  </tr>
-</table>
+* Express.js
 
-## 範例 Examples
+## 範例
 
 * [JCSUnity Scripting Reference](http://www.jcs-profile.com:3001/Manual/index.html)
 * [JCSEgret Scripting Reference](http://www.jcs-profile.com:3002/Manual/index.html)

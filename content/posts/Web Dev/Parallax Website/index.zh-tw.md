@@ -25,20 +25,9 @@ lightgallery: true
 
 <!-- more -->
 
-<table>
-<tr>
-<td>1.</td>
-<td>視差</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>聲音</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>轉蛋機</td>
-</tr>
-</table>
+1. 視差
+2. 聲音
+3. 轉蛋機
 
 ## 👁️ 視差
 

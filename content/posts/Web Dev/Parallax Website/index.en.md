@@ -27,20 +27,9 @@ this project.
 
 <!-- more -->
 
-<table>
-<tr>
-<td>1.</td>
-<td>Parallax Effect</td>
-</tr>
-<tr>
-<td>2.</td>
-<td>Use of Sound</td>
-</tr>
-<tr>
-<td>3.</td>
-<td>Gashapon</td>
-</tr>
-</table>
+1. Parallax Effect
+2. Use of Sound
+3. Gashapon
 
 ## 👁️ Parallax Effect
 

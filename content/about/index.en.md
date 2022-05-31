@@ -3,7 +3,6 @@ title: "Aboue me!"
 date: 2017-09-02T11:04:49+08:00
 draft: false
 description: "Aboue me!"
-images: ["/Apple-Devices-Preview.png"]
 
 lightgallery: true
 

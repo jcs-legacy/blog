@@ -475,10 +475,8 @@ enableEmoji = true
   # Site SEO config
   [params.seo]
     # image URL
-    # 图片 URL
-    image = "/images/Apple-Devices-Preview.png"
+    image = "/images/preview.png"
     # thumbnail URL
-    # 缩略图 URL
     thumbnailUrl = "/images/screenshot.png"
 
   # Analytics config

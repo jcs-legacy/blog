@@ -13,29 +13,16 @@ the website. The following list is the list of technologies I used in the projec
 
 <!-- more -->
 
-### 前端 Front-end
+### Frontend
 
-<table>
-  <tr>
-    <td>*</td>
-    <td>Basic HTML/CSS</td>
-  </tr>
-  <tr>
-    <td>*</td>
-    <td>Basic JavaScript and jQuery</td>
-  </tr>
-</table>
+* Basic HTML/CSS
+* Basic JavaScript and jQuery
 
-### 後端 Back-end
+### Backend
 
-<table>
-  <tr>
-    <td>*</td>
-    <td>Express.js</td>
-  </tr>
-</table>
+* Express.js
 
-## 範例 Examples
+## Examples
 
 * [JCSUnity Scripting Reference](http://www.jcs-profile.com:3001/Manual/index.html)
 * [JCSEgret Scripting Reference](http://www.jcs-profile.com:3002/Manual/index.html)

@@ -10,17 +10,17 @@ This is a record, a message from me to one of my ex-firned.
 While you are in a dilemma, we humans are totally normal to be afraid
 of it. This may be a process; afraid makes us strong and a much more
 experienced people. Humans suppose to grow like that! So let it be!
-Once you are afraid of something, don’t give up on trying it; think
+Once you are afraid of something, don't give up on trying it; think
 about the issue, think as hard as you can, and try to resolve it!
-Even if we couldn’t resolve the issue, it doesn’t mean we are bad,
-or the issue can’t be resolved in the later future.
+Even if we couldn't resolve the issue, it doesn't mean we are bad,
+or the issue can't be resolved in the later future.
 
 We are often weak while facing problems that are just too tough for us
-humans. We grow only when the dilemma is just right above us. We can’t
-simply level up by skipping it. Avoiding the issue/weaknesses doesn’t
+humans. We grow only when the dilemma is just right above us. We can't
+simply level up by skipping it. Avoiding the issue/weaknesses doesn't
 mean anything; I have been studying English for more than 20 years, but
 then I finally have the proof that I could get into a college ranked in
-the first fifteenth. I have realized that avoiding the dilemma doesn’t
+the first fifteenth. I have realized that avoiding the dilemma doesn't
 affect you from any aspect because I have come and eventually resolved it!
 
 Everyone has the time that they got beaten up. All we need to do is stand

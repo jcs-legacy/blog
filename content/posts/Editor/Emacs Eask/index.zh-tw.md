@@ -18,20 +18,21 @@ categories: ["Editor"]
 lightgallery: true
 ---
 
-## 介紹
+## 🔰 介紹
 
-Eask的名字源自於[Emacs Cask](https://github.com/cask/cask); 如果你已經有使用過Cask的經驗,
-那基本上你可以跳過這階段. 對於不了解或沒使用過的人, 在此我還是加減介紹一下:
+`Eask`的名字源自於[Emacs Cask](https://github.com/cask/cask); 如果你已經有使
+用過`Cask`的經驗, 那基本上你可以跳過這階段. 對於不了解或沒使用過的人, 在此我還是加減
+介紹一下:
 
-(**NOTE:** 原則上這裡的Eask和Cask是可以互相替換的)
+(**NOTE:** 原則上這裡的`Eask`和`Cask`是可以互相替換的)
 
-Eask是個Emacs的套件管理工具, 有點類似於`Node.js`的`npm`, 但不全然是. 畢竟工具還不夠齊全,
-而且Emacs生態也不適合`npm`那樣的模式. 所以簡單來說, Eask可以是個劣化版的`npm`. 下面連結
-的Why Cask? 有著更好的解釋
+Eask是個Emacs的套件管理工具, 有點類似於`Node.js`的`npm`, 但不全然是. 畢竟工具還不
+夠齊全, 而且Emacs生態也不適合`npm`那樣的模式. 所以簡單來說, Eask可以是個劣化版的`npm`.
+下面連結的 **Why Cask?** 有著更好的解釋
 
 * [Why Cask?](https://cask.readthedocs.io/en/latest/guide/introduction.html#introduction-why-cask)
 
-## 那為什麼用要Eask, 而不是Cask?
+## ❓ 那為什麼用要Eask, 而不是Cask?
 
 以下是簡單的優劣展示表格:
 
@@ -70,7 +71,7 @@ Eask是個Emacs的套件管理工具, 有點類似於`Node.js`的`npm`, 但不�
 2. `Eask`是採取一個指令一個檔案制; 所以有非常多的檔案散佈在各區
 3. 專案結構相比其他都複雜許多; 對於不習慣這種分類法的人會很痛苦
 
-## 結語
+## 🧙‍♂️ 結語
 
 比較這麼多優缺點, 我還是會選擇Eask. 畢竟這專案未來的發展性會比其他的都高出許多.
 我認為`JavaScript`和`npm`也非常好上手, 問題並不大!

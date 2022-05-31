@@ -18,15 +18,15 @@ categories: ["Editor"]
 lightgallery: true
 ---
 
-## Introduction
+## 🔰 Introduction
 
 WIP
 
-## Then why Eask, and not Cask?
+## ❓ Then why Eask, and not Cask?
 
 WIP
 
-## Conclusion
+## 🧙‍♂️ Conclusion
 
 WIP
 

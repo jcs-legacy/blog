@@ -46,41 +46,63 @@ A simple comparison table below:
 
 (Table is copy and paste, please visit the site [here](https://emacs-eask.github.io/#-comparisons))
 
-`Eask` advantages came from the behind technology choice, it uses `Node.js` and
-not `Shellscript`, `Bash`, or `Batch`, etc. It would require us to use `Node runtime`,
-but we can use [pkg](https://www.npmjs.com/package/pkg) (big thanks to `vercel`) to
-package into native executable to avoid such a hassle.
+`Eask`'s advantages came from the behind technology choice; it uses `Node.js` and
+not `Shellscript`, `Bash`, `Batch`, etc. It would require us to use `Node runtime`,
+but we can use [pkg](https://www.npmjs.com/package/pkg) (big thanks to `vercel`) for
+packaging into native executable to avoid such a hassle.
 
+<<<<<<< HEAD
 It's much more hassle while working with `Eask`, because we will first need to install
 `Node.js` and then call `npm install`. So besides this, what are the **GOOD** stuffs?
+=======
+I hope the needs to install `Node.js` and the extra step to call `npm install`
+are the only defect from `Eask`. So what are the **GOOD** stuffs?
+>>>>>>> ad1110d925c4e540d6e7b717984f3dddfff325b6
 
-1. `Eask` can be package into native executable; it should give you a better speed!
-2. It uses `Cask`'s DSL, it became very easy to adapt from Cask to Eask
-3. **Eask**-file is unlike **Cask**-file; it's an Elisp file and function similar to
+1. `Eask` can be packaged into native executables; it should give you a better speed!
+2. It uses `Cask`'s DSL; it became very easy to adapt from Cask to Eask
+3. **Eask**-file is unlike **Cask**-file; it's an Elisp file and functions similar to
 `init.el` (combined from `Cask` + `Eldev`)
-4. Use high programming language `JavaScript`; `npm` has a huge ecosystem. We can
-always fallback to node layer if something doesn't work inside Emacs (e.g. `exec`,
-`init`)
+4. Use high-level programming language `JavaScript`; `npm` has a huge ecosystem. We
+can always fall back to the node layer if something doesn't work inside Emacs (e.g.
+`exec`, `init`)
 5. `Eask` doesn't require to call `Emacs` all the time; this is particularly good
 in Windows due to the `fork` operation is quite slow in the system (this is why
 I don't recommend `Eldev` under Windows)
 6. Cross-platform and consistency; other alternatives don't support Windows by
-default except `Eldev`
-7. It's easy to expand, clearer project architecture; `Cask` , `Eldev`, and
-`makem.sh` have their files very huge, it would be harder to maintain or adding new
+default except for `Eldev`
+7. It's easy to expand, and clearer project architecture; `Cask`, `Eldev`, and
+`makem.sh` have their files very huge, so it would be harder to maintain or add new
 features
-8. Global flag `-g` allow you to manage you Emacs configuration
+8. Global flag `-g` allows you to manage your Emacs configuration
 
 Eask sounds good, but it isn't perfect. Here are the bads:
 
-1. Harder to get into the development, you will need to know `JavaScript` and `npm`
+1. Harder to get into the development; you will need to know `JavaScript` and `npm`
 2. `Eask` project structure follows 1 command to 1 file; people hate having multiple
-files everywehre
-3. Project is much more complicated (same as no. 2)
+files everywhere
+3. The project is much more complicated (same as no. 2)
 
 ## 🧙‍♂️ Conclusion
 
-WIP
+After seeing and comparing all the alternatives; I would eventually pick Eask as my
+major management tool. Eask has more potential if we compare it to the others; on the
+other hand, I think `JavaScript` and `npm` are very easy to learn.
+
+I have been using Emacs on Windows for 7 years; it's quite painful. In general,
+many packages are either broken or doesn't have a good user experience. I sometimes
+do have a good user experience but rarely. For example, `magit`, `helm`, is slow
+on Windows. Simple ping package `eping` doesn't support Windows' `ping.exe`. Last
+time installing  `docker.el` doesn't work on Windows (1 week ago). I know the fact is
+**Emacs is just too slow on Windows**, but that doesn't mean that we couldn't do
+anything about it! The fact is user experience is still bad on Windows, though! 😅
+
+Many people seem to use `Cask`, but the majority of them don't require tests on Windows.
+It's simply hard and inconvenient. You would have to install `Python`, and `Python`
+is particularly bad on Windows (UX wise). Here came the `Eask` to be the savior.
+It's compatible with `Cask`'s DSL and ensures the workflow's consistency (no Python).
+Hopefully, everyone can use `Eask` to develop their elisp packages. Maybe someday
+Emacs can live better under the Windows... What do you think?
 
 ---
 

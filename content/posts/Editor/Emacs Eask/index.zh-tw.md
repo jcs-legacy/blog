@@ -46,7 +46,7 @@ lightgallery: true
 (這是我直接複製貼上的, 原文可以參考[這](https://emacs-eask.github.io/#-comparisons).)
 
 `Eask`的優點來自於它背後的技術選擇是使用`Node.js`; 而不是基礎的`Shellscript`, `Bash`,
-或`Batch`, 等等. 雖然必須使用`Node runtime`, 但我們可以透過[pkg](https://www.npmjs.com/package/pkg)
+`Batch`, 等等. 雖然必須使用`Node runtime`, 但我們可以透過[pkg](https://www.npmjs.com/package/pkg)
 (感謝`vercel`)打包來解決這問題! (這樣我們就可以跳過安裝`Node.js`)
 
 使用`Node.js`並且還多了一步`npm install`確實比較麻煩, 但這大概是Eask唯一的缺點. 好在
@@ -76,9 +76,9 @@ pkg解決了這問題! 我們接著看優點:
 比較這麼多優缺點, 我還是會選擇Eask. 畢竟這專案未來的發展性會比其他的都高出許多.我認為
 `JavaScript`和`npm`也非常好上手, 問題並不大!
 
-我個人長期在 Windows 上使用 Emacs; 其實是蠻折騰人的. 因為大部分的插件在 Windows
-下都是壞掉的, 好一點就是體驗不佳. 我很少會遇到體驗好的插件. 例如 `magit`, `helm`
-, `ivy`很慢, `eping`不支持`Windows`, `docker.el`上次安裝掛了, 等等. 多倒數不清.
+我個人長期在`Windows`上使用`Emacs`; 其實是蠻折騰人的. 因為大部分的插件在`Windows`
+下都是壞掉的, 好一點就是體驗不佳. 我很少會遇到體驗好的插件. 例如 `magit`, `helm`很慢.
+`eping`不支持`Windows`. `docker.el`上次安裝掛了, 等等. 多倒數不清.
 
 以前大家都用Cask, 但都往往不在 Windows 上做測試; 因為難用, 測試起來也不方便.
 還需要特別安裝`Python`, `Python`在`Windows`上的體驗也不好. 因此`Eask`誕生了,

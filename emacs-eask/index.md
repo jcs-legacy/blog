@@ -63,7 +63,24 @@ files everywhere
 
 ## 🧙‍♂️ Conclusion
 
-WIP
+After seeing and comparing all the alternatives; I would eventually pick Eask as my
+major management tool. Eask has more potential if we compare it to the others; on the
+other hand, I think `JavaScript` and `npm` are very easy to learn.
+
+I have been using Emacs on Windows for 7 years; it's quite painful. In general,
+many packages are either broken or doesn't have a good user experience. I sometimes
+do have a good user experience but rarely. For example, `magit`, `helm`, is slow
+on Windows. Simple ping package `eping` doesn't support Windows' `ping.exe`. Last
+time installing  `docker.el` doesn't work on Windows (1 week ago). I know the fact is
+**Emacs is just too slow on Windows**, but that doesn't mean that we couldn't do
+anything about it! The fact is user experience is still bad on Windows, though! 😅
+
+Many people seem to use `Cask`, but the majority of them don't require tests on Windows.
+It's simply hard and inconvenient. You would have to install `Python`, and `Python`
+is particularly bad on Windows (UX wise). Here came the `Eask` to be the savior.
+It's compatible with `Cask`'s DSL and ensures the workflow's consistency (no Python).
+Hopefully, everyone can use `Eask` to develop their elisp packages. Maybe someday
+Emacs can live better under the Windows... What do you think?
 
 ---
 

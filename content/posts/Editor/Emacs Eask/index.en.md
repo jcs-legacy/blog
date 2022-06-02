@@ -20,16 +20,16 @@ lightgallery: true
 
 ## 🔰 Introduction
 
-The name `Eask` is obviousely came from [Emacs Cask](https://github.com/cask/cask)
-; if you already know what is `Cask` and what it does, please skip this and
+The name `Eask` came from [Emacs Cask](https://github.com/cask/cask)
+; if you already know what `Cask` is and what it does, please skip this and
 forward to the next section.
 
 (**NOTE:** `Cask` and `Eask` are interchangeable in this section)
 
 `Eask` is the dependency management tool for Emacs Lisp. It's like `npm` to
-`Node.js`; but it isn't exactly the same since `Eask`'s has less tool than `npm`,
-plus their ecosystems are slightly different. Below link **Why Cask?** has better
-explanation.
+`Node.js`; but it isn't exactly the same since `Eask` has fewer tools than `npm`,
+plus their ecosystems are slightly different. Below is the link **Why Cask?** has
+a better explanation.
 
 * [Why Cask?](https://cask.readthedocs.io/en/latest/guide/introduction.html#introduction-why-cask)
 
@@ -51,7 +51,8 @@ not `Shellscript`, `Bash`, or `Batch`, etc. It would require us to use `Node run
 but we can use [pkg](https://www.npmjs.com/package/pkg) (big thanks to `vercel`) to
 package into native executable to avoid such a hassle.
 
-It's more hassle 
+It's much more hassle while working with `Eask`, because we will first need to install
+`Node.js` and then call `npm install`. So besides this, what are the **GOOD** stuffs?
 
 1. `Eask` can be package into native executable; it should give you a better speed!
 2. It uses `Cask`'s DSL, it became very easy to adapt from Cask to Eask

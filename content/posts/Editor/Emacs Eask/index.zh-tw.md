@@ -46,7 +46,7 @@ lightgallery: true
 (這是我直接複製貼上的, 原文可以參考[這](https://emacs-eask.github.io/#-comparisons).)
 
 `Eask`的優點來自於它背後的技術選擇是使用`Node.js`; 而不是基礎的`Shellscript`, `Bash`,
-或`Batch`, 等等. 雖然必須使用`Node runtime`, 但我們可以透過[pkg](https://www.npmjs.com/package/pkg)
+`Batch`, 等等. 雖然必須使用`Node runtime`, 但我們可以透過[pkg](https://www.npmjs.com/package/pkg)
 (感謝`vercel`)打包來解決這問題! (這樣我們就可以跳過安裝`Node.js`)
 
 使用`Node.js`並且還多了一步`npm install`確實比較麻煩, 但這大概是Eask唯一的缺點. 好在

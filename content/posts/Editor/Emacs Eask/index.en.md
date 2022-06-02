@@ -46,36 +46,37 @@ A simple comparison table below:
 
 (Table is copy and paste, please visit the site [here](https://emacs-eask.github.io/#-comparisons))
 
-`Eask` advantages came from the behind technology choice, it uses `Node.js` and
-not `Shellscript`, `Bash`, or `Batch`, etc. It would require us to use `Node runtime`,
-but we can use [pkg](https://www.npmjs.com/package/pkg) (big thanks to `vercel`) to
-package into native executable to avoid such a hassle.
+`Eask`'s advantages came from the behind technology choice; it uses `Node.js` and
+not `Shellscript`, `Bash`, `Batch`, etc. It would require us to use `Node runtime`,
+but we can use [pkg](https://www.npmjs.com/package/pkg) (big thanks to `vercel`) for
+packaging into native executable to avoid such a hassle.
 
-It's more hassle 
+I hope the needs to install `Node.js` and the extra step to call `npm install`
+are the only defect from `Eask`. So what are the **GOOD** stuffs?
 
-1. `Eask` can be package into native executable; it should give you a better speed!
-2. It uses `Cask`'s DSL, it became very easy to adapt from Cask to Eask
-3. **Eask**-file is unlike **Cask**-file; it's an Elisp file and function similar to
+1. `Eask` can be packaged into native executables; it should give you a better speed!
+2. It uses `Cask`'s DSL; it became very easy to adapt from Cask to Eask
+3. **Eask**-file is unlike **Cask**-file; it's an Elisp file and functions similar to
 `init.el` (combined from `Cask` + `Eldev`)
-4. Use high programming language `JavaScript`; `npm` has a huge ecosystem. We can
-always fallback to node layer if something doesn't work inside Emacs (e.g. `exec`,
-`init`)
+4. Use high-level programming language `JavaScript`; `npm` has a huge ecosystem. We
+can always fall back to the node layer if something doesn't work inside Emacs (e.g.
+`exec`, `init`)
 5. `Eask` doesn't require to call `Emacs` all the time; this is particularly good
 in Windows due to the `fork` operation is quite slow in the system (this is why
 I don't recommend `Eldev` under Windows)
 6. Cross-platform and consistency; other alternatives don't support Windows by
-default except `Eldev`
-7. It's easy to expand, clearer project architecture; `Cask` , `Eldev`, and
-`makem.sh` have their files very huge, it would be harder to maintain or adding new
+default except for `Eldev`
+7. It's easy to expand, and clearer project architecture; `Cask`, `Eldev`, and
+`makem.sh` have their files very huge, so it would be harder to maintain or add new
 features
-8. Global flag `-g` allow you to manage you Emacs configuration
+8. Global flag `-g` allows you to manage your Emacs configuration
 
 Eask sounds good, but it isn't perfect. Here are the bads:
 
-1. Harder to get into the development, you will need to know `JavaScript` and `npm`
+1. Harder to get into the development; you will need to know `JavaScript` and `npm`
 2. `Eask` project structure follows 1 command to 1 file; people hate having multiple
-files everywehre
-3. Project is much more complicated (same as no. 2)
+files everywhere
+3. The project is much more complicated (same as no. 2)
 
 ## 🧙‍♂️ Conclusion
 

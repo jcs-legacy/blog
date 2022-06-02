@@ -35,7 +35,7 @@ but we can use [pkg](https://www.npmjs.com/package/pkg) (big thanks to `vercel`)
 packaging into native executable to avoid such a hassle.
 
 I hope the needs to install `Node.js` and the extra step to call `npm install`
-are the only defect from `Eask`. So what are the **GOOD** stuffs?
+are the only defect from `Eask`. So what are the **GOODS** stuff?
 
 1. `Eask` can be packaged into native executables; it should give you a better speed!
 2. It uses `Cask`'s DSL; it became very easy to adapt from Cask to Eask
@@ -44,17 +44,19 @@ are the only defect from `Eask`. So what are the **GOOD** stuffs?
 4. Use high-level programming language `JavaScript`; `npm` has a huge ecosystem. We
 can always fall back to the node layer if something doesn't work inside Emacs (e.g.
 `exec`, `init`)
-5. `Eask` doesn't require to call `Emacs` all the time; this is particularly good
+5. `Eask` uses [yargs](https://www.npmjs.com/package/yargs) as their CLI parsing
+library, which makes us only have to focus on the development
+6. `Eask` doesn't require to call `Emacs` all the time; this is particularly good
 in Windows due to the `fork` operation is quite slow in the system (this is why
 I don't recommend `Eldev` under Windows)
-6. Cross-platform and consistency; other alternatives don't support Windows by
+7. Cross-platform and consistency; other alternatives don't support Windows by
 default except for `Eldev`
-7. It's easy to expand, and clearer project architecture; `Cask`, `Eldev`, and
+8. It's easy to expand, and clearer project architecture; `Cask`, `Eldev`, and
 `makem.sh` have their files very huge, so it would be harder to maintain or add new
 features
-8. Global flag `-g` allows you to manage your Emacs configuration
+9. Global flag `-g` allows you to manage your Emacs configuration
 
-Eask sounds good, but it isn't perfect. Here are the bads:
+Eask sounds good, but it isn't perfect. Here are the **BADS**:
 
 1. Harder to get into the development; you will need to know `JavaScript` and `npm`
 2. `Eask` project structure follows 1 command to 1 file; people hate having multiple

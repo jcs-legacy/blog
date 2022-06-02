@@ -41,12 +41,14 @@ pkg解決了這問題! 我們接著看優點:
 +Eldev的優點)
 4. 使用了高階語言`JavaScript`; `npm`有很龐大的生態, 如果有`Emacs`不方便做的, 我們可以
 交由這層來做 (例: `exec`, `init`)
-5. `Eask`不用每次都呼叫`Emacs`; 這在 `Windows` 很吃香; 因為Windows開進程非常慢 (這就是
+5. `Eask`使用 [yargs](https://www.npmjs.com/package/yargs) 來當作CLI解析器; 這促使我們
+只需要專注在開發上即可!
+6. `Eask`不用每次都呼叫`Emacs`; 這在 `Windows` 很吃香; 因為Windows開進程非常慢 (這就是
 為什麼`Eldev`在`Windows`系統下體驗不佳的原因)
-6. 跨平台; 目前除了Eldev其他都不支援Windows
-7. 非常容易擴充, 結構明確; 目前`Cask`, `Eldev`, 和 `makem.sh`每個單獨檔案都很大,
+7. 跨平台; 目前除了Eldev其他都不支援Windows
+8. 非常容易擴充, 結構明確; 目前`Cask`, `Eldev`, 和 `makem.sh`每個單獨檔案都很大,
 維護成本高且不易, 未來面對新功能也是比較吃力
-8. 全域`-g`旗標讓你可以更好管理你的Emacs配置
+9. 全域`-g`旗標讓你可以更好管理你的Emacs配置
 
 那Eask沒有缺點嗎?當然有!
 

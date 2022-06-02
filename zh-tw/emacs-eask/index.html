@@ -8,7 +8,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://example.com/blog/zh-tw/emacs-eask/"><meta property="og:image" content="http://example.com/blog/zh-tw/emacs-eask/featured-image.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2022-05-29T21:00:00+00:00">
-<meta property="article:modified_time" content="2022-06-02T19:58:14+08:00"><meta property="og:site_name" content="jcs090218">
+<meta property="article:modified_time" content="2022-06-02T20:11:28+08:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="http://example.com/blog/zh-tw/emacs-eask/featured-image.png">
 <meta name=twitter:title content="Emacs Eask - Emacs Cask替代方案">
@@ -16,7 +16,7 @@
 <meta name=application-name content="Jen-Chieh's Blog">
 <meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/zh-tw/emacs-eask/><link rel=prev href=http://example.com/blog/zh-tw/%E5%AA%BD%E5%AA%BD-%E8%A6%81%E5%B9%AB%E9%82%84%E6%98%AF%E4%B8%8D%E5%B9%AB/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Emacs Eask - Emacs Cask替代方案","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask\/featured-image.png","width":800,"height":800}],"genre":"posts","keywords":"Editor, Emacs","wordcount":1387,"url":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask\/","datePublished":"2022-05-29T21:00:00+00:00","dateModified":"2022-06-02T19:58:14+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Emacs Eask - Emacs Cask替代方案","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask\/featured-image.png","width":800,"height":800}],"genre":"posts","keywords":"Editor, Emacs","wordcount":1421,"url":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask\/","datePublished":"2022-05-29T21:00:00+00:00","dateModified":"2022-06-02T20:11:28+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -86,7 +86,7 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Emacs Eask - Emacs Cask替代方案</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>收錄於 <a href=/blog/zh-tw/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-05-29>2022-05-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 1387 字&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-05-29>2022-05-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 1421 字&nbsp;
 <i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/blog/zh-tw/emacs-eask/ class=leancloud_visitors data-flag-title="Emacs Eask - Emacs Cask替代方案">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
@@ -170,6 +170,8 @@ pkg解決了這問題! 我們接著看優點:</p>
 +Eldev的優點)</li>
 <li>使用了高階語言<code>JavaScript</code>; <code>npm</code>有很龐大的生態, 如果有<code>Emacs</code>不方便做的, 我們可以
 交由這層來做 (例: <code>exec</code>, <code>init</code>)</li>
+<li><code>Eask</code>使用 <a href=https://www.npmjs.com/package/yargs target=_blank rel="noopener noreffer">yargs</a> 來當作CLI解析器; 這促使我們
+只需要專注在開發上即可!</li>
 <li><code>Eask</code>不用每次都呼叫<code>Emacs</code>; 這在 <code>Windows</code> 很吃香; 因為Windows開進程非常慢 (這就是
 為什麼<code>Eldev</code>在<code>Windows</code>系統下體驗不佳的原因)</li>
 <li>跨平台; 目前除了Eldev其他都不支援Windows</li>
@@ -206,8 +208,8 @@ pkg解決了這問題! 我們接著看優點:</p>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2022-06-02&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/c8d8564c98adfe7e4f2ca5bef830ed1a497dd7ef target=_blank title="commit by Jen-Chieh Shen(jcs090218@gmail.com) c8d8564c98adfe7e4f2ca5bef830ed1a497dd7ef: fix conflict">
-<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>c8d8564</a></span>
+<span>更新於 2022-06-02&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/be187d31d6d97058fd213ef08db5f9e6b4e73ecf target=_blank title="commit by Jen-Chieh Shen(jcs090218@gmail.com) be187d31d6d97058fd213ef08db5f9e6b4e73ecf: Add one more ben">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>be187d3</a></span>
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>

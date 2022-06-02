@@ -51,13 +51,8 @@ not `Shellscript`, `Bash`, `Batch`, etc. It would require us to use `Node runtim
 but we can use [pkg](https://www.npmjs.com/package/pkg) (big thanks to `vercel`) for
 packaging into native executable to avoid such a hassle.
 
-<<<<<<< HEAD
-It's much more hassle while working with `Eask`, because we will first need to install
-`Node.js` and then call `npm install`. So besides this, what are the **GOOD** stuffs?
-=======
 I hope the needs to install `Node.js` and the extra step to call `npm install`
 are the only defect from `Eask`. So what are the **GOOD** stuffs?
->>>>>>> ad1110d925c4e540d6e7b717984f3dddfff325b6
 
 1. `Eask` can be packaged into native executables; it should give you a better speed!
 2. It uses `Cask`'s DSL; it became very easy to adapt from Cask to Eask

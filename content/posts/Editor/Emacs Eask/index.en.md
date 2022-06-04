@@ -103,7 +103,7 @@ Emacs can live better under the Windows... What do you think?
 
 ---
 
-> I've also learned 了[Hugo](https://gohugo.io/); would love to share
+> I've also learned [Hugo](https://gohugo.io/); would love to share
 it one day!
 
 ---

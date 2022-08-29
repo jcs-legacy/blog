@@ -18,7 +18,7 @@ categories: ["Editor"]
 lightgallery: true
 ---
 
-## 🔰 介紹
+### 🔰 介紹
 
 `Eask`的名字源自於[Emacs Cask](https://github.com/cask/cask); 如果你已經有使
 用過`Cask`的經驗, 那基本上你可以跳過這階段. 對於不了解或沒使用過的人, 在此我還是加減
@@ -32,7 +32,7 @@ lightgallery: true
 
 * [Why Cask?](https://cask.readthedocs.io/en/latest/guide/introduction.html#introduction-why-cask)
 
-## ❓ 那為什麼用要Eask, 而不是Cask?
+### ❓ 那為什麼用要Eask, 而不是Cask?
 
 以下是簡單的優劣展示表格:
 
@@ -73,7 +73,7 @@ pkg解決了這問題! 我們接著看優點:
 2. `Eask`是採取一個指令一個檔案制; 所以有非常多的檔案散佈在各區
 3. 專案結構相比其他都複雜許多; 對於不習慣這種分類法的人會很痛苦
 
-## 🧙‍♂️ 結語
+### 🧙‍♂️ 結語
 
 比較這麼多優缺點, 我還是會選擇Eask. 畢竟這專案未來的發展性會比其他的都高出許多.我認為
 `JavaScript`和`npm`也非常好上手, 問題並不大!
@@ -93,6 +93,6 @@ pkg解決了這問題! 我們接著看優點:
 
 ---
 
-## 🔗 連結
+### 🔗 連結
 
 * https://github.com/emacs-eask/eask

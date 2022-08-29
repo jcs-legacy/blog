@@ -19,3 +19,5 @@ lightgallery: true
 ---
 
 WIP
+
+<!-- more -->

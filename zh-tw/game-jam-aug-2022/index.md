@@ -35,12 +35,13 @@
 
 ## 成品展示
 
-![1](./_images/1.png)
-![2](./_images/2.png)
-![3](./_images/3.png)
+![1](1.png)
+![2](2.png)
+![3](3.png)
 
 ### 🔗 Links
 
+- [作品: Alice In Surprise](https://kuhhenry.itch.io/alice-in-surprise)
 - [Game Jam](https://itch.io/jam/2022082)
 - [自製遊戲公會](https://diygm2021.weebly.com/)
 - [火柴共作坊](https://github.com/MatchWorkshop)

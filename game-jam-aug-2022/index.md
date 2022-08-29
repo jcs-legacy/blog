@@ -5,11 +5,27 @@ WIP
 
 <!-- more -->
 
+### ❓ About Game Jam
+
+WIP
+
+### 🔰 Joined! Meet the team
+
+WIP
+
+### 💡 Design, and Programmer View
+
+WIP
+
 ### 🖼️ Screenshots
 
 <img src="./1.png">
 <img src="./2.png">
 <img src="./3.png">
+
+### 💬 Conclusion
+
+WIP
 
 ### 🔗 Links
 

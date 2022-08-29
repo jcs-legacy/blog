@@ -35,9 +35,9 @@
 
 ## 成品展示
 
-![1](1.png)
-![2](2.png)
-![3](3.png)
+<img src="1.png">
+<img src="2.png">
+<img src="3.png">
 
 ### 🔗 Links
 

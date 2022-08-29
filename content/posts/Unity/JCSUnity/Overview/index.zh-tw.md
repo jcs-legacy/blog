@@ -83,14 +83,14 @@ Unity引擎遊戲設計師的設計理念, 版本相容度是非常高的, 基�
 麼等下會提到.
 
 <div style="text-align: center">
-  <img alt="demo_circle" src="./_images/demo_circle.gif" width="300" height="180"/>
-  <img alt="demo_shake" src="./_images/demo_shake.gif" width="300" height="180"/>
-  <img alt="demo_wave" src="./_images/demo_wave.gif" width="300" height="180"/>
+  <img alt="demo_circle" src="./demo_circle.gif" width="300" height="180"/>
+  <img alt="demo_shake" src="./demo_shake.gif" width="300" height="180"/>
+  <img alt="demo_wave" src="./demo_wave.gif" width="300" height="180"/>
   <h4>3 Basic Actions 本身3種</h4>
 
-  <img alt="demo_circle_shake" src="./_images/demo_circle_shake.gif" width="300" height="180"/>
-  <img alt="demo_circle_wave" src="./_images/demo_circle_wave.gif" width="300" height="180"/>
-  <img alt="demo_shake_wave" src="./_images/demo_shake_wave.gif" width="300" height="180"/>
+  <img alt="demo_circle_shake" src="./demo_circle_shake.gif" width="300" height="180"/>
+  <img alt="demo_circle_wave" src="./demo_circle_wave.gif" width="300" height="180"/>
+  <img alt="demo_shake_wave" src="./demo_shake_wave.gif" width="300" height="180"/>
   <h4>(Circle Action 繞圓 + Shake Effect 震動) + (Circle Action 繞圓 + Wave Action 上下搖擺) + (Shake Effect 震動 + Wave Effect 上下搖擺)</h4>
 
   <img alt="demo_circle_shake_wave" src="./images/Unity/JCSUnity/demo_circle_shake_wave.gif" width="300" height="180"/>

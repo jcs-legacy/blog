@@ -19,7 +19,7 @@ lightgallery: true
 ---
 
 <p align="center">
-  <img alt="blog-img" src="./_images/blog_pic.png" width="319" height="181" />
+  <img alt="blog-img" src="./blog_pic.png" width="319" height="181" />
 </p>
 
 I have heard about people saying that writing a blog is a good idea. And 

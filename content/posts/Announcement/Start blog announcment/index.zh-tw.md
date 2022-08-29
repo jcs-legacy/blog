@@ -19,7 +19,7 @@ lightgallery: true
 ---
 
 <p align="center">
-  <img alt="blog-img" src="./_images/blog_pic.png" width="319" height="181" />
+  <img alt="blog-img" src="./blog_pic.png" width="319" height="181" />
 </p>
 
 這是我個人的部落格, 我聽說了很多人寫部落格有許多好處. 所以我決定開始

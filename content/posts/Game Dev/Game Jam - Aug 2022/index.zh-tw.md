@@ -52,9 +52,9 @@ lightgallery: true
 
 ## 成品展示
 
-<img src="1.png">
-<img src="2.png">
-<img src="3.png">
+<img src="./1.png">
+<img src="./2.png">
+<img src="./3.png">
 
 ### 🔗 Links
 

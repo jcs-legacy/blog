@@ -1,7 +1,7 @@
 # Emacs Eask - Alternative to Emacs Cask
 
 
-## 🔰 Introduction
+### 🔰 Introduction
 
 The name `Eask` came from [Emacs Cask](https://github.com/cask/cask)
 ; if you already know what `Cask` is and what it does, please skip this and
@@ -16,7 +16,7 @@ a better explanation.
 
 * [Why Cask?](https://cask.readthedocs.io/en/latest/guide/introduction.html#introduction-why-cask)
 
-## ❓ Then why Eask, and not Cask?
+### ❓ Then why Eask, and not Cask?
 
 A simple comparison table below:
 
@@ -63,7 +63,7 @@ Eask sounds good, but it isn't perfect. Here are the **BADS**:
 files everywhere
 3. The project is much more complicated (same as no. 2)
 
-## 🧙‍♂️ Conclusion
+### 🧙‍♂️ Conclusion
 
 After seeing and comparing all the alternatives; I would eventually pick Eask as my
 major management tool. Eask has more potential if we compare it to the others; on the
@@ -91,7 +91,7 @@ it one day!
 
 ---
 
-## 🔗 Links
+### 🔗 Links
 
 * https://github.com/emacs-eask/eask
 

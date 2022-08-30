@@ -68,7 +68,19 @@ say is **THANK YOU** to the group!
 
 ### 💡 Design, and Programmer View
 
-WIP
+First of all, I didn't come up with the game idea. The game design had
+been established before I joined the team. Therefore, I will only
+talk about the game-making (engineering) part of the game. Here are
+some issues that I think are worth mentioning for the record:
+
+- GDD is incomplete, lack of details
+- We don't know who came up with the idea? (even at the very end of the event)
+- No core design principles, game idea could not be established
+
+Nice reminder, this is **NOT** for me to blame on anyone in the group.
+I am simply pointing it out to help myself do better in the future.
+Anyways, we eventually made the game! Congratulation! 🎉🎊 Seeing
+the finished game always makes me feel good! ✨
 
 ### 🖼️ Screenshots
 

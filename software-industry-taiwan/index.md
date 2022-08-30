@@ -1,5 +1,0 @@
-# Software Industry - Taiwan
-
-
-WIP
-

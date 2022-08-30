@@ -38,7 +38,16 @@ experience in Taiwan's Game Industry. Team and role are listed below:
 - 特里斯卡 （2D Artist）
 - Jen-Chieh Shen （Engineer）  **<- That's me! 😎**
 
+I reckon `Yi` and `Kyrie` are two essential pieces in this group.
+Without their contribution, our game will simply be a disaster.
+`Yi` is responsible for making our characters (`Minions` and `Alice`)
+look alive, which requires countless hours to accomplish such a heavy
+task. Kyrie made a decent GDD, and shows his passion during the entire
+Game Jam.
 
+What about `Jen-Chieh` (me)? He made the entire game (programming-wise)
+within `24 hours`. It could be impressive but expected. 🙂 All I want to
+say is **THANK YOU** to the group!
 
 ### 💡 Design, and Programmer View
 
@@ -52,7 +61,14 @@ WIP
 
 ### 💬 Conclusion
 
-WIP
+Let's move on to the conclusion; I sense this project is great compared
+to many games that have been submitted to the same event. Even though
+the game isn't a **complete** complete game, but it has everything a
+game needs, and there are more details in the game. I am proud of myself
+in this event! 👍 The only thing I have in mind so the game can be
+more inclusive is that we don't have time to debug and playtest more.
+I wish we could have more time or improve our time management during
+the event! 🙏
 
 ### 🔗 Links
 

@@ -26,7 +26,7 @@ invited me to rejoin the community [MatchWorkshop](https://github.com/MatchWorks
 Therefore, this Game Jam is treated as an opportunity to collaborate
 with other headmaster from other department in this community. 😕
 
-I believe "networking" is a massive part of the Game Jam; hence I have
+I believe networking is a massive part of the Game Jam; hence I have
 decided to join the event without too much hesitation. This Game Jam
 came in just about the right time since I just ended another project
 last month.

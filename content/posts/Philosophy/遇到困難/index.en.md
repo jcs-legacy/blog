@@ -12,8 +12,8 @@ resources:
 - name: "featured-image"
   src: "featured-image.png"
 
-tags: ["Unity", "system"]
-categories: ["Unity"]
+tags: ["Philosophy", "delima"]
+categories: ["Philosophy"]
 
 lightgallery: true
 ---

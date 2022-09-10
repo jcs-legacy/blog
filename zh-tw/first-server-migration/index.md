@@ -1,7 +1,7 @@
 # 第一次遷移服務器
 
 
-我一直以來的的web hosting, 一直是使用aws. 但最近總覺得價錢太貴, 而且很多資金的使用
+我一直以來的的 web hosting, 一直是使用aws. 但最近總覺得價錢太貴, 而且很多資金的使用
 並不是這麼貼心. 總是莫名其妙多了一些費用. 當然, 這些並不是說aws有問題. 不過它們這方
 面的機制, 我本身並不是很喜歡. 所以我決定在這個月, 換一個web hosting的公司. 更換的
 理由如下:
@@ -15,7 +15,7 @@
 
 接著, 進入細節.
 
-### 遷移網域名
+### 📋 遷移網域名
 
 這次遷移的目標是 [jcs-profile.com](https://who.is/whois/jcs-profile.com)
 這個網域. 查一下 who.is, 註冊商是 `amazon.com`. 我之前是使用 AWS 裡面的網域
@@ -32,11 +32,61 @@ Namecheap. 不過依然是個很棒著選擇! 😁
 
 [Craylor Made](https://www.youtube.com/c/CraylorMade) 講解得非常棒! 給個讚! 👍
 
-### 資料轉移
+不過這次的網域名的遷移, 因為更改了註冊商, 所以花了五天的時間更改註冊商. 我那時候是
+禮拜四申請轉移網域名, 禮拜一才轉移完成. 😅
 
-WIP
+### 📂 資料轉移
 
-### 重新
+這部分就非常簡單了, 我一樣使用 [FileZilla](https://filezilla-project.org/)
+來透過 `FTP` 連線把我舊的 (在aws) 資料全部拉下來做備份. 由於我沒有使用什麼特別的
+服務, 像是 `Node`, `PHP`, `MySQL`, 所以我也不用過多的考慮. 先直接拉下來就好.
+不過這部分的遷移也是挺簡單的, 只要記得, **在確定把所有東西遷移到新的服務器之前,
+千萬不要把舊的關閉!**
 
-WIP
+這邊感覺蠻可惜的是, 我並沒有使用 [Docker](https://www.docker.com/) 部屬的習慣.
+有機會的話, 我是蠻想有用 Docker 遷移服務器的機會! 🙂
+
+### 🩹 重新啟動
+
+新的 web hosting 我選擇 [DigitalOcean](https://www.digitalocean.com/).
+選擇 DO 的原因如下,
+
+1. 便宜 (相對於aws)
+2. 透明資金流向
+3. 好看且清新的介面
+4. 文件很多, 社群友善
+5. 服務跟aws持平 (個人觀點)
+
+唯一的缺點大概是, 目前提供的服務器位置都在歐美地區. 相比於其他家算是比較少的.
+
+資料轉移完成後, 第一件最重要的是把位址轉移到新的服務器IP. 因為我沒有使用過 Namecheap
+所以我是參考了下面的影片解說, 非常值觀好了解!
+
+{{< youtube zOPH54ltGLQ >}}
+
+我原本舊的網域服務器 (aws的`NAMESERVERS`)
+
+```
+ns-1375.awsdns-43.org
+ns-1685.awsdns-18.co.uk
+ns-804.awsdns-36.net
+ns-93.awsdns-11.com
+```
+
+新的要改成, (DO的`NAMESERVERS``)
+
+```
+ns1.digitalocean.com.
+ns2.digitalocean.com.
+ns3.digitalocean.com.
+```
+
+接著到DO 的 DNS Records 那邊新增 `HOSTNAME` 就完成了!
+
+| Type | Hostname | Value  | TTL(seconds)  |
+|:-----|:---------|:-------|:--------------|
+| A    | @        | IP位址 | 3600 (預設的) |
+| A    | www      | IP位址 | 3600 (預設的) |
+
+結束!~ 🥳🎉🎊
 

@@ -21,3 +21,5 @@ lightgallery: true
 WIP
 
 <!-- more -->
+
+Done!~ 🥳🎉🎊

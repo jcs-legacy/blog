@@ -94,10 +94,10 @@ ns3.digitalocean.com.
 Then we need to modify the `DNS Records` from DigitalOcean's website.
 We add `@` and `www` points to our new server (IP).
 
-| Type | Hostname | Value  | TTL(seconds)   |
-|:-----|:---------|:-------|:---------------|
-| A    | @        | IP位址 | 3600 (default) |
-| A    | www      | IP位址 | 3600 (default) |
+| Type | Hostname | Value      | TTL(seconds)   |
+|:-----|:---------|:-----------|:---------------|
+| A    | @        | IP address | 3600 (default) |
+| A    | www      | IP address | 3600 (default) |
 
 Then we are done! Hurray!~ 🥳🎉🎊
 

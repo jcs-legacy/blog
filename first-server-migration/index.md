@@ -2,27 +2,36 @@
 
 
 I have always been using AWS as my main web hosting choice. But I
-have came to a point that I reckon the price and services aren't
-something what I need. Therefore, I have decided to switch to other
+have come to the point that I reckon the price and services aren't
+something that I need. Therefore, I have decided to switch to another
 web hosting company just for another taste.
 
 <!-- more -->
 
-The main reason are listed below:
+The main reasons are listed below:
 
 1. AWS charges you money when you click on their services without
 notifying the user. I dislike how it functions.
-2. Price is too high, plus I don't really need it
-3. UI is aweful, and UX is bad
+2. The price is too high, plus I don't really need it
+3. UI is awful, and UX is bad
 4. Jargons aren't transferable (I'm picky)
 
 Now, let's move into details.
 
 ### 📋 Transfer the domain name
 
-WIP
+The target domain I am transferring is [jcs-profile.com](https://who.is/whois/jcs-profile.com)
+. If we checked who.is; the registrar is `amazon.com`. I bought the
+domain name using AWS's [Route 53](https://aws.amazon.com/route53/).
+But now, I would like to transfer it to [Namecheap](https://www.namecheap.com/)
+. This isn't the cheapest choice, but I like their UI/UX. It's
+simpler and looks much more organized compared to AWS's UI.
 
-WIP
+I watched the below video when I was picking my new domain name registrar.
+I attempted to use [Google Domains](https://domains.google/) since
+it's the best choice from the video, but it came out it doesn't support
+my country/region, `Taiwan` (WIP). So I go for the second best choice,
+which is Namecheap. 😅
 
 {{< youtube G5KpAflMOng >}}
 
@@ -34,27 +43,34 @@ until the transfer is completed!*
 
 ### 📂 Transfer data
 
-WIP
+Transfer data is easy, I use [FileZilla](https://filezilla-project.org/)
+(as always) to download all the files I need to move over to the
+new server. Unlike `Node`, `PHP`, or `MySQL`; there isn't much
+environment I need to set up (except the [Nginx](https://www.nginx.com/))
+. We would just have to ensure **don't ever close the old server
+until we have moved everything to the new server!**
 
-WIP
+Something I always want to try out is the [Docker](https://www.docker.com/)
+migration. It sounds like fun to me! But I guess I will have to wait
+until next time I get the opportunity.🙂
 
 ### 🩹 Restart our server
 
-I have chose [DigitalOcean](https://www.digitalocean.com/) as my new
+I have chosen [DigitalOcean](https://www.digitalocean.com/) as my new
 web hosting company. Reasons are:
 
 1. cheaper (relative to aws)
 2. Easier to see what is charged and what not
 3. Excellent UI
-4. Documentation is great, community seems to be friendly
+4. Documentation is great; the community seems to be friendly
 
-The only defect is the server's location, there aren't many locations
-to chose.
+The only defect is the server's location, and there aren't many locations
+to choose.
 
-First thing first, after transferring all the date. We need to update
-the name servers so it could be redirect to the correct IP address.
+First thing first, after transferring all the data. We need to update
+the name servers so it can be redirected to the correct IP address.
 
-The following video say it all. It's amazing!
+The following video says it all. It's amazing!
 
 {{< youtube zOPH54ltGLQ >}}
 

@@ -7,7 +7,7 @@
 
 My blog.
 
-## 🔨 How to use?
+## ⚙ Host it locally
 
 This is how you run the server locally:
 

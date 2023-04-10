@@ -7,6 +7,21 @@
 
 My blog.
 
+## 🔨 How to use?
+
+This is how you run the server locally:
+
+```sh
+# Clone this repository somewhere on your machine
+$ git clone https://github.com/jcs090218/blog.git  --recurse
+
+# Navigate to the project directory
+$ cd ./blog
+
+# Run the server
+$ hugo server
+```
+
 ## License
 
 This work is licensed under a

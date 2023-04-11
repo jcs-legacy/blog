@@ -21,10 +21,24 @@ on the GitHub pages! But why is it the fastest LEPA? There are two factors:
 2. We build packages using [GitHub Actions][] with multiple jobs (if you are
 unfamiliar with GHA, think as multiple PCs helping you build your packages)
 
-JCS-ELPA builds your packages with multiple jobs simultaneously! Therefore,
-in theory, JCS-ELPA is the fastest ELPA in this world!
+JCS-ELPA builds your packages with multiple jobs simultaneously! The formula:
 
-But that's it! Nothing to brag about it! 😅
+```
+New build time = Original Build time / jobs
+```
+
+If jobs is equal to 1, then the new build time equals to original build time (no
+build time improvement). For example, if `original build time` is 10 minutes,
+and we start 3 jobs, the new build time will be 2 minutes.
+
+```
+2 min = 10 min / 5 jobs
+```
+
+Of course, this is not going to happen in the real life. In reality, we will
+need to consume time on job scheduling, starting and closing time for the
+jobs, etc. But in theory, the more packages the ELPA holds, you will see the big
+differences between these two models.
 
 ## 👷 How does it work?
 
@@ -45,7 +59,8 @@ Hence:
 3 = (136 / 50) + 1
 ```
 
-Now you have 3 workers to help you build packages onto our server! 😄
+Now you have 3 workers to help you build packages onto our server! The original
+build time was 4 to 5 minutes, now it's 1.5 minutes! What a big improvement! 😄
 
 ![](jobs.png)
 

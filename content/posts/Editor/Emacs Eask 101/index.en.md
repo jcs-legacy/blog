@@ -24,7 +24,7 @@ who want to publish their package to an ELPA. e.g., [GNU Elpa][], [NonGNU Elpa][
 [MELPA][], etc.
 
 That's why I use [Eask][] to help me develop elisp packages. Therefore, in this
-article I'm going to teach people how to use this tool to help you build your
+article, I'm going to teach people how to use this tool to help you build your
 own elisp packages! 😄
 
 <!-- more -->
@@ -58,7 +58,7 @@ cd sideline
 tree /f
 ```
 
-The project structure look like this:
+The project structure looks like this:
 
 ```
 │   .dir-locals.el
@@ -110,7 +110,7 @@ is to test installing the package. It's meaningless if people can download
 your package but aren't able to install it. We install the package with
 the `install` command:
 
-```
+```sh
 $ eask install
 ```
 
@@ -140,7 +140,7 @@ Activating the package `openai'... succeeded v
 Great! It means our package has been activated without any error! 😋
 
 This step is generally optional, but it's good to know if you will encounter
-any runtime error!
+any runtime errors!
 
 ## 👷 Compile it!
 
@@ -178,6 +178,15 @@ Compiling d:/_workspace/elisp/openai/openai-moderation.el... done v
 These are the basic uses of [Eask][], but there are more things that Eask can
 do. Like lint your package, run tests suite, or package management, etc. But
 we can cover these within the next chapter.
+
+This is the result of all the commands we have used in this article:
+
+```sh
+eask package        # Build package artifect (installable file)
+eask install        # Install installable file
+eask test activate  # Test package activation
+eask compile        # Source code compilation
+```
 
 [GNU Elpa]: https://elpa.gnu.org/
 [NonGNU Elpa]: https://elpa.nongnu.org/

@@ -5,20 +5,20 @@
 <meta name=robots content="noodp">
 <title>Emacs Eask 101 - Build tool - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Emacs Eask 101 - Build tool">
 <meta property="og:description" content="I&rsquo;ve developed more than 50 elisp packages, and maintain 100 or more of them. Developing an elisp package isn&rsquo;t easy for a beginner, especially for those who want to publish their package to an ELPA. e.g., GNU Elpa, NonGNU Elpa, MELPA, etc.
-That&rsquo;s why I use Eask to help me develop elisp packages. Therefore, in this article I&rsquo;m going to teach people how to use this tool to help you build your own elisp packages!">
+That&rsquo;s why I use Eask to help me develop elisp packages. Therefore, in this article, I&rsquo;m going to teach people how to use this tool to help you build your own elisp packages!">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://example.com/blog/emacs-eask-101/"><meta property="og:image" content="http://example.com/blog/emacs-eask-101/featured-image.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2023-04-10T21:00:00+00:00">
-<meta property="article:modified_time" content="2023-04-10T16:52:43-07:00"><meta property="og:site_name" content="jcs090218">
+<meta property="article:modified_time" content="2023-04-10T17:32:19-07:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="http://example.com/blog/emacs-eask-101/featured-image.png">
 <meta name=twitter:title content="Emacs Eask 101 - Build tool">
 <meta name=twitter:description content="I&rsquo;ve developed more than 50 elisp packages, and maintain 100 or more of them. Developing an elisp package isn&rsquo;t easy for a beginner, especially for those who want to publish their package to an ELPA. e.g., GNU Elpa, NonGNU Elpa, MELPA, etc.
-That&rsquo;s why I use Eask to help me develop elisp packages. Therefore, in this article I&rsquo;m going to teach people how to use this tool to help you build your own elisp packages!">
+That&rsquo;s why I use Eask to help me develop elisp packages. Therefore, in this article, I&rsquo;m going to teach people how to use this tool to help you build your own elisp packages!">
 <meta name=application-name content="Jen-Chieh's Blog">
 <meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/emacs-eask-101/><link rel=prev href=http://example.com/blog/first-server-migration/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Emacs Eask 101 - Build tool","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/emacs-eask-101\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/emacs-eask-101\/featured-image.png","width":800,"height":800}],"genre":"posts","keywords":"Editor, Emacs","wordcount":672,"url":"http:\/\/example.com\/blog\/emacs-eask-101\/","datePublished":"2023-04-10T21:00:00+00:00","dateModified":"2023-04-10T16:52:43-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Emacs Eask 101 - Build tool","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/emacs-eask-101\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/emacs-eask-101\/featured-image.png","width":800,"height":800}],"genre":"posts","keywords":"Editor, Emacs","wordcount":717,"url":"http:\/\/example.com\/blog\/emacs-eask-101\/","datePublished":"2023-04-10T21:00:00+00:00","dateModified":"2023-04-10T17:32:19-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -27,7 +27,7 @@ That&rsquo;s why I use Eask to help me develop elisp packages. Therefore, in thi
 </div>
 <div class=menu>
 <div class=menu-inner><a class=menu-item href=/blog/posts/> Posts </a><a class=menu-item href=/blog/tags/> Tags </a><a class=menu-item href=/blog/categories/> Categories </a><a class=menu-item href=/blog/about/> About </a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i> </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/emacs-eask-101/ selected>English</option></select>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/emacs-eask-101/ selected>English</option><option value=/blog/zh-tw/emacs-eask-101/>正體中文</option></select>
 </a><span class="menu-item search" id=search-desktop>
 <input type=text placeholder="Search titles or contents..." id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
@@ -74,7 +74,7 @@ Cancel
 </div><a class=menu-item href=/blog/posts/ title>Posts</a><a class=menu-item href=/blog/tags/ title>Tags</a><a class=menu-item href=/blog/categories/ title>Categories</a><a class=menu-item href=/blog/about/ title>About</a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i>
 </a><a href=javascript:void(0); class=menu-item title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select onchange="location=this.value"><option value=/blog/emacs-eask-101/ selected>English</option></select>
+<select class=language-select onchange="location=this.value"><option value=/blog/emacs-eask-101/ selected>English</option><option value=/blog/zh-tw/emacs-eask-101/>正體中文</option></select>
 </a></div>
 </div>
 </header><div class="search-dropdown desktop">
@@ -88,7 +88,7 @@ Cancel
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Emacs Eask 101 - Build tool</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>included in <a href=/blog/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-04-10>2023-04-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;672 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-04-10>2023-04-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;717 words&nbsp;
 <i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;4 minutes&nbsp;<span id=/blog/emacs-eask-101/ class=leancloud_visitors data-flag-title="Emacs Eask 101 - Build tool">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
 </span>&nbsp;</div>
@@ -112,7 +112,7 @@ Developing an elisp package isn&rsquo;t easy for a beginner, especially for thos
 who want to publish their package to an ELPA. e.g., <a href=https://elpa.gnu.org/ target=_blank rel="noopener noreffer">GNU Elpa</a>, <a href=https://elpa.nongnu.org/ target=_blank rel="noopener noreffer">NonGNU Elpa</a>,
 <a href=https://melpa.org/ target=_blank rel="noopener noreffer">MELPA</a>, etc.</p>
 <p>That&rsquo;s why I use <a href=https://github.com/emacs-eask/cli target=_blank rel="noopener noreffer">Eask</a> to help me develop elisp packages. Therefore, in this
-article I&rsquo;m going to teach people how to use this tool to help you build your
+article, I&rsquo;m going to teach people how to use this tool to help you build your
 own elisp packages! 😄</p>
 <h2 id=-trouble-using-eask>🗨️ Trouble using Eask</h2>
 <p>Eask now has more than 50 commands (including hidden ones). The tool is fairly
@@ -153,7 +153,7 @@ $ git clone https://github.com/emacs-openai/openai.git
 tree /f
 </code></pre></td></tr></table>
 </div>
-</div><p>The project structure look like this:</p>
+</div><p>The project structure looks like this:</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt> 1
@@ -232,7 +232,7 @@ the <code>install</code> command:</p>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>$ eask install
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask install
 </code></pre></td></tr></table>
 </div>
 </div><p>The package is installed in an isolated environment, so it won&rsquo;t create any side
@@ -266,7 +266,7 @@ Activating the package <span class=sb>`</span>openai<span class=err>&#39;</span>
 </div>
 </div><p>Great! It means our package has been activated without any error! 😋</p>
 <p>This step is generally optional, but it&rsquo;s good to know if you will encounter
-any runtime error!</p>
+any runtime errors!</p>
 <h2 id=-compile-it>👷 Compile it!</h2>
 <p>It&rsquo;s time to compile your package! Compile step is the same as the install step.
 The only difference is it won&rsquo;t need to be built (<code>eask package</code>) to test
@@ -320,12 +320,27 @@ Compiling d:/_workspace/elisp/openai/openai-moderation.el... <span class=k>done<
 <p>These are the basic uses of <a href=https://github.com/emacs-eask/cli target=_blank rel="noopener noreffer">Eask</a>, but there are more things that Eask can
 do. Like lint your package, run tests suite, or package management, etc. But
 we can cover these within the next chapter.</p>
-</div><div class=post-footer id=post-footer>
+<p>This is the result of all the commands we have used in this article:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>eask package        <span class=c1># Build package artifect (installable file)</span>
+eask install        <span class=c1># Install installable file</span>
+eask <span class=nb>test</span> activate  <span class=c1># Test package activation</span>
+eask compile        <span class=c1># Source code compilation</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>Updated on 2023-04-10&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/25a99e10bd6fe0b09936c9b138dca50c1eea5e6e target=_blank title="commit by JenChieh(jcs090218@gmail.com) 25a99e10bd6fe0b09936c9b138dca50c1eea5e6e: Add blog post">
-<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>25a99e1</a></span>
+<span>Updated on 2023-04-10&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/3e7449b52cebd5585f83e3fbd9e7c280eafd0e41 target=_blank title="commit by JenChieh(jcs090218@gmail.com) 3e7449b52cebd5585f83e3fbd9e7c280eafd0e41: Add post">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>3e7449b</a></span>
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>

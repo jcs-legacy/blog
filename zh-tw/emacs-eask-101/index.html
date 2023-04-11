@@ -1,0 +1,363 @@
+<!doctype html><html lang=zh-tw>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<title>Emacs Eask 101 - 建構工具 - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Emacs Eask 101 - 建構工具">
+<meta property="og:description" content="我開發了 50 多個 Emacs 插件, 並且維護了將近 100 多個. 對初學者來說, 開發 Emacs 插件是一件不容易的事情, 特別是對那些想把自己的插件發行到其他的 ELPA 的人來說更不">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://example.com/blog/zh-tw/emacs-eask-101/"><meta property="og:image" content="http://example.com/blog/zh-tw/emacs-eask-101/featured-image.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-04-10T21:00:00+00:00">
+<meta property="article:modified_time" content="2023-04-10T17:32:19-07:00"><meta property="og:site_name" content="jcs090218">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="http://example.com/blog/zh-tw/emacs-eask-101/featured-image.png">
+<meta name=twitter:title content="Emacs Eask 101 - 建構工具">
+<meta name=twitter:description content="我開發了 50 多個 Emacs 插件, 並且維護了將近 100 多個. 對初學者來說, 開發 Emacs 插件是一件不容易的事情, 特別是對那些想把自己的插件發行到其他的 ELPA 的人來說更不">
+<meta name=application-name content="Jen-Chieh's Blog">
+<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/zh-tw/emacs-eask-101/><link rel=prev href=http://example.com/blog/zh-tw/%E5%81%8F%E8%A2%92%E8%88%87%E8%A2%AB%E8%B0%9D%E5%9D%A6/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Emacs Eask 101 - 建構工具","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask-101\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask-101\/featured-image.png","width":800,"height":800}],"genre":"posts","keywords":"Editor, Emacs","wordcount":1125,"url":"http:\/\/example.com\/blog\/zh-tw\/emacs-eask-101\/","datePublished":"2023-04-10T21:00:00+00:00","dateModified":"2023-04-10T17:32:19-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/blog/zh-tw/ title="Jen-Chieh's Blog"><span class=header-title-pre><i class="fa-solid fa-camera-retro"></i></span> Jen-Chieh's Blog</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/blog/zh-tw/posts/> 所有文章 </a><a class=menu-item href=/blog/zh-tw/tags/> 標籤 </a><a class=menu-item href=/blog/zh-tw/categories/> 分類 </a><a class=menu-item href=/blog/zh-tw/about/> 關於 </a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i> </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item language" title=選擇語言>正體中文<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/emacs-eask-101/>English</option><option value=/blog/zh-tw/emacs-eask-101/ selected>正體中文</option></select>
+</a><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
+<i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=清空>
+<i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a>
+</div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/blog/zh-tw/ title="Jen-Chieh's Blog"><span class=header-title-pre><i class="fa-solid fa-camera-retro"></i></span> Jen-Chieh's Blog</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=搜索文章標題或內容... id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=搜索>
+<i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=清空>
+<i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span>
+</div>
+<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
+取消
+</a>
+</div><a class=menu-item href=/blog/zh-tw/posts/ title>所有文章</a><a class=menu-item href=/blog/zh-tw/tags/ title>標籤</a><a class=menu-item href=/blog/zh-tw/categories/ title>分類</a><a class=menu-item href=/blog/zh-tw/about/ title>關於</a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class=menu-item title=選擇語言>正體中文<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
+<select class=language-select onchange="location=this.value"><option value=/blog/emacs-eask-101/>English</option><option value=/blog/zh-tw/emacs-eask-101/ selected>正體中文</option></select>
+</a></div>
+</div>
+</header><div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div><main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>目錄</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Emacs Eask 101 - 建構工具</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>收錄於 <a href=/blog/zh-tw/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-04-10>2023-04-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 1125 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/blog/zh-tw/emacs-eask-101/ class=leancloud_visitors data-flag-title="Emacs Eask 101 - 建構工具">
+<i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
+</span>&nbsp;</div>
+</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/emacs-eask-101/featured-image.png data-srcset="/blog/zh-tw/emacs-eask-101/featured-image.png, /blog/zh-tw/emacs-eask-101/featured-image.png 1.5x, /blog/zh-tw/emacs-eask-101/featured-image.png 2x" data-sizes=auto alt=/blog/zh-tw/emacs-eask-101/featured-image.png title=/blog/zh-tw/emacs-eask-101/featured-image.png></div><div class="details toc" id=toc-static data-kept>
+<div class="details-summary toc-title">
+<span>目錄</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#-善用---help>🗨️ 善用 <code>--help</code></a></li>
+<li><a href=#-建構插件>📦 建構插件</a></li>
+<li><a href=#-安裝>⚙ 安裝</a></li>
+<li><a href=#-啟動看看>📋 啟動看看?</a></li>
+<li><a href=#-編譯>👷 編譯</a></li>
+<li><a href=#-結語>⚜️ 結語</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p>我開發了 50 多個 Emacs 插件, 並且維護了將近 100 多個. 對初學者來說, 開發
+Emacs 插件是一件不容易的事情, 特別是對那些想把自己的插件發行到其他的 ELPA
+的人來說更不容易. 哪些 ELPA? (<a href=https://elpa.gnu.org/ target=_blank rel="noopener noreffer">GNU Elpa</a>, <a href=https://elpa.nongnu.org/ target=_blank rel="noopener noreffer">NonGNU Elpa</a>, <a href=https://melpa.org/ target=_blank rel="noopener noreffer">MELPA</a>, 等等.)</p>
+<p>這是為什麼我使用 <a href=https://github.com/emacs-eask/cli target=_blank rel="noopener noreffer">Eask</a> 來幫助我完成這些插件的開發和維護的工作. 所以我將
+在這則文章教大家如何使用這個工具來幫助你完成插件的開發!</p>
+<h2 id=-善用---help>🗨️ 善用 <code>--help</code></h2>
+<p>現今的 Eask 已經有超過 50 種以上的指令集 (包含隱藏的). 這個工具已經是個有
+點複雜, 所以當你遇到問題的時候請善用 <code>--help</code> 這個旗幟.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask --help
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=-建構插件>📦 建構插件</h2>
+<p>我們這裡直接切入正題, 我會默認你已經會初始化 Eask 專案, 並且只想知道如何
+有效的使用這工具!</p>
+<p>為了方便展示, 我直接使用了自己現存已開發完成的專案 [openal.el][openal].</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=c1># Clone 專案</span>
+$ git clone https://github.com/emacs-openai/openai.git
+
+<span class=c1># 進入到專案裡面</span>
+<span class=nb>cd</span> sideline
+
+<span class=c1># (非必要) 印出專案結構</span>
+tree /f
+</code></pre></td></tr></table>
+</div>
+</div><p>我們的專案結構是長這樣的:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>│   .dir-locals.el
+│   .gitignore
+│   CHANGELOG.md
+│   Eask
+│   LICENSE.txt
+│   Makefile
+│   openai-audio.el
+│   openai-chat.el
+│   openai-completion.el
+│   openai-edit.el
+│   openai-embedding.el
+│   openai-engine.el
+│   openai-file.el
+│   openai-fine-tune.el
+│   openai-image.el
+│   openai-model.el
+│   openai-moderation.el
+│   openai.el
+│   README.md
+│
+└───.github
+    └───workflows
+            test.yml
+</code></pre></td></tr></table>
+</div>
+</div><p>我們用這指令來建構我們的插件:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask package
+</code></pre></td></tr></table>
+</div>
+</div><p>這個指令會建立一個檔案夾 <code>dist</code>, 結果如下:</p>
+<p><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/emacs-eask-101/package.png data-srcset="/blog/zh-tw/emacs-eask-101/package.png, /blog/zh-tw/emacs-eask-101/package.png 1.5x, /blog/zh-tw/emacs-eask-101/package.png 2x" data-sizes=auto alt=/blog/zh-tw/emacs-eask-101/package.png title=/blog/zh-tw/emacs-eask-101/package.png width=755 height=318></p>
+<p>注意這個專案是個<a href=https://www.gnu.org/software/emacs/manual/html_node/elisp/Multi_002dfile-Packages.html target=_blank rel="noopener noreffer">多文件插件</a>所以建構出來的是一個 <code>tar</code>
+檔案, 而不是 <code>.el</code> 檔案. 如果我們看一下這個檔案, 結果如下:</p>
+<p><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/emacs-eask-101/tar.png data-srcset="/blog/zh-tw/emacs-eask-101/tar.png, /blog/zh-tw/emacs-eask-101/tar.png 1.5x, /blog/zh-tw/emacs-eask-101/tar.png 2x" data-sizes=auto alt=/blog/zh-tw/emacs-eask-101/tar.png title=/blog/zh-tw/emacs-eask-101/tar.png width=819 height=378></p>
+<h2 id=-安裝>⚙ 安裝</h2>
+<p>現在你已經成功建構完了插件, 這代表如果你發行到任何 ELPA 都將不會有任何問
+(<a href=https://elpa.gnu.org/ target=_blank rel="noopener noreffer">GNU Elpa</a>, <a href=https://melpa.org/ target=_blank rel="noopener noreffer">MELPA</a>,等等.). 大家都將成功下載你的插件! 我們下一步是安裝.
+如果我們可以下載你的插件, 但無法安裝, 是不是沒有任何意義? 我們使用 <code>install</code>
+指令來安裝我們剛剛建立的檔案:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask install
+</code></pre></td></tr></table>
+</div>
+</div><p>這個插件會安裝到一個獨立的環境, 所以我們不用擔心他會影響到我們本地的
+Emacs 配置 <code>~/.emacs.d/</code>. 結果如下:</p>
+<p><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/emacs-eask-101/install.png data-srcset="/blog/zh-tw/emacs-eask-101/install.png, /blog/zh-tw/emacs-eask-101/install.png 1.5x, /blog/zh-tw/emacs-eask-101/install.png 2x" data-sizes=auto alt=/blog/zh-tw/emacs-eask-101/install.png title=/blog/zh-tw/emacs-eask-101/install.png width=631 height=335></p>
+<h2 id=-啟動看看>📋 啟動看看?</h2>
+<p>啟動一個檔案相當簡單, 正常來說我們會想要確定我們的插件是能夠被正確引入的.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask <span class=nb>test</span> activate
+</code></pre></td></tr></table>
+</div>
+</div><p>你會看到下面的結果:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>Loading package information... <span class=k>done</span> v
+
+Activating the package <span class=sb>`</span>openai<span class=err>&#39;</span>... succeeded v
+<span class=o>(</span>Nothing to load.<span class=o>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>太棒了! 這代表我們的插件已經成功被啟動了, 並且沒有任何錯誤! 😋</p>
+<p>這個步驟通常是不必要的, 不過當你想知道你的插件是否能夠被引入, 這會相當好用!</p>
+<h2 id=-編譯>👷 編譯</h2>
+<p>是時候該編譯我們的插件了! 通常情況下, 編譯步驟跟安裝步驟是相似的, 因為
+安裝的過程必定有編譯. 唯一的不同在於我們不會想要每次都建構插件, 所以直接
+編譯就會相通好用!</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask compile
+</code></pre></td></tr></table>
+</div>
+</div><p>很棒! 這次編譯也沒有任何問題! 😋</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>Compiling d:/_workspace/elisp/openai/openai.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-audio.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-chat.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-completion.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-edit.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-embedding.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-engine.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-file.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-fine-tune.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-image.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-model.el... <span class=k>done</span> v
+Compiling d:/_workspace/elisp/openai/openai-moderation.el... <span class=k>done</span> v
+
+<span class=o>(</span>Total of <span class=m>12</span> files compiled, <span class=m>0</span> skipped<span class=o>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=-結語>⚜️ 結語</h2>
+<p>這些就是最基礎的 Eask 用法. 當然還有更多, 例如 linter 檢查代碼, 跑測試, 或者
+插件管理, 等等. 不過這些等我們下一次有機會在介紹!</p>
+<p>最後總結一下我們在這則文章使用過的指令集:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>eask package        <span class=c1># 建構可安裝檔案</span>
+eask install        <span class=c1># 安裝建構檔案 (.tar 或 .el)</span>
+eask <span class=nb>test</span> activate  <span class=c1># 啟動測試</span>
+eask compile        <span class=c1># 編譯原始碼</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>更新於 2023-04-10&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/3e7449b52cebd5585f83e3fbd9e7c280eafd0e41 target=_blank title="commit by JenChieh(jcs090218@gmail.com) 3e7449b52cebd5585f83e3fbd9e7c280eafd0e41: Add post">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>3e7449b</a></span>
+</div></div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/blog/zh-tw/emacs-eask-101/index.md target=_blank>閱讀原始文檔</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=http://example.com/blog/zh-tw/emacs-eask-101/ data-title="Emacs Eask 101 - 建構工具" data-hashtags=Editor,Emacs><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=http://example.com/blog/zh-tw/emacs-eask-101/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=http://example.com/blog/zh-tw/emacs-eask-101/ data-title="Emacs Eask 101 - 建構工具"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=http://example.com/blog/zh-tw/emacs-eask-101/ data-title="Emacs Eask 101 - 建構工具"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=http://example.com/blog/zh-tw/emacs-eask-101/ data-title="Emacs Eask 101 - 建構工具"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/zh-tw/tags/editor/>Editor</a>,&nbsp;<a href=/blog/zh-tw/tags/emacs/>Emacs</a></section>
+<section>
+<span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/blog/zh-tw/>主頁</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/blog/zh-tw/%E5%81%8F%E8%A2%92%E8%88%87%E8%A2%AB%E8%B0%9D%E5%9D%A6/ class=prev rel=prev title="💔 偏袒與被谝坦"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>💔 偏袒與被谝坦</a></div>
+</div>
+<div id=comments><div id=valine class=comment></div><noscript>
+Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.
+</noscript></div></article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>由 <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.91.2">Hugo</a> 強力驅動 | 主題 - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a>
+</div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2019 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://www.jcs-profile.com/ target=_blank>Jen-Chieh Shen</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div>
+</footer></div>
+<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title=回到頂部>
+<i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title=查看評論>
+<i class="fas fa-comment fa-fw" aria-hidden=true></i>
+</a>
+</div><link rel=stylesheet href=/blog/lib/valine/valine.min.css><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/algoliasearch@4.13.0/dist/algoliasearch-lite.umd.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.1/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"複製到剪貼板",maxShownLines:50},comment:{valine:{appId:"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI",appKey:"WBmoGyJtbqUswvfLh6L8iEBr",avatar:"mp",el:"#valine",emojiCDN:"https://cdn.jsdelivr.net/npm/emoji-datasource-google@14.0.0/img/google/64/",emojiMaps:{100:"1f4af.png",alien:"1f47d.png",anger:"1f4a2.png",angry:"1f620.png",anguished:"1f627.png",astonished:"1f632.png",black_heart:"1f5a4.png",blue_heart:"1f499.png",blush:"1f60a.png",bomb:"1f4a3.png",boom:"1f4a5.png",broken_heart:"1f494.png",brown_heart:"1f90e.png",clown_face:"1f921.png",cold_face:"1f976.png",cold_sweat:"1f630.png",confounded:"1f616.png",confused:"1f615.png",cry:"1f622.png",crying_cat_face:"1f63f.png",cupid:"1f498.png",dash:"1f4a8.png",disappointed:"1f61e.png",disappointed_relieved:"1f625.png",dizzy:"1f4ab.png",dizzy_face:"1f635.png",drooling_face:"1f924.png",exploding_head:"1f92f.png",expressionless:"1f611.png",face_vomiting:"1f92e.png",face_with_cowboy_hat:"1f920.png",face_with_hand_over_mouth:"1f92d.png",face_with_head_bandage:"1f915.png",face_with_monocle:"1f9d0.png",face_with_raised_eyebrow:"1f928.png",face_with_rolling_eyes:"1f644.png",face_with_symbols_on_mouth:"1f92c.png",face_with_thermometer:"1f912.png",fearful:"1f628.png",flushed:"1f633.png",frowning:"1f626.png",ghost:"1f47b.png",gift_heart:"1f49d.png",green_heart:"1f49a.png",grimacing:"1f62c.png",grin:"1f601.png",grinning:"1f600.png",hankey:"1f4a9.png",hear_no_evil:"1f649.png",heart:"2764-fe0f.png",heart_decoration:"1f49f.png",heart_eyes:"1f60d.png",heart_eyes_cat:"1f63b.png",heartbeat:"1f493.png",heartpulse:"1f497.png",heavy_heart_exclamation_mark_ornament:"2763-fe0f.png",hole:"1f573-fe0f.png",hot_face:"1f975.png",hugging_face:"1f917.png",hushed:"1f62f.png",imp:"1f47f.png",innocent:"1f607.png",japanese_goblin:"1f47a.png",japanese_ogre:"1f479.png",joy:"1f602.png",joy_cat:"1f639.png",kiss:"1f48b.png",kissing:"1f617.png",kissing_cat:"1f63d.png",kissing_closed_eyes:"1f61a.png",kissing_heart:"1f618.png",kissing_smiling_eyes:"1f619.png",laughing:"1f606.png",left_speech_bubble:"1f5e8-fe0f.png",love_letter:"1f48c.png",lying_face:"1f925.png",mask:"1f637.png",money_mouth_face:"1f911.png",nauseated_face:"1f922.png",nerd_face:"1f913.png",neutral_face:"1f610.png",no_mouth:"1f636.png",open_mouth:"1f62e.png",orange_heart:"1f9e1.png",partying_face:"1f973.png",pensive:"1f614.png",persevere:"1f623.png",pleading_face:"1f97a.png",pouting_cat:"1f63e.png",purple_heart:"1f49c.png",rage:"1f621.png",relaxed:"263a-fe0f.png",relieved:"1f60c.png",revolving_hearts:"1f49e.png",right_anger_bubble:"1f5ef-fe0f.png",robot_face:"1f916.png",rolling_on_the_floor_laughing:"1f923.png",scream:"1f631.png",scream_cat:"1f640.png",see_no_evil:"1f648.png",shushing_face:"1f92b.png",skull:"1f480.png",skull_and_crossbones:"2620-fe0f.png",sleeping:"1f634.png",sleepy:"1f62a.png",slightly_frowning_face:"1f641.png",slightly_smiling_face:"1f642.png",smile:"1f604.png",smile_cat:"1f638.png",smiley:"1f603.png",smiley_cat:"1f63a.png",smiling_face_with_3_hearts:"1f970.png",smiling_imp:"1f608.png",smirk:"1f60f.png",smirk_cat:"1f63c.png",sneezing_face:"1f927.png",sob:"1f62d.png",space_invader:"1f47e.png",sparkling_heart:"1f496.png",speak_no_evil:"1f64a.png",speech_balloon:"1f4ac.png","star-struck":"1f929.png",stuck_out_tongue:"1f61b.png",stuck_out_tongue_closed_eyes:"1f61d.png",stuck_out_tongue_winking_eye:"1f61c.png",sunglasses:"1f60e.png",sweat:"1f613.png",sweat_drops:"1f4a6.png",sweat_smile:"1f605.png",thinking_face:"1f914.png",thought_balloon:"1f4ad.png",tired_face:"1f62b.png",triumph:"1f624.png",two_hearts:"1f495.png",unamused:"1f612.png",upside_down_face:"1f643.png",weary:"1f629.png",white_frowning_face:"2639-fe0f.png",white_heart:"1f90d.png",wink:"1f609.png",woozy_face:"1f974.png",worried:"1f61f.png",yawning_face:"1f971.png",yellow_heart:"1f49b.png",yum:"1f60b.png",zany_face:"1f92a.png",zipper_mouth_face:"1f910.png",zzz:"1f4a4.png"},enableQQ:!1,highlight:!0,lang:"zh-TW",pageSize:10,placeholder:"你的評論 ...",recordIP:!0,serverURLs:"https://leancloud.hugoloveit.com",visitor:!0}},lightgallery:!0,search:{algoliaAppID:"PASDMWALPK",algoliaIndex:"index.zh-tw",algoliaSearchKey:"b42948e51daaa93df92381c8e2ac0f93",highlightTag:"em",maxResultLength:10,noResultsFound:"沒有找到結果",snippetLength:50,type:"algolia"}}</script><script type=text/javascript src=/blog/js/theme.min.js></script></body>
+</html>

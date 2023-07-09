@@ -53,7 +53,25 @@ also how much I get disappointed with Emacs. 😥
 
 ## 💫 Why Emacs isn't the worth my time anymore?
 
-WIP
+First of all, there is nothing wrong with the Emacs' devel. They did a great job
+keeping Emacs alive and I like their mentality and most of their technical decesions.
+
+For me, the problem is the Elisp dev ecosystem (not the Emacs comunity itself; consider
+the Elisp dev ecosystem is the subset of the Emacs community). I appreciate people
+willing to contribute to Emacs, but I hate when they don't consider their packages'
+cross-platform capability. Yes, I'm a Windows user, actually, I use all the most used
+systems (Linux, macOS, and Windows). I hate that when I tried a package then it only
+works on a specific system (excluding packages that only rely on certain systems),
+but it suppose to work on all systems. I feel terrible and frustrated because most of
+the Elisp dev does not care or does not care enough about the minority users (Windows users).
+Even about some famous packages don't work well on Windows, magit is slow, straight.el is slow,
+helm is slow, ivy is slow, projectile is broken, eping is broken, EAF is constatly broken, etc.
+I use over 500 packages in my configuration. I can list a ton of packages that have terrible
+cross-platform capability.
+
+But are they all bad? Of course not. Most of the authors show patience and are willing to
+help you with the issue you had encountered. At least they have tried to solve these issues
+and provide a workaround, etc.
 
 ## 💫 Will I leave Emacs community?
 

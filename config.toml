@@ -671,6 +671,7 @@ enableEmoji = true
           disclaimer = "Technology, Reflection, updated bi-weekly"
       [languages.en.params.social]
         GitHub = "jcs090218"
+        GitLab = "jcs090218"
         Twitter = "jenchieh94"
         #Instagram = "jcs090218"
         #Facebook = "jcs090218"
@@ -753,6 +754,8 @@ enableEmoji = true
           disclaimer = "關注時事, 每周更新"
       [languages.zh-tw.params.social]
         GitHub = "jcs090218"
+        GitLab = "jcs090218"
+        Twitter = "jenchieh94"
         #Weibo = "xxxx"
         #Steam = "xxxx"
         #Zhihu = "xxxx"

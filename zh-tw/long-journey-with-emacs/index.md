@@ -53,7 +53,6 @@ projectile 壞了，eping 壞了，EAF 經常壞了等等。我使用了超過 5
 
 ## 💫 我會離開 Emacs 社區嗎？
 
-
 最簡潔的答案是不。我很可能不會再開發更多的 Emacs 軟件包；除非我真的想這麼做。但我將繼續維護我目前正在維護
 的所有軟件包，因為我將繼續在未來的工作中使用 Emacs！
 
@@ -65,5 +64,4 @@ projectile 壞了，eping 壞了，EAF 經常壞了等等。我使用了超過 5
 
 [Handmade Hero]: https://handmadehero.org/
 [MELPA]: https://melpa.org/#/
-
 

@@ -68,7 +68,7 @@ lightgallery: true
 作我的語言服務器客戶端。我已經在 Emacs Lisp 中創建了幾個語言服務器客戶端，
 因此創建另一個並不太困難。 😁
 
-## 📦 在 NuGet 上發布
+## 📦 發布到 NuGet
 
 I have no experience publishing packages to [NuGet][], but it wasn't hard after
 watching a couple of tutorials on YouTube. I use the [csharp-language-server][]

@@ -12,8 +12,8 @@ resources:
 - name: "featured-image"
   src: "featured-image.png"
 
-tags: ["Editor"]
-categories: ["Editor"]
+tags: ["LSP"]
+categories: ["LSP"]
 
 lightgallery: true
 ---

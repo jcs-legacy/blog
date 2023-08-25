@@ -3,20 +3,24 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title>Productivity - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Productivity">
-<meta property="og:description" content="Productivity is topic that often is ignored by a lot programmer. I have seen a bunch of documents out there talking about algorithm and data structure, so I would like to post a topic about productivity for an advanced programmer or for the programmer who wants to be a better programmer. So what exactly mean productivity in software development field? If you have seen my previous blog post ' Framework I have been working&mldr; (Part 1) ' and ' Framework I have been working&mldr; (Part 2) &lsquo;, then you might already know what I am going to write about for the rest of this article.">
+<title>My first VSCode plugin - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="My first VSCode plugin">
+<meta property="og:description" content="Repo Link: https://github.com/shader-ls/vscode-shader
+ Aug 23rd, 2023. I&rsquo;ve created my first VSCode plugin &ndash; vscode-shader. My intention was simple: to create a language server&rsquo;s client in VSCode for my shader-language-server that I created a couple of months ago. 🤔
+🔰 Simple and good UX First of all, it is very simple to develop a VSCode plugin. Especially developing a language server&rsquo;s client for VSCode. There are many examples and good documentation on their site, making it very easy for developers.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://example.com/blog/productivity/"><meta property="og:image" content="http://example.com/blog/productivity/featured-image.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2017-10-24T21:00:00+00:00">
+<meta property="og:url" content="http://example.com/blog/vscode-shader/"><meta property="og:image" content="http://example.com/blog/vscode-shader/featured-image.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-08-24T21:00:00+00:00">
 <meta property="article:modified_time" content="2023-08-24T22:40:02-07:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="http://example.com/blog/productivity/featured-image.png">
-<meta name=twitter:title content="Productivity">
-<meta name=twitter:description content="Productivity is topic that often is ignored by a lot programmer. I have seen a bunch of documents out there talking about algorithm and data structure, so I would like to post a topic about productivity for an advanced programmer or for the programmer who wants to be a better programmer. So what exactly mean productivity in software development field? If you have seen my previous blog post ' Framework I have been working&mldr; (Part 1) ' and ' Framework I have been working&mldr; (Part 2) &lsquo;, then you might already know what I am going to write about for the rest of this article.">
+<meta name=twitter:image content="http://example.com/blog/vscode-shader/featured-image.png">
+<meta name=twitter:title content="My first VSCode plugin">
+<meta name=twitter:description content="Repo Link: https://github.com/shader-ls/vscode-shader
+ Aug 23rd, 2023. I&rsquo;ve created my first VSCode plugin &ndash; vscode-shader. My intention was simple: to create a language server&rsquo;s client in VSCode for my shader-language-server that I created a couple of months ago. 🤔
+🔰 Simple and good UX First of all, it is very simple to develop a VSCode plugin. Especially developing a language server&rsquo;s client for VSCode. There are many examples and good documentation on their site, making it very easy for developers.">
 <meta name=application-name content="Jen-Chieh's Blog">
-<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/productivity/><link rel=prev href=http://example.com/blog/framework-i-have-been-working-on/><link rel=next href=http://example.com/blog/best-editor-ever/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/vscode-shader/><link rel=prev href=http://example.com/blog/shader-ls/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Productivity","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/productivity\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/productivity\/featured-image.png","width":1600,"height":900}],"genre":"posts","keywords":"Productivity","wordcount":358,"url":"http:\/\/example.com\/blog\/productivity\/","datePublished":"2017-10-24T21:00:00+00:00","dateModified":"2023-08-24T22:40:02-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"My first VSCode plugin","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/vscode-shader\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/vscode-shader\/featured-image.png","width":500,"height":500}],"genre":"posts","keywords":"Editor","wordcount":193,"url":"http:\/\/example.com\/blog\/vscode-shader\/","datePublished":"2023-08-24T21:00:00+00:00","dateModified":"2023-08-24T22:40:02-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -25,7 +29,7 @@
 </div>
 <div class=menu>
 <div class=menu-inner><a class=menu-item href=/blog/posts/> Posts </a><a class=menu-item href=/blog/tags/> Tags </a><a class=menu-item href=/blog/categories/> Categories </a><a class=menu-item href=/blog/about/> About </a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i> </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/productivity/ selected>English</option><option value=/blog/zh-tw/productivity/>正體中文</option></select>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/vscode-shader/ selected>English</option><option value=/blog/zh-tw/vscode-shader/>正體中文</option></select>
 </a><span class="menu-item search" id=search-desktop>
 <input type=text placeholder="Search titles or contents..." id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
@@ -72,7 +76,7 @@ Cancel
 </div><a class=menu-item href=/blog/posts/ title>Posts</a><a class=menu-item href=/blog/tags/ title>Tags</a><a class=menu-item href=/blog/categories/ title>Categories</a><a class=menu-item href=/blog/about/ title>About</a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i>
 </a><a href=javascript:void(0); class=menu-item title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select onchange="location=this.value"><option value=/blog/productivity/ selected>English</option><option value=/blog/zh-tw/productivity/>正體中文</option></select>
+<select class=language-select onchange="location=this.value"><option value=/blog/vscode-shader/ selected>English</option><option value=/blog/zh-tw/vscode-shader/>正體中文</option></select>
 </a></div>
 </div>
 </header><div class="search-dropdown desktop">
@@ -84,49 +88,51 @@ Cancel
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>Contents</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Productivity</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>included in <a href=/blog/categories/productivity/><i class="far fa-folder fa-fw" aria-hidden=true></i>Productivity</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2017-10-24>2017-10-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;358 words&nbsp;
-<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;2 minutes&nbsp;<span id=/blog/productivity/ class=leancloud_visitors data-flag-title=Productivity>
+</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">My first VSCode plugin</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>included in <a href=/blog/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-08-24>2023-08-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;193 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;One minute&nbsp;<span id=/blog/vscode-shader/ class=leancloud_visitors data-flag-title="My first VSCode plugin">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
 </span>&nbsp;</div>
-</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/productivity/featured-image.png data-srcset="/blog/productivity/featured-image.png, /blog/productivity/featured-image.png 1.5x, /blog/productivity/featured-image.png 2x" data-sizes=auto alt=/blog/productivity/featured-image.png title=/blog/productivity/featured-image.png></div><div class="details toc" id=toc-static data-kept>
+</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/vscode-shader/featured-image.png data-srcset="/blog/vscode-shader/featured-image.png, /blog/vscode-shader/featured-image.png 1.5x, /blog/vscode-shader/featured-image.png 2x" data-sizes=auto alt=/blog/vscode-shader/featured-image.png title=/blog/vscode-shader/featured-image.png></div><div class="details toc" id=toc-static data-kept>
 <div class="details-summary toc-title">
 <span>Contents</span>
 <span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span>
 </div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div>
-</div><div class=content id=content><p>Productivity is topic that often is ignored by a lot programmer. I have
-seen a bunch of documents out there talking about algorithm and data structure,
-so I would like to post a topic about productivity for an advanced programmer
-or for the programmer who wants to be a better programmer. So what exactly
-mean productivity in software development field? If you have seen my previous
-blog post '
-<a href="?page=Framework_sp_I_sp_have_sp_been_sp_working_sp_-Part_sp_1-" rel>Framework I have been working&mldr; (Part 1)</a>
-' and '
-<a href="?page=Framework_sp_I_sp_have_sp_been_sp_working_sp_-Part_sp_2-" rel>Framework I have been working&mldr; (Part 2)</a>
-&lsquo;, then you might already know what I am going to write about for the rest of
-this article.</p>
-<p>So what essentially methods that we could do to improve the productivity for
-ourselves as a software engineer? First of all, I would say build your tools.
-Anything that could speed up the development process will increase the productivity
-of the project. It sounds straightforward to make your tools or library, but
-when you start making it, it actually kind of hard to make. That I have heard
-of a lot of people asking me how to make a library for other people to use?</p>
-<p>Building a tool is hard and time-consuming. The first thing to make your
-tool is to have learned Design Pattern (I have already mentioned few books I
-recommend in my previous post - '
-<a href="?page=Framework_sp_I_sp_have_sp_been_sp_working_sp_-Part_sp_1-" rel>Framework I have been working&mldr; (Part 1)</a>
-&lsquo;). Attention, learn design pattern is to learn how to build a better software
-architecture. Not to learn how to use a design pattern in your code! I have seen
-programmers use design pattern all the time and feel bad about it because they
-seem to be attempt to use design pattern instead of designing a software architecture.</p>
-<p>Once you have the skill and knowledge of design pattern. I would recommend
-seeing how other people build their tools on any open source platform. As
-everyone knows GitHub, GitLab, SourceForge, etc. Designing tools are thinking
-about how to make other programmers feel comfortable when using your tool.
-Think what kind of params have to pass into this function? Think is this
-feature that is needed to be here/design?</p>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#-simple-and-good-ux>🔰 Simple and good UX</a></li>
+<li><a href=#-publish-to-vscode-marketplace>📦 Publish to VSCode Marketplace</a></li>
+<li><a href=#-achievement>🎖️ Achievement</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><blockquote>
+<p>Repo Link: <a href=https://github.com/shader-ls/vscode-shader target=_blank rel="noopener noreffer">https://github.com/shader-ls/vscode-shader</a></p>
+</blockquote>
+<p>Aug 23rd, 2023. I&rsquo;ve created my first VSCode plugin &ndash; <a href=https://github.com/shader-ls/vscode-shader target=_blank rel="noopener noreffer">vscode-shader</a>.
+My intention was simple: to create a language server&rsquo;s client in VSCode
+for my <a href=https://github.com/shader-ls/shader-language-server target=_blank rel="noopener noreffer">shader-language-server</a> that I created a couple of months ago. 🤔</p>
+<h2 id=-simple-and-good-ux>🔰 Simple and good UX</h2>
+<p>First of all, it is very simple to develop a VSCode plugin.
+Especially developing a language server&rsquo;s client for VSCode.
+There are many examples and good documentation on their site,
+making it very easy for developers. I am using <a href=https://github.com/freckletonj/uniteai target=_blank rel="noopener noreffer">uniteai</a> and
+<a href=https://github.com/emacs-grammarly/grammarly-language-server target=_blank rel="noopener noreffer">grammarly-language-server</a> as the references.</p>
+<h2 id=-publish-to-vscode-marketplace>📦 Publish to VSCode Marketplace</h2>
+<p>Publishing to VSCode is probably the most challenging step since you need
+to navigate to <a href=https://aex.dev.azure.com/ target=_blank rel="noopener noreffer">Azure DevOps</a>, which seems utterly irrelevant
+to VSCode Marketplace! 🤔 Then get the <strong>Personal Access Token</strong>
+in order to publish your packages to the marketplace. It&rsquo;s still
+straightforward but quite confusing on the <a href=https://aex.dev.azure.com/ target=_blank rel="noopener noreffer">Azure DevOps</a> part.</p>
+<p>Then you just need to <code>npm install -g @vscode/vsce</code>, <code>vsce package</code> and <code>vsce publish</code>.
+While publishing, you will be asked to enter your PAT!</p>
+<p>You can see VSCode&rsquo;s <a href=https://code.visualstudio.com/api/working-with-extensions/publishing-extension target=_blank rel="noopener noreffer">Publishing Extensions</a>
+website for more information!</p>
+<h2 id=-achievement>🎖️ Achievement</h2>
+<ul>
+<li>Created a language server client, <a href=https://github.com/shader-ls/vscode-shader target=_blank rel="noopener noreffer">vscode-shader</a>.</li>
+<li>My first published VSCode plugin, see <a href="https://marketplace.visualstudio.com/items?itemName=shader-ls.vscode-shader" target=_blank rel="noopener noreffer">https://marketplace.visualstudio.com/items?itemName=shader-ls.vscode-shader</a>.</li>
+</ul>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
@@ -136,21 +142,20 @@ feature that is needed to be here/design?</p>
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>
-<a class=link-to-markdown href=/blog/productivity/index.md target=_blank>Read Markdown</a>
+<a class=link-to-markdown href=/blog/vscode-shader/index.md target=_blank>Read Markdown</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.com/blog/productivity/ data-title=Productivity data-via=jenchieh94 data-hashtags=Productivity><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.com/blog/productivity/ data-hashtag=Productivity><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.com/blog/productivity/ data-title=Productivity><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.com/blog/productivity/ data-title=Productivity><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.com/blog/productivity/ data-title=Productivity><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
+<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.com/blog/vscode-shader/ data-title="My first VSCode plugin" data-via=jenchieh94 data-hashtags=Editor><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.com/blog/vscode-shader/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.com/blog/vscode-shader/ data-title="My first VSCode plugin"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.com/blog/vscode-shader/ data-title="My first VSCode plugin"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.com/blog/vscode-shader/ data-title="My first VSCode plugin"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/tags/productivity/>Productivity</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/tags/editor/>Editor</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/blog/>Home</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/blog/framework-i-have-been-working-on/ class=prev rel=prev title="Framework I have been working on"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Framework I have been working on</a>
-<a href=/blog/best-editor-ever/ class=next rel=next title="Best Editor Ever">Best Editor Ever<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div>
+<div class=post-nav><a href=/blog/shader-ls/ class=prev rel=prev title="Shader Language Server (LS)"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Shader Language Server (LS)</a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

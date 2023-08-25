@@ -8,15 +8,15 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://example.com/blog/zh-tw/shader-ls/"><meta property="og:image" content="http://example.com/blog/zh-tw/shader-ls/featured-image.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2023-08-23T21:00:00+00:00">
-<meta property="article:modified_time" content="2023-08-24T21:13:50-07:00"><meta property="og:site_name" content="jcs090218">
+<meta property="article:modified_time" content="2023-08-24T22:40:02-07:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="http://example.com/blog/zh-tw/shader-ls/featured-image.png">
 <meta name=twitter:title content="Shader 语言服务器">
 <meta name=twitter:description content="代碼庫連結: https://github.com/shader-ls/shader-language-server 2023 年 4 月 30 日。我創建了我的第一個語言服務器，它對某人確實有用。 我不久前嘗試過一個語言服務器，但它只是一個示例服務器，所以它不是">
 <meta name=application-name content="Jen-Chieh's Blog">
-<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/zh-tw/shader-ls/><link rel=prev href=http://example.com/blog/zh-tw/long-journey-with-emacs/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/zh-tw/shader-ls/><link rel=prev href=http://example.com/blog/zh-tw/long-journey-with-emacs/><link rel=next href=http://example.com/blog/zh-tw/vscode-shader/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Shader 语言服务器","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/featured-image.png","width":500,"height":500}],"genre":"posts","keywords":"Editor","wordcount":1022,"url":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/","datePublished":"2023-08-23T21:00:00+00:00","dateModified":"2023-08-24T21:13:50-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Shader 语言服务器","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/featured-image.png","width":500,"height":500}],"genre":"posts","keywords":"Editor","wordcount":994,"url":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/","datePublished":"2023-08-23T21:00:00+00:00","dateModified":"2023-08-24T22:40:02-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -86,8 +86,8 @@
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Shader 语言服务器</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>收錄於 <a href=/blog/zh-tw/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-08-23>2023-08-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 1022 字&nbsp;
-<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/blog/zh-tw/shader-ls/ class=leancloud_visitors data-flag-title="Shader 语言服务器">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-08-23>2023-08-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 994 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/blog/zh-tw/shader-ls/ class=leancloud_visitors data-flag-title="Shader 语言服务器">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
 </div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/shader-ls/featured-image.png data-srcset="/blog/zh-tw/shader-ls/featured-image.png, /blog/zh-tw/shader-ls/featured-image.png 1.5x, /blog/zh-tw/shader-ls/featured-image.png 2x" data-sizes=auto alt=/blog/zh-tw/shader-ls/featured-image.png title=/blog/zh-tw/shader-ls/featured-image.png></div><div class="details toc" id=toc-static data-kept>
@@ -100,7 +100,7 @@
 <li><a href=#-為什麼選擇c作為實現語言>❓ 為什麼選擇C#作為實現語言？</a></li>
 <li><a href=#-c-language-server-protocal-地獄>💀 C# Language Server Protocal 地獄</a></li>
 <li><a href=#-插入-shaderlabvs>⚙️ 插入 ShaderlabVS</a></li>
-<li><a href=#-創建語言服務器客戶端>💥 創建語言服務器客戶端</a></li>
+<li><a href=#-創建語言服務器的客戶端>💥 創建語言服務器的客戶端</a></li>
 <li><a href=#-發布到-nuget>📦 發布到 NuGet</a></li>
 <li><a href=#-成就>🎖️ 成就</a></li>
 </ul>
@@ -129,6 +129,7 @@
 經過幾天的挖掘，我面臨以下問題：</p>
 <ol>
 <li>官方存儲庫中的示例要么<strong>損壞</strong>，要么<strong>不完整</strong>（有點無用）</li>
+<li>過時或缺乏文檔</li>
 <li>他們並不真正關心其他編輯。 （許多編輯器兼容問題和 PR 尚未解決）</li>
 </ol>
 <p>幸運的是，我找到了 <strong>@gulbanana</strong> 創建的 <a href=https://github.com/gulbanana/thousand target=_blank rel="noopener noreffer">thousand</a> 語言服務器和 <strong>@tgjones</strong> 創建的
@@ -138,16 +139,12 @@
 <p>另一個挑戰是語言服務器的引擎。什麼解析文本文檔並向客戶提供合理的響應？然後我找到了一個已
 經為我做到這一點的項目—— <a href=https://github.com/wudixiaop/ShaderlabVS target=_blank rel="noopener noreffer">ShaderlabVS</a>。這是一個理想的解決方案，因為也是用 C# 實現的。
 感謝作者 <strong>@wudixiaop</strong> 這個令人驚嘆的項目！ ❤️</p>
-<h2 id=-創建語言服務器客戶端>💥 創建語言服務器客戶端</h2>
+<h2 id=-創建語言服務器的客戶端>💥 創建語言服務器的客戶端</h2>
 <p>好的，現在我們已經有了一個語言服務器並正在運行，但是無法測試它！我是一名 Emacs 用戶，
 所以我決定創建一個 Emacs 包 – <a href=https://github.com/shader-ls/lsp-shader target=_blank rel="noopener noreffer">lsp-shader</a>，它以 <a href=https://github.com/emacs-lsp/lsp-mode target=_blank rel="noopener noreffer">lsp-mode</a> 為基礎，並將其用
-作我的語言服務器客戶端。我已經在 Emacs Lisp 中創建了幾個語言服務器客戶端，
+作我的語言服務器的客戶端。我已經在 Emacs Lisp 中創建了幾個語言服務器的客戶端，
 因此創建另一個並不太困難。 😁</p>
 <h2 id=-發布到-nuget>📦 發布到 NuGet</h2>
-<p>I have no experience publishing packages to <a href=https://www.nuget.org/ target=_blank rel="noopener noreffer">NuGet</a>, but it wasn&rsquo;t hard after
-watching a couple of tutorials on YouTube. I use the <a href=https://github.com/razzmatazz/csharp-language-server target=_blank rel="noopener noreffer">csharp-language-server</a>
-created by <strong>@razzmatazz</strong> as my reference since this is the only project I know
-with a similar structure I want.</p>
 <p>我沒有將包發佈到 <a href=https://www.nuget.org/ target=_blank rel="noopener noreffer">NuGet</a> 的經驗，但在 YouTube 上觀看了一些教程後，這並不難。我參考了
 <strong>@razzmatazz</strong> 創建的 <a href=https://github.com/razzmatazz/csharp-language-server target=_blank rel="noopener noreffer">csharp-language-server</a>，因為這是我所知道的唯一具有我想
 要的類似結構的項目。</p>
@@ -159,15 +156,15 @@ with a similar structure I want.</p>
 <h2 id=-成就>🎖️ 成就</h2>
 <ul>
 <li>創建了語言服務器。</li>
-<li>為 shader-ls 創建 Emacs 客戶端，<a href=https://github.com/shader-ls/lsp-shader target=_blank rel="noopener noreffer">lsp-shader</a>。</li>
+<li>為 shader-ls 創建 Emacs 語言服務器的客戶端，<a href=https://github.com/shader-ls/lsp-shader target=_blank rel="noopener noreffer">lsp-shader</a>。</li>
 <li>我的第一個發布的 NuGet 包，請參閱 <a href=https://www.nuget.org/packages/shader-ls/ target=_blank rel="noopener noreffer">https://www.nuget.org/packages/shader-ls/</a>.</li>
 </ul>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>更新於 2023-08-24&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/4621b41353273fb4c1a08c8c7580a2e68b479c06 target=_blank title="commit by JenChieh(jcs090218@gmail.com) 4621b41353273fb4c1a08c8c7580a2e68b479c06: correct grammar">
-<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>4621b41</a></span>
+<span>更新於 2023-08-24&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/8fdfc0a1c5d7e1181b38805f74c44137f620d3c6 target=_blank title="commit by JenChieh(jcs090218@gmail.com) 8fdfc0a1c5d7e1181b38805f74c44137f620d3c6: pub">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>8fdfc0a</a></span>
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>
@@ -184,7 +181,8 @@ with a similar structure I want.</p>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/blog/zh-tw/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/blog/zh-tw/long-journey-with-emacs/ class=prev rel=prev title="Emacs 的漫長旅程"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Emacs 的漫長旅程</a></div>
+<div class=post-nav><a href=/blog/zh-tw/long-journey-with-emacs/ class=prev rel=prev title="Emacs 的漫長旅程"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Emacs 的漫長旅程</a>
+<a href=/blog/zh-tw/vscode-shader/ class=next rel=next title="我的第一個 VSCode 插件">我的第一個 VSCode 插件<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

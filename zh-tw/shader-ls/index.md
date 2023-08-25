@@ -44,6 +44,13 @@
 經為我做到這一點的項目—— [ShaderlabVS][]。這是一個理想的解決方案，因為也是用 C# 實現的。
 感謝作者 **@wudixiaop** 這個令人驚嘆的項目！ ❤️
 
+## 💥 創建語言服務器客戶端
+
+好的，現在我們已經有了一個語言服務器並正在運行，但是無法測試它！我是一名 Emacs 用戶，
+所以我決定創建一個 Emacs 包 – [lsp-shader][]，它以 [lsp-mode][] 為基礎，並將其用
+作我的語言服務器客戶端。我已經在 Emacs Lisp 中創建了幾個語言服務器客戶端，
+因此創建另一個並不太困難。 😁
+
 ## 📦 在 NuGet 上發布
 
 I have no experience publishing packages to [NuGet][], but it wasn't hard after
@@ -74,6 +81,8 @@ with a similar structure I want.
 [ShaderlabVS]: https://github.com/wudixiaop/ShaderlabVS
 [thousand]: https://github.com/gulbanana/thousand
 [HlslTools]: https://github.com/tgjones/HlslTools
+
+[lsp-mode]: https://github.com/emacs-lsp/lsp-mode
 
 [NuGet]: https://www.nuget.org/
 [csharp-language-server]: https://github.com/razzmatazz/csharp-language-server

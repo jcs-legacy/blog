@@ -71,6 +71,14 @@ that already does that for me -- [ShaderlabVS][]. It's an ideal solution since
 the implementation are also in C#. Thanks to the author **@wudixiaop** for this
 amazing project! ❤️
 
+## 💥 Create a language server client
+
+Okay, now we have a language server up and running, but there is no way to test it!
+I'm an Emacs user, so I've decided to create an Emacs package -- [lsp-shader][] that
+uses [lsp-mode][] as the base and use it as my language server client. I've already
+created several language server clients in Emacs Lisp, so creating another isn't too
+difficult. 😁
+
 ## 📦 Publish on NuGet
 
 I have no experience publishing packages to [NuGet][], but it wasn't hard after
@@ -97,6 +105,8 @@ In closing, you only need two step to publish package on NuGet. 😋
 [ShaderlabVS]: https://github.com/wudixiaop/ShaderlabVS
 [thousand]: https://github.com/gulbanana/thousand
 [HlslTools]: https://github.com/tgjones/HlslTools
+
+[lsp-mode]: https://github.com/emacs-lsp/lsp-mode
 
 [NuGet]: https://www.nuget.org/
 [csharp-language-server]: https://github.com/razzmatazz/csharp-language-server

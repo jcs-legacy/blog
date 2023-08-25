@@ -3,20 +3,20 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title>Emacs vs Vim - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Emacs vs Vim">
-<meta property="og:description" content="實際上,我並不是個Emacs或Vim專家.我只是單純剛好在這兩個編輯器上面都有些了解. 如果你查看我的兩個 Emacs 和 Vim 的repo,那可能是最糟的經驗">
+<title>Shader 语言服务器 - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Shader 语言服务器">
+<meta property="og:description" content="代碼庫連結: https://github.com/shader-ls/shader-language-server 2023 年 4 月 30 日。我創建了我的第一個語言服務器，它對某人確實有用。 我不久前嘗試過一個語言服務器，但它只是一個示例服務器，所以它不是">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://example.com/blog/zh-tw/emacs-vs-vim/"><meta property="og:image" content="http://example.com/blog/zh-tw/emacs-vs-vim/featured-image.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2017-12-10T21:00:00+00:00">
+<meta property="og:url" content="http://example.com/blog/zh-tw/shader-ls/"><meta property="og:image" content="http://example.com/blog/zh-tw/shader-ls/featured-image.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-08-23T21:00:00+00:00">
 <meta property="article:modified_time" content="2023-08-24T20:45:28-07:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="http://example.com/blog/zh-tw/emacs-vs-vim/featured-image.png">
-<meta name=twitter:title content="Emacs vs Vim">
-<meta name=twitter:description content="實際上,我並不是個Emacs或Vim專家.我只是單純剛好在這兩個編輯器上面都有些了解. 如果你查看我的兩個 Emacs 和 Vim 的repo,那可能是最糟的經驗">
+<meta name=twitter:image content="http://example.com/blog/zh-tw/shader-ls/featured-image.png">
+<meta name=twitter:title content="Shader 语言服务器">
+<meta name=twitter:description content="代碼庫連結: https://github.com/shader-ls/shader-language-server 2023 年 4 月 30 日。我創建了我的第一個語言服務器，它對某人確實有用。 我不久前嘗試過一個語言服務器，但它只是一個示例服務器，所以它不是">
 <meta name=application-name content="Jen-Chieh's Blog">
-<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/zh-tw/emacs-vs-vim/><link rel=prev href=http://example.com/blog/zh-tw/best-editor-ever/><link rel=next href=http://example.com/blog/zh-tw/overview/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/zh-tw/shader-ls/><link rel=prev href=http://example.com/blog/zh-tw/long-journey-with-emacs/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Emacs vs Vim","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/emacs-vs-vim\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/emacs-vs-vim\/featured-image.png","width":1280,"height":720}],"genre":"posts","keywords":"Editor, Emacs, Vim","wordcount":1327,"url":"http:\/\/example.com\/blog\/zh-tw\/emacs-vs-vim\/","datePublished":"2017-12-10T21:00:00+00:00","dateModified":"2023-08-24T20:45:28-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Shader 语言服务器","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/featured-image.png","width":500,"height":500}],"genre":"posts","keywords":"Editor","wordcount":891,"url":"http:\/\/example.com\/blog\/zh-tw\/shader-ls\/","datePublished":"2023-08-23T21:00:00+00:00","dateModified":"2023-08-24T20:45:28-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -25,7 +25,7 @@
 </div>
 <div class=menu>
 <div class=menu-inner><a class=menu-item href=/blog/zh-tw/posts/> 所有文章 </a><a class=menu-item href=/blog/zh-tw/tags/> 標籤 </a><a class=menu-item href=/blog/zh-tw/categories/> 分類 </a><a class=menu-item href=/blog/zh-tw/about/> 關於 </a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i> </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item language" title=選擇語言>正體中文<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/emacs-vs-vim/>English</option><option value=/blog/zh-tw/emacs-vs-vim/ selected>正體中文</option></select>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/shader-ls/>English</option><option value=/blog/zh-tw/shader-ls/ selected>正體中文</option></select>
 </a><span class="menu-item search" id=search-desktop>
 <input type=text placeholder=搜索文章標題或內容... id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
@@ -72,7 +72,7 @@
 </div><a class=menu-item href=/blog/zh-tw/posts/ title>所有文章</a><a class=menu-item href=/blog/zh-tw/tags/ title>標籤</a><a class=menu-item href=/blog/zh-tw/categories/ title>分類</a><a class=menu-item href=/blog/zh-tw/about/ title>關於</a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i>
 </a><a href=javascript:void(0); class=menu-item title=選擇語言>正體中文<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select onchange="location=this.value"><option value=/blog/emacs-vs-vim/>English</option><option value=/blog/zh-tw/emacs-vs-vim/ selected>正體中文</option></select>
+<select class=language-select onchange="location=this.value"><option value=/blog/shader-ls/>English</option><option value=/blog/zh-tw/shader-ls/ selected>正體中文</option></select>
 </a></div>
 </div>
 </header><div class="search-dropdown desktop">
@@ -84,57 +84,79 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Emacs vs Vim</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Shader 语言服务器</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>收錄於 <a href=/blog/zh-tw/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2017-12-10>2017-12-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 1327 字&nbsp;
-<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/blog/zh-tw/emacs-vs-vim/ class=leancloud_visitors data-flag-title="Emacs vs Vim">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-08-23>2023-08-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 891 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/blog/zh-tw/shader-ls/ class=leancloud_visitors data-flag-title="Shader 语言服务器">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
-</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/emacs-vs-vim/featured-image.png data-srcset="/blog/zh-tw/emacs-vs-vim/featured-image.png, /blog/zh-tw/emacs-vs-vim/featured-image.png 1.5x, /blog/zh-tw/emacs-vs-vim/featured-image.png 2x" data-sizes=auto alt=/blog/zh-tw/emacs-vs-vim/featured-image.png title=/blog/zh-tw/emacs-vs-vim/featured-image.png></div><div class="details toc" id=toc-static data-kept>
+</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/shader-ls/featured-image.png data-srcset="/blog/zh-tw/shader-ls/featured-image.png, /blog/zh-tw/shader-ls/featured-image.png 1.5x, /blog/zh-tw/shader-ls/featured-image.png 2x" data-sizes=auto alt=/blog/zh-tw/shader-ls/featured-image.png title=/blog/zh-tw/shader-ls/featured-image.png></div><div class="details toc" id=toc-static data-kept>
 <div class="details-summary toc-title">
 <span>目錄</span>
 <span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span>
 </div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div>
-</div><div class=content id=content><p>實際上,我並不是個Emacs或Vim專家.我只是單純剛好在這兩個編輯器上面都有些了解.
-如果你查看我的兩個
-<a href=https://github.com/jcs090218/jcs-emacs target=_blank rel="noopener noreffer">Emacs</a>
-和
-<a href=https://github.com/jcs090218/jcs-vim target=_blank rel="noopener noreffer">Vim</a>
-的repo,那可能是最糟的經驗. 我秉持著一個想法, 那就是編輯器對我只是個工具.
-在我對於我的工具不滿意的時候我才會選擇去修改我的工具. 不是很必要的我就不會
-特地去強求. 畢竟我不是要再造一個輪子,也沒打算讓Emacs或Vim分個高下.</p>
-<p>先說結論,我是Emacs的使用者. 但為什麼我是Emacs使用者不是Vim使用者對我來講是
-有一套根據的. 首先我對於開發者的理念以及角度做了一個簡單的對比. 依照我的個人
-經驗以及橫跨世界的開發者角度來看,使用Emacs的通常都是開發軟體(Software
-Engineering)的較多. 則使用Vim的大多是駭客(Hacker)或者從事資訊安全(Cyber
-Security). 其實這個道理很簡單,相信可能已經很多人都發現了. 身為軟體工程的我
-會更喜歡Emacs本身設計師的理念, 他讓了軟體設計師有了強大的韌性以及空間去做最
-大幅度上的修改. 因為軟體工程師的工作大多都需要在一個軟體待得很久, 這樣聽起來
-是不是對某個東西很熟悉呢? 沒錯, 那就是一個Integrated Development
-Environment (IDE). 當然一定會有人開始要爭論Vim也做得到, 但是那並不是Vim
-本身的設計理念. Vim本身是為了快速地能夠在終端修改文本而產生的編輯器. 他是為了
-快速而生的, 所以在建造這個Vim的時候並沒有在修改上有其專門性. 在這方面在Emacs
-面前較會略為遜色, 相反的Vim在速度以及需要跨足到其他軟體的行業來講是非常受到
-歡迎的,以及近年來改的版本也越來越傾向於Emacs那樣的設計了! 但同時也衍生了一
-個問題,如果Vim是為了快速修改文本,再增加每一個插件的同時,也帶來了效能上的消耗.
-打開文本的速度會越來越慢. 這樣的衝突實在讓我百思不得其解&mldr; 至於Emacs本身設計
-的同時就打算在這上面有所顧忌了,所以他一開始就沒打算跟Vim去比速度. 這也是為什麼
-大多Vim使用者覺得Emacs太肥,因為Emacs本身的設計就不是為了速度. 他是選擇夾在類
-Vim跟大多的IDE中間. 這剛好滿足了軟體工程師討厭的肥大的IDE,以及同時保留了IDE大
-多數或者更棒的功能!</p>
-<p>但是這麼棒的東西為什麼還是這麼少人用? 原因很簡單, 我個人學Emacs的時候是學
-Raw Emacs, 也就是什麼都沒有開始建起來. 我特別能夠感受到Emacs它的獨特性以
-及它的不友善性&mldr; 它官方的文檔我覺得做的不算好,教學視頻也不是很多, 也沒有
-Vim口令那樣的設計巧思. 根本就是一塊石頭. 在這樣的情況下,有誰會想用它? 在
-學習曲線這麼陡的道路上,以及大多數的功能還要自己去寫,寫之前還得要去學Emacs
-它們搭建的腳本層的語言/語法(Emacs Lisp),這些都是不少的工程以及時間上的花費.
-我學到現在第四年了,我依然還沒辦法很精通它. 也沒打算精通了,畢竟平時開發上我
-認為比較重要.</p>
-<p>最後我想補充一些想法, 這些都是我的個人經驗不代表我說的一定都是對的. Emacs有
-Emacs的好處, Vim也有Vim的優點. 我也時常在服務端的時候使用Vim, 因為這是最
-快的手段,而且還是大多系統built-in的. 所以我想結論是沒有最棒的編輯器,只有善加
-利用工具的使用者!</p>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#heading>❓</a></li>
+<li><a href=#-c-language-server-protocal-地獄>💀 C# Language Server Protocal 地獄</a></li>
+<li><a href=#-插入-shaderlabvs>⚙️ 插入 ShaderlabVS</a></li>
+<li><a href=#-在-nuget-上發布>📦 在 NuGet 上發布</a></li>
+<li><a href=#-成就>🎖️ 成就</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><blockquote>
+<p>代碼庫連結: <a href=https://github.com/shader-ls/shader-language-server target=_blank rel="noopener noreffer">https://github.com/shader-ls/shader-language-server</a></p>
+</blockquote>
+<p>2023 年 4 月 30 日。我創建了我的第一個語言服務器，它對某人確實有用。
+我不久前嘗試過一個語言服務器，但它只是一個示例服務器，所以它不是很有用，
+而且僅用於教育目的。</p>
+<p>我選擇編寫的目標語言是 <a href=https://docs.unity3d.com/Manual/SL-Reference.html target=_blank rel="noopener noreffer">ShaderLab</a> 語言。 ShaderLab 用於 Unity 引擎，
+因此您可以編寫自定義著色器來風格化您的遊戲。與常規編程語言不同，<a href=https://docs.unity3d.com/Manual/SL-Reference.html target=_blank rel="noopener noreffer">ShaderLab</a>
+分析起來要簡單得多，因此語言服務器可以響應客戶端。</p>
+<h2 id=heading>❓</h2>
+<p>為什麼選擇C#作為實現語言？</p>
+<p>由於 Unity Engine 最受歡迎的腳本語言是 C#，因此我認為選擇 C# 是最佳選擇。</p>
+<h2 id=-c-language-server-protocal-地獄>💀 C# Language Server Protocal 地獄</h2>
+<p>在開始用 C# 編寫語言服務器之前，我就已經有一種不好的預感，因為我對作者 <a href=https://github.com/OmniSharp target=_blank rel="noopener noreffer">Omnisharp</a>
+的插件一直沒有好印象。我在 VSCode Marketplace 上嘗試過他們的官方 C# 插件，但說實話，
+我不會說我喜歡它。以下是一些原因：</p>
+<ol>
+<li>很慢</li>
+<li>不斷的突破性變化。下次更新就沒啥作用了！</li>
+<li>維護者不是很活躍（但社區很友好）</li>
+</ol>
+<p>儘管如此，我還是堅持嘗試一下 <a href=https://github.com/OmniSharp/csharp-language-server-protocol target=_blank rel="noopener noreffer">csharp-language-server-protocol</a>，因為沒有其他合理的選擇。
+經過幾天的挖掘，我面臨以下問題：</p>
+<ol>
+<li>官方存儲庫中的示例要么<strong>損壞</strong>，要么<strong>不完整</strong>（有點無用）</li>
+<li>他們並不真正關心其他編輯。 （許多編輯器兼容問題和 PR 尚未解決）</li>
+</ol>
+<p>幸運的是，我找到了 <strong>@gulbanana</strong> 創建的 <a href=https://github.com/gulbanana/thousand target=_blank rel="noopener noreffer">thousand</a> 語言服務器和 <strong>@tgjones</strong> 創建的
+<a href=https://github.com/tgjones/HlslTools target=_blank rel="noopener noreffer">HlslTools</a>。因此，我能夠通過看到他們的實現來完成這個項目！ 😅😇</p>
+<p>*附註: 我花了很長時間才弄清楚事情！！！*💀</p>
+<h2 id=-插入-shaderlabvs>⚙️ 插入 ShaderlabVS</h2>
+<p>另一個挑戰是語言服務器的引擎。什麼解析文本文檔並向客戶提供合理的響應？然後我找到了一個已
+經為我做到這一點的項目—— <a href=https://github.com/wudixiaop/ShaderlabVS target=_blank rel="noopener noreffer">ShaderlabVS</a>。這是一個理想的解決方案，因為也是用 C# 實現的。
+感謝作者 <strong>@wudixiaop</strong> 這個令人驚嘆的項目！ ❤️</p>
+<h2 id=-在-nuget-上發布>📦 在 NuGet 上發布</h2>
+<p>I have no experience publishing packages to <a href=https://www.nuget.org/ target=_blank rel="noopener noreffer">NuGet</a>, but it wasn&rsquo;t hard after
+watching a couple of tutorials on YouTube. I use the <a href=https://github.com/razzmatazz/csharp-language-server target=_blank rel="noopener noreffer">csharp-language-server</a>
+created by <strong>@razzmatazz</strong> as my reference since this is the only project I know
+with a similar structure I want.</p>
+<p>我沒有將包發佈到 <a href=https://www.nuget.org/ target=_blank rel="noopener noreffer">NuGet</a> 的經驗，但在 YouTube 上觀看了一些教程後，這並不難。我參考了
+<strong>@razzmatazz</strong> 創建的 <a href=https://github.com/razzmatazz/csharp-language-server target=_blank rel="noopener noreffer">csharp-language-server</a>，因為這是我所知道的唯一具有我想
+要的類似結構的項目。</p>
+<p>最後說明一下，您只需要兩步即可在 <a href=https://www.nuget.org/ target=_blank rel="noopener noreffer">NuGet</a> 上發布包。 😋</p>
+<ol>
+<li>從 Visual Studio 打包包</li>
+<li>上傳到 NuGet 站點</li>
+</ol>
+<h2 id=-成就>🎖️ 成就</h2>
+<ul>
+<li>創建了語言服務器。</li>
+<li>為 shader-ls 創建 Emacs 客戶端，<a href=https://github.com/shader-ls/lsp-shader target=_blank rel="noopener noreffer">lsp-shader</a>。</li>
+<li>我的第一個發布的 NuGet 包，請參閱 <a href=https://www.nuget.org/packages/shader-ls/ target=_blank rel="noopener noreffer">https://www.nuget.org/packages/shader-ls/</a>.</li>
+</ul>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
@@ -144,21 +166,20 @@ Emacs的好處, Vim也有Vim的優點. 我也時常在服務端的時候使用Vi
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>
-<a class=link-to-markdown href=/blog/zh-tw/emacs-vs-vim/index.md target=_blank>閱讀原始文檔</a>
+<a class=link-to-markdown href=/blog/zh-tw/shader-ls/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=http://example.com/blog/zh-tw/emacs-vs-vim/ data-title="Emacs vs Vim" data-via=jenchieh94 data-hashtags=Editor,Emacs,Vim><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=http://example.com/blog/zh-tw/emacs-vs-vim/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=http://example.com/blog/zh-tw/emacs-vs-vim/ data-title="Emacs vs Vim"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=http://example.com/blog/zh-tw/emacs-vs-vim/ data-title="Emacs vs Vim"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=http://example.com/blog/zh-tw/emacs-vs-vim/ data-title="Emacs vs Vim"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=http://example.com/blog/zh-tw/shader-ls/ data-title="Shader 语言服务器" data-via=jenchieh94 data-hashtags=Editor><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=http://example.com/blog/zh-tw/shader-ls/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=http://example.com/blog/zh-tw/shader-ls/ data-title="Shader 语言服务器"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=http://example.com/blog/zh-tw/shader-ls/ data-title="Shader 语言服务器"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=http://example.com/blog/zh-tw/shader-ls/ data-title="Shader 语言服务器"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/zh-tw/tags/editor/>Editor</a>,&nbsp;<a href=/blog/zh-tw/tags/emacs/>Emacs</a>,&nbsp;<a href=/blog/zh-tw/tags/vim/>Vim</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/zh-tw/tags/editor/>Editor</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/blog/zh-tw/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/blog/zh-tw/best-editor-ever/ class=prev rel=prev title=最好的編輯器><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>最好的編輯器</a>
-<a href=/blog/zh-tw/overview/ class=next rel=next title=JCSUnity概要>JCSUnity概要<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div>
+<div class=post-nav><a href=/blog/zh-tw/long-journey-with-emacs/ class=prev rel=prev title="Emacs 的漫長旅程"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Emacs 的漫長旅程</a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

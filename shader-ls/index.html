@@ -3,22 +3,24 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title>Best Editor Ever - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Best Editor Ever">
-<meta property="og:description" content="First the foremost, this article is all subjective opinions by me, and there are all kind of text editor for any kind of programmer. I think some programmer have some kind of religion, so I am not going to tell anyone to use any particular text editor. I believed text editor is just tool to help programmer make a software and get their job done.
-At my previous post ' Framework I have been working&mldr; (Part 2) ' I mentioned I watched a few episodes of ' Handmade Hero &rsquo;s series.">
+<title>Shader Language Server (LS) - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Shader Language Server (LS)">
+<meta property="og:description" content="Repo Link: https://github.com/shader-ls/shader-language-server
+ April 30th, 2023. I have created my first language server that is actually useful to someone. I tried a language server a while back, but it was just an example server, so it’s not very useful, and it’s only for educational purposes.
+The target language I chose to write is the ShaderLab language. ShaderLab is used in Unity Engine, so you can write custom shaders to stylize your game.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://example.com/blog/best-editor-ever/"><meta property="og:image" content="http://example.com/blog/best-editor-ever/featured-image.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2017-11-12T21:00:00+00:00">
+<meta property="og:url" content="http://example.com/blog/shader-ls/"><meta property="og:image" content="http://example.com/blog/shader-ls/featured-image.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-08-23T21:00:00+00:00">
 <meta property="article:modified_time" content="2023-08-24T20:45:28-07:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="http://example.com/blog/best-editor-ever/featured-image.png">
-<meta name=twitter:title content="Best Editor Ever">
-<meta name=twitter:description content="First the foremost, this article is all subjective opinions by me, and there are all kind of text editor for any kind of programmer. I think some programmer have some kind of religion, so I am not going to tell anyone to use any particular text editor. I believed text editor is just tool to help programmer make a software and get their job done.
-At my previous post ' Framework I have been working&mldr; (Part 2) ' I mentioned I watched a few episodes of ' Handmade Hero &rsquo;s series.">
+<meta name=twitter:image content="http://example.com/blog/shader-ls/featured-image.png">
+<meta name=twitter:title content="Shader Language Server (LS)">
+<meta name=twitter:description content="Repo Link: https://github.com/shader-ls/shader-language-server
+ April 30th, 2023. I have created my first language server that is actually useful to someone. I tried a language server a while back, but it was just an example server, so it’s not very useful, and it’s only for educational purposes.
+The target language I chose to write is the ShaderLab language. ShaderLab is used in Unity Engine, so you can write custom shaders to stylize your game.">
 <meta name=application-name content="Jen-Chieh's Blog">
-<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/best-editor-ever/><link rel=prev href=http://example.com/blog/productivity/><link rel=next href=http://example.com/blog/emacs-vs-vim/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=./favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/shader-ls/><link rel=prev href=http://example.com/blog/long-journey-with-emacs/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Best Editor Ever","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/best-editor-ever\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/best-editor-ever\/featured-image.png","width":1e3,"height":667}],"genre":"posts","keywords":"Editor","wordcount":495,"url":"http:\/\/example.com\/blog\/best-editor-ever\/","datePublished":"2017-11-12T21:00:00+00:00","dateModified":"2023-08-24T20:45:28-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Shader Language Server (LS)","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/shader-ls\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/shader-ls\/featured-image.png","width":500,"height":500}],"genre":"posts","keywords":"Editor","wordcount":440,"url":"http:\/\/example.com\/blog\/shader-ls\/","datePublished":"2023-08-23T21:00:00+00:00","dateModified":"2023-08-24T20:45:28-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -27,7 +29,7 @@ At my previous post ' Framework I have been working&mldr; (Part 2) ' I mentioned
 </div>
 <div class=menu>
 <div class=menu-inner><a class=menu-item href=/blog/posts/> Posts </a><a class=menu-item href=/blog/tags/> Tags </a><a class=menu-item href=/blog/categories/> Categories </a><a class=menu-item href=/blog/about/> About </a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i> </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/best-editor-ever/ selected>English</option><option value=/blog/zh-tw/best-editor-ever/>正體中文</option></select>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/shader-ls/ selected>English</option><option value=/blog/zh-tw/shader-ls/>正體中文</option></select>
 </a><span class="menu-item search" id=search-desktop>
 <input type=text placeholder="Search titles or contents..." id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
@@ -74,7 +76,7 @@ Cancel
 </div><a class=menu-item href=/blog/posts/ title>Posts</a><a class=menu-item href=/blog/tags/ title>Tags</a><a class=menu-item href=/blog/categories/ title>Categories</a><a class=menu-item href=/blog/about/ title>About</a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i>
 </a><a href=javascript:void(0); class=menu-item title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select onchange="location=this.value"><option value=/blog/best-editor-ever/ selected>English</option><option value=/blog/zh-tw/best-editor-ever/>正體中文</option></select>
+<select class=language-select onchange="location=this.value"><option value=/blog/shader-ls/ selected>English</option><option value=/blog/zh-tw/shader-ls/>正體中文</option></select>
 </a></div>
 </div>
 </header><div class="search-dropdown desktop">
@@ -86,75 +88,84 @@ Cancel
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>Contents</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Best Editor Ever</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Shader Language Server (LS)</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>included in <a href=/blog/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2017-11-12>2017-11-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;495 words&nbsp;
-<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;3 minutes&nbsp;<span id=/blog/best-editor-ever/ class=leancloud_visitors data-flag-title="Best Editor Ever">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-08-23>2023-08-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;440 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;3 minutes&nbsp;<span id=/blog/shader-ls/ class=leancloud_visitors data-flag-title="Shader Language Server (LS)">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
 </span>&nbsp;</div>
-</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/best-editor-ever/featured-image.png data-srcset="/blog/best-editor-ever/featured-image.png, /blog/best-editor-ever/featured-image.png 1.5x, /blog/best-editor-ever/featured-image.png 2x" data-sizes=auto alt=/blog/best-editor-ever/featured-image.png title=/blog/best-editor-ever/featured-image.png></div><div class="details toc" id=toc-static data-kept>
+</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/shader-ls/featured-image.png data-srcset="/blog/shader-ls/featured-image.png, /blog/shader-ls/featured-image.png 1.5x, /blog/shader-ls/featured-image.png 2x" data-sizes=auto alt=/blog/shader-ls/featured-image.png title=/blog/shader-ls/featured-image.png></div><div class="details toc" id=toc-static data-kept>
 <div class="details-summary toc-title">
 <span>Contents</span>
 <span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span>
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
-<li>
-<ul>
-<li><a href=#-my-emacs-file-config-repo->* My emacs file config repo *</a></li>
-<li><a href=#-few-videos-i-watched-when-i-learn-emacs->* Few Videos I watched when I learn Emacs *</a></li>
-</ul>
-</li>
+<li><a href=#-why-chose-c-as-the-implementaion-language>❓ Why chose C# as the implementaion language?</a></li>
+<li><a href=#-c-language-server-protocal-hell>💀 C# Language Server Protocal Hell</a></li>
+<li><a href=#-plug-in-shaderlabvs>⚙️ Plug-in ShaderlabVS</a></li>
+<li><a href=#-publish-on-nuget>📦 Publish on NuGet</a></li>
+<li><a href=#-achievement>🎖️ Achievement</a></li>
 </ul>
 </nav></div>
-</div><div class=content id=content><p>First the foremost, this article is all subjective opinions
-by me, and there are all kind of text editor for any kind of
-programmer. I think some programmer have some kind of religion,
-so I am not going to tell anyone to use any particular text
-editor. I believed text editor is just tool to help programmer
-make a software and get their job done.</p>
-<p>At my previous post '
-<a href="?page=Framework_sp_I_sp_have_sp_been_sp_working_sp_-Part_sp_2-" rel>Framework I have been working&mldr; (Part 2)</a>
-' I mentioned I watched a few episodes of '
-<a href=https://www.youtube.com/user/handmadeheroarchive target=_blank rel="noopener noreffer">Handmade Hero</a>
-&rsquo;s series.
-<a href=https://twitter.com/cmuratori target=_blank rel="noopener noreffer">Casey Muratori</a>
-was using Emacs as a text editor coding C/C++(I think now he use 4coder instead of Emacs). I was surprised by how fast he can code in Emacs. So I made some research and discovered there is Vim which is another great text editor competing with Emacs. I decide to give both editor a try, and it turn out I chose Emacs over Vim.</p>
-<p>First, I would like to talk about why I chose Emacs over Vim.
-I think Emacs can do almost everything that Vim does. Vim stays
-cool he just wants to be a text editor and does not want to do
-something else. Emacs design the way that you could turn Emacs
-from text editor to something else. And of course, Emacs is not
-perfect. Emacs has few troubles doing something like you still
-need to use third-party software in order to run a package, and
-sometimes Emacs just froze when I am just trying to edit a text
-file. Emacs is just a right tool for me because I use to want a
-text editor that could edit any programming languages and do
-anything inside it. On the other hand, you might say that is
-gross to have a text editor do all kind of job for you. Why do
-not we just use another program instead of code in elisp and
-write your own functionality for Emacs? Is that even worth it?</p>
-<p>The answer is really depend on who is using it. For me, I
-program in different programming languages; I would somehow
-need to use other text editor or IDE when I change to code in
-another programming language. For example, I code Java and C++
-I would have to change from &lsquo;Eclipse&rsquo;/&lsquo;Android Studio&rsquo; to &lsquo;Visual
-Studio&rsquo;/&lsquo;MonoDevelop&rsquo;. And these IDEs has different key bindings,
-which I really hate because I would somehow make mistakes by
-pressing the wrong key binding from previous IDE to current IDE.
-In this case, Emacs/Vim become useful because I could finally
-code all programming languages with the same key bindings. On
-the other hand, if you are a front-end developer you would
-recommend people use Sublime Text instead of Emacs because it
-is wasting your time and is not worth it anymore.</p>
-<h3 id=-my-emacs-file-config-repo->* My emacs file config repo *</h3>
+</div><div class=content id=content><blockquote>
+<p>Repo Link: <a href=https://github.com/shader-ls/shader-language-server target=_blank rel="noopener noreffer">https://github.com/shader-ls/shader-language-server</a></p>
+</blockquote>
+<p>April 30th, 2023. I have created my first language server that is actually
+useful to someone. I tried a language server a while back, but it was just
+an example server, so it’s not very useful, and it’s only for educational
+purposes.</p>
+<p>The target language I chose to write is the <a href=https://docs.unity3d.com/Manual/SL-Reference.html target=_blank rel="noopener noreffer">ShaderLab</a> language.
+ShaderLab is used in Unity Engine, so you can write custom shaders
+to stylize your game. Unlike regular programming languages, <a href=https://docs.unity3d.com/Manual/SL-Reference.html target=_blank rel="noopener noreffer">ShaderLab</a>
+is much simpler to analyze, so the language server can respond to the
+client side.</p>
+<h2 id=-why-chose-c-as-the-implementaion-language>❓ Why chose C# as the implementaion language?</h2>
+<p>Since Unity Engine&rsquo;s most popular scripting language is C#, I reckon
+choosing C# is the perfect match.</p>
+<h2 id=-c-language-server-protocal-hell>💀 C# Language Server Protocal Hell</h2>
+<p>I already had a bad feeling when writing a language server in C#
+before starting it since I never had a good impression of the
+author <a href=https://github.com/OmniSharp target=_blank rel="noopener noreffer">Omnisharp</a>&rsquo;s plugins. I&rsquo;ve tried their official C# plugins
+on the VSCode Marketplace, but to be honest, I wouldn&rsquo;t say I like it.
+Here are a few reasons why:</p>
+<ol>
+<li>It&rsquo;s slow</li>
+<li>Constant breaking changes. Next update nothing works!</li>
+<li>Maintainers are not very active (but the community is friendly though)</li>
+</ol>
+<p>Nevertheless, I insist on giving <a href=https://github.com/OmniSharp/csharp-language-server-protocol target=_blank rel="noopener noreffer">csharp-language-server-protocol</a> a shot
+since there are no other <strong>reasonable alternatives</strong>. After digging it for
+a few days, here are issues I am facing:</p>
+<ol>
+<li>Example from the official repository is either <strong>broken</strong> or <strong>incomplete</strong> (kinda useless)</li>
+<li>They don&rsquo;t really care about other editors. (Many editor compatible issues and PRs are left opened)</li>
+</ol>
+<p>Fortunately, I found the <a href=https://github.com/gulbanana/thousand target=_blank rel="noopener noreffer">thousand</a> language server created by <strong>@gulbanana</strong> and <a href=https://github.com/tgjones/HlslTools target=_blank rel="noopener noreffer">HlslTools</a>
+created by <strong>@tgjones</strong>. Therefore, I am able to accomplish this project by seeing their
+implementations! 😅😇</p>
+<p><em>P.S. It took me very long to figure things out!!!</em> 💀</p>
+<h2 id=-plug-in-shaderlabvs>⚙️ Plug-in ShaderlabVS</h2>
+<p>Another challenge is the engine of the language server. What parses the text
+document and gives reasonable responses to the client? Then I found a project
+that already does that for me &ndash; <a href=https://github.com/wudixiaop/ShaderlabVS target=_blank rel="noopener noreffer">ShaderlabVS</a>. It&rsquo;s an ideal solution since
+the implementation are also in C#. Thanks to the author <strong>@wudixiaop</strong> for this
+amazing project! ❤️</p>
+<h2 id=-publish-on-nuget>📦 Publish on NuGet</h2>
+<p>I have no experience publishing packages to <a href=https://www.nuget.org/ target=_blank rel="noopener noreffer">NuGet</a>, but it wasn&rsquo;t hard after
+watching a couple of tutorials on YouTube. I use the <a href=https://github.com/razzmatazz/csharp-language-server target=_blank rel="noopener noreffer">csharp-language-server</a>
+created by <strong>@razzmatazz</strong> as my reference since this is the only project I know
+with a similar structure I want.</p>
+<p>In closing, you only need two step to publish package on NuGet. 😋</p>
+<ol>
+<li>Pack the package from Visual Studio</li>
+<li>Upload to NuGet site</li>
+</ol>
+<h2 id=-achievement>🎖️ Achievement</h2>
 <ul>
-<li><strong>url:</strong> <a href=https://github.com/jcs090218/jcs-emacs target=_blank rel="noopener noreffer">https://github.com/jcs090218/jcs-emacs</a></li>
-</ul>
-<h3 id=-few-videos-i-watched-when-i-learn-emacs->* Few Videos I watched when I learn Emacs *</h3>
-<ul>
-<li>Casy&rsquo;s Emacs Tutorial: <a href="https://www.youtube.com/watch?v=hbmV1bnQ-i0&t=1584s" target=_blank rel="noopener noreffer">https://www.youtube.com/watch?v=hbmV1bnQ-i0&t=1584s</a></li>
-<li>Stop Worrying and Love Emacs: <a href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc" target=_blank rel="noopener noreffer">https://www.youtube.com/watch?v=JWD1Fpdd4Pc</a></li>
+<li>Created a language server.</li>
+<li>Created Emacs client for shader-ls, <a href=https://github.com/shader-ls/lsp-shader target=_blank rel="noopener noreffer">lsp-shader</a>.</li>
+<li>My first published NuGet package, see <a href=https://www.nuget.org/packages/shader-ls/ target=_blank rel="noopener noreffer">https://www.nuget.org/packages/shader-ls/</a>.</li>
 </ul>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
@@ -165,10 +176,10 @@ is wasting your time and is not worth it anymore.</p>
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>
-<a class=link-to-markdown href=/blog/best-editor-ever/index.md target=_blank>Read Markdown</a>
+<a class=link-to-markdown href=/blog/shader-ls/index.md target=_blank>Read Markdown</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.com/blog/best-editor-ever/ data-title="Best Editor Ever" data-via=jenchieh94 data-hashtags=Editor><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.com/blog/best-editor-ever/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.com/blog/best-editor-ever/ data-title="Best Editor Ever"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.com/blog/best-editor-ever/ data-title="Best Editor Ever"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.com/blog/best-editor-ever/ data-title="Best Editor Ever"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
+<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.com/blog/shader-ls/ data-title="Shader Language Server (LS)" data-via=jenchieh94 data-hashtags=Editor><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.com/blog/shader-ls/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.com/blog/shader-ls/ data-title="Shader Language Server (LS)"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.com/blog/shader-ls/ data-title="Shader Language Server (LS)"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.com/blog/shader-ls/ data-title="Shader Language Server (LS)"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
 </div>
 </div>
 </div>
@@ -178,8 +189,7 @@ is wasting your time and is not worth it anymore.</p>
 <span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/blog/>Home</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/blog/productivity/ class=prev rel=prev title=Productivity><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Productivity</a>
-<a href=/blog/emacs-vs-vim/ class=next rel=next title="Emacs vs Vim">Emacs vs Vim<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div>
+<div class=post-nav><a href=/blog/long-journey-with-emacs/ class=prev rel=prev title="Long Journey with Emacs"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Long Journey with Emacs</a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

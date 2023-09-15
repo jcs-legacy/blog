@@ -22,6 +22,8 @@ $ cd ./blog
 $ hugo server
 ```
 
+Then in your browser, navigate to http://localhost:1313/blog/!
+
 ## License
 
 This work is licensed under a

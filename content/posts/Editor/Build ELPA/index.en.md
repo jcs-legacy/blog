@@ -18,9 +18,9 @@ categories: ["Editor"]
 lightgallery: true
 ---
 
-[ELPA][] is stand for Emacs Lisp Package Archive. It's used for Emacs users
+[ELPA][] stands for Emacs Lisp Package Archive. It's used for Emacs users
 to download packages from, and it's also the place where Emacs Lisp developers
-will host their packages. Here is a list of famous [ELPA][], see their site
+will host their packages. Here is a list of famous [ELPA][]; see their site
 for more information!
 
 - [GNU Elpa][] (official)
@@ -29,18 +29,18 @@ for more information!
 
 ## ❓ Why?
 
-So why do we want to host our own ELPA? Isn't those ELPAs enough?
+So why do we want to host our own ELPA? Aren’t those ELPAs enough?
 
-Yes, in general you don't need to host ELPA yourself since most packages
-you need will be avaliable in one of those ELPA (packages can co-exist
+Yes, in general, you don't need to host ELPA yourself since most packages
+you need will be available in one of those ELPA (packages can co-exist
 between ELPA). Here are several reasons why you might want to build
 your own ELPA:
 
-1. Package you like isn't (yet) on any ELPA
-2. ELPA's package review take couple days or months to review ([MELPA][] is probably the fastest)
-3. Packages that are no longer maintained, you can link to the new maintained fork
-4. Similar to Pt. 3, there are bugs in the package you like, you can create a new fork to replace it!
-5. For elisp package development purposes. Sometimes build tools just isn't enough.
+1. The package you like isn’t (yet) on any ELPA
+2. ELPA's package review takes a couple of days or months to review ([MELPA][] is probably the fastest)
+3. For packages that are no longer maintained, you can link to the newly maintained fork
+4. Similar to Pt. 3, if there are bugs in the package you like, you can create a new fork to replace it!
+5. For elisp package development purposes. Sometimes, more than the build tools are needed.
 
 <!-- more -->
 
@@ -51,7 +51,7 @@ your own ELPA:
 
 ## 🔍 Step 1. Create ELPA project
 
-It's easy to build your own [ELPA][] with [Eask][]. You only need a few commands
+It's easy to build your own [ELPA][] with [Eask][]. You only need a few commands,
 and it will run.
 
 First, we need to create the ELPA project:
@@ -66,7 +66,7 @@ In the example, I'm going to use `my-elpa` as my project name:
 $ eask create elpa my-elpa
 ```
 
-Then you will be prompt to create the Eask file; enter required
+Then you will be prompted to create the Eask file; enter the required
 information like this:
 
 ```sh
@@ -116,8 +116,8 @@ Congratulations! Your new ELPA project is created in /home/jenchieh/my-elpa/
 Visit https://emacs-eask.github.io/ for quickstart guide and full documentation.
 ```
 
-Now, you will see the project `my-elpa` has been created! Use `ls` command to see
-what's in project folder:
+Now, you will see the project `my-elpa` has been created! Use the `ls` command to see
+what's in the project folder:
 
 ```
 root@6a52f76aff2d:/home/jenchieh/my-elpa# ls
@@ -126,12 +126,12 @@ Eask  README.md  docs  recipes
 
 ## 🔍 Step 2. Add recipes!
 
-Now you can add recipes to the `recipes` folder.
+Now, you can add recipes to the `recipes` folder.
 
 If you don't know what's the recipe, see [melpa#recipe-format](https://github.com/melpa/melpa#recipe-format)
 for more information!
 
-In this example, I'm going to add [jcs-modeline][] to this ELPA. But you can add
+In this example, I'm going to add the [jcs-modeline][] to this ELPA. But you can add
 whatever package you like!
 
 This is the recipe file, and place it as `my-elpa/recipes/jcs-modeline` (no file extension).
@@ -142,9 +142,9 @@ This is the recipe file, and place it as `my-elpa/recipes/jcs-modeline` (no file
 
 ## 🔍 Step 3. Build it!
 
-Nice! Now we have one package in our ELPA.
+Nice! Now, we have one package in our ELPA.
 
-Next is to build our ELPA so we can host it with GitHub pages (or your own server).
+Next, build our ELPA to host it with GitHub pages (or your own server).
 
 First, we need to install dependencies for our project.
 
@@ -165,8 +165,8 @@ Installing 1 package dependency...
 (Total of 1 dependency installed, 0 skipped)
 ```
 
-Once all dependencies have been installed, we can build our ELPA with following
-command:
+Once all dependencies have been installed, we can build our ELPA with the
+following command:
 
 ```sh
 $ eask run build
@@ -198,7 +198,7 @@ Built jcs-modeline in 0.655s, finished at 2023-09-16T03:29:36+0000
 
 Congratulations! 🎉 Now you have your own ELPA!
 
-Next you would just need to push to a GitHub repo and enable GitHub Pages
+Next, you would just need to push to a GitHub repo and enable GitHub Pages
 for that repo. See [github-elpa#3-change-repository-setting](https://github.com/10sr/github-elpa#3-change-repository-setting)
 for more information!
 

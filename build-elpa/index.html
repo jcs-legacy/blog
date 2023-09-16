@@ -4,23 +4,23 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
 <title>How to build your own ELPA with Eask? - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="How to build your own ELPA with Eask?">
-<meta property="og:description" content="ELPA is stand for Emacs Lisp Package Archive. It&rsquo;s used for Emacs users to download packages from, and it&rsquo;s also the place where Emacs Lisp developers will host their packages. Here is a list of famous ELPA, see their site for more information!
- GNU Elpa (official) NonGNU Elpa (official) MELPA  ❓ Why? So why do we want to host our own ELPA? Isn&rsquo;t those ELPAs enough?
-Yes, in general you don&rsquo;t need to host ELPA yourself since most packages you need will be avaliable in one of those ELPA (packages can co-exist between ELPA).">
+<meta property="og:description" content="ELPA stands for Emacs Lisp Package Archive. It&rsquo;s used for Emacs users to download packages from, and it&rsquo;s also the place where Emacs Lisp developers will host their packages. Here is a list of famous ELPA; see their site for more information!
+ GNU Elpa (official) NonGNU Elpa (official) MELPA  ❓ Why? So why do we want to host our own ELPA? Aren’t those ELPAs enough?
+Yes, in general, you don&rsquo;t need to host ELPA yourself since most packages you need will be available in one of those ELPA (packages can co-exist between ELPA).">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://example.com/blog/build-elpa/"><meta property="og:image" content="http://example.com/blog/build-elpa/featured-image.png"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2023-09-15T21:00:00+00:05">
-<meta property="article:modified_time" content="2023-09-15T21:28:09-07:00"><meta property="og:site_name" content="jcs090218">
+<meta property="article:modified_time" content="2023-09-15T21:37:26-07:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="http://example.com/blog/build-elpa/featured-image.png">
 <meta name=twitter:title content="How to build your own ELPA with Eask?">
-<meta name=twitter:description content="ELPA is stand for Emacs Lisp Package Archive. It&rsquo;s used for Emacs users to download packages from, and it&rsquo;s also the place where Emacs Lisp developers will host their packages. Here is a list of famous ELPA, see their site for more information!
- GNU Elpa (official) NonGNU Elpa (official) MELPA  ❓ Why? So why do we want to host our own ELPA? Isn&rsquo;t those ELPAs enough?
-Yes, in general you don&rsquo;t need to host ELPA yourself since most packages you need will be avaliable in one of those ELPA (packages can co-exist between ELPA).">
+<meta name=twitter:description content="ELPA stands for Emacs Lisp Package Archive. It&rsquo;s used for Emacs users to download packages from, and it&rsquo;s also the place where Emacs Lisp developers will host their packages. Here is a list of famous ELPA; see their site for more information!
+ GNU Elpa (official) NonGNU Elpa (official) MELPA  ❓ Why? So why do we want to host our own ELPA? Aren’t those ELPAs enough?
+Yes, in general, you don&rsquo;t need to host ELPA yourself since most packages you need will be available in one of those ELPA (packages can co-exist between ELPA).">
 <meta name=application-name content="Jen-Chieh's Blog">
 <meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=https://www.jcs-profile.com/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/build-elpa/><link rel=prev href=http://example.com/blog/vscode-shader/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"How to build your own ELPA with Eask?","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/build-elpa\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/build-elpa\/featured-image.png","width":1200,"height":600}],"genre":"posts","keywords":"Editor, Emacs, ELPA","wordcount":718,"url":"http:\/\/example.com\/blog\/build-elpa\/","datePublished":"2023-09-15T21:00:00+00:05","dateModified":"2023-09-15T21:28:09-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"How to build your own ELPA with Eask?","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/build-elpa\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/build-elpa\/featured-image.png","width":1200,"height":600}],"genre":"posts","keywords":"Editor, Emacs, ELPA","wordcount":725,"url":"http:\/\/example.com\/blog\/build-elpa\/","datePublished":"2023-09-15T21:00:00+00:05","dateModified":"2023-09-15T21:37:26-07:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -90,7 +90,7 @@ Cancel
 <div class=toc-content id=toc-content-auto></div>
 </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">How to build your own ELPA with Eask?</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>included in <a href=/blog/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-09-15>2023-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;718 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-09-15>2023-09-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;725 words&nbsp;
 <i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;4 minutes&nbsp;<span id=/blog/build-elpa/ class=leancloud_visitors data-flag-title="How to build your own ELPA with Eask?">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
 </span>&nbsp;</div>
@@ -108,9 +108,9 @@ Cancel
 <li><a href=#-step-3-build-it>🔍 Step 3. Build it!</a></li>
 </ul>
 </nav></div>
-</div><div class=content id=content><p><a href=https://www.emacswiki.org/emacs/ELPA target=_blank rel="noopener noreffer">ELPA</a> is stand for Emacs Lisp Package Archive. It&rsquo;s used for Emacs users
+</div><div class=content id=content><p><a href=https://www.emacswiki.org/emacs/ELPA target=_blank rel="noopener noreffer">ELPA</a> stands for Emacs Lisp Package Archive. It&rsquo;s used for Emacs users
 to download packages from, and it&rsquo;s also the place where Emacs Lisp developers
-will host their packages. Here is a list of famous <a href=https://www.emacswiki.org/emacs/ELPA target=_blank rel="noopener noreffer">ELPA</a>, see their site
+will host their packages. Here is a list of famous <a href=https://www.emacswiki.org/emacs/ELPA target=_blank rel="noopener noreffer">ELPA</a>; see their site
 for more information!</p>
 <ul>
 <li><a href=https://elpa.gnu.org/ target=_blank rel="noopener noreffer">GNU Elpa</a> (official)</li>
@@ -118,17 +118,17 @@ for more information!</p>
 <li><a href=https://melpa.org/#/ target=_blank rel="noopener noreffer">MELPA</a></li>
 </ul>
 <h2 id=-why>❓ Why?</h2>
-<p>So why do we want to host our own ELPA? Isn&rsquo;t those ELPAs enough?</p>
-<p>Yes, in general you don&rsquo;t need to host ELPA yourself since most packages
-you need will be avaliable in one of those ELPA (packages can co-exist
+<p>So why do we want to host our own ELPA? Aren’t those ELPAs enough?</p>
+<p>Yes, in general, you don&rsquo;t need to host ELPA yourself since most packages
+you need will be available in one of those ELPA (packages can co-exist
 between ELPA). Here are several reasons why you might want to build
 your own ELPA:</p>
 <ol>
-<li>Package you like isn&rsquo;t (yet) on any ELPA</li>
-<li>ELPA&rsquo;s package review take couple days or months to review (<a href=https://melpa.org/#/ target=_blank rel="noopener noreffer">MELPA</a> is probably the fastest)</li>
-<li>Packages that are no longer maintained, you can link to the new maintained fork</li>
-<li>Similar to Pt. 3, there are bugs in the package you like, you can create a new fork to replace it!</li>
-<li>For elisp package development purposes. Sometimes build tools just isn&rsquo;t enough.</li>
+<li>The package you like isn’t (yet) on any ELPA</li>
+<li>ELPA&rsquo;s package review takes a couple of days or months to review (<a href=https://melpa.org/#/ target=_blank rel="noopener noreffer">MELPA</a> is probably the fastest)</li>
+<li>For packages that are no longer maintained, you can link to the newly maintained fork</li>
+<li>Similar to Pt. 3, if there are bugs in the package you like, you can create a new fork to replace it!</li>
+<li>For elisp package development purposes. Sometimes, more than the build tools are needed.</li>
 </ol>
 <h2 id=-prerequisite>📝 Prerequisite</h2>
 <ul>
@@ -136,7 +136,7 @@ your own ELPA:</p>
 <li>Install <a href=https://emacs-eask.github.io/ target=_blank rel="noopener noreffer">Eask</a> CLI</li>
 </ul>
 <h2 id=-step-1-create-elpa-project>🔍 Step 1. Create ELPA project</h2>
-<p>It&rsquo;s easy to build your own <a href=https://www.emacswiki.org/emacs/ELPA target=_blank rel="noopener noreffer">ELPA</a> with <a href=https://emacs-eask.github.io/ target=_blank rel="noopener noreffer">Eask</a>. You only need a few commands
+<p>It&rsquo;s easy to build your own <a href=https://www.emacswiki.org/emacs/ELPA target=_blank rel="noopener noreffer">ELPA</a> with <a href=https://emacs-eask.github.io/ target=_blank rel="noopener noreffer">Eask</a>. You only need a few commands,
 and it will run.</p>
 <p>First, we need to create the ELPA project:</p>
 <div class=highlight><div class=chroma>
@@ -156,7 +156,7 @@ and it will run.</p>
 <pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ eask create elpa my-elpa
 </code></pre></td></tr></table>
 </div>
-</div><p>Then you will be prompt to create the Eask file; enter required
+</div><p>Then you will be prompted to create the Eask file; enter the required
 information like this:</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -249,8 +249,8 @@ Congratulations! Your new ELPA project is created in /home/jenchieh/my-elpa/
 Visit https://emacs-eask.github.io/ <span class=k>for</span> quickstart guide and full documentation.
 </code></pre></td></tr></table>
 </div>
-</div><p>Now, you will see the project <code>my-elpa</code> has been created! Use <code>ls</code> command to see
-what&rsquo;s in project folder:</p>
+</div><p>Now, you will see the project <code>my-elpa</code> has been created! Use the <code>ls</code> command to see
+what&rsquo;s in the project folder:</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -262,10 +262,10 @@ Eask  README.md  docs  recipes
 </code></pre></td></tr></table>
 </div>
 </div><h2 id=-step-2-add-recipes>🔍 Step 2. Add recipes!</h2>
-<p>Now you can add recipes to the <code>recipes</code> folder.</p>
+<p>Now, you can add recipes to the <code>recipes</code> folder.</p>
 <p>If you don&rsquo;t know what&rsquo;s the recipe, see <a href=https://github.com/melpa/melpa#recipe-format target=_blank rel="noopener noreffer">melpa#recipe-format</a>
 for more information!</p>
-<p>In this example, I&rsquo;m going to add <a href=https://github.com/jcs-emacs/jcs-modeline target=_blank rel="noopener noreffer">jcs-modeline</a> to this ELPA. But you can add
+<p>In this example, I&rsquo;m going to add the <a href=https://github.com/jcs-emacs/jcs-modeline target=_blank rel="noopener noreffer">jcs-modeline</a> to this ELPA. But you can add
 whatever package you like!</p>
 <p>This is the recipe file, and place it as <code>my-elpa/recipes/jcs-modeline</code> (no file extension).</p>
 <div class=highlight><div class=chroma>
@@ -277,8 +277,8 @@ whatever package you like!</p>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id=-step-3-build-it>🔍 Step 3. Build it!</h2>
-<p>Nice! Now we have one package in our ELPA.</p>
-<p>Next is to build our ELPA so we can host it with GitHub pages (or your own server).</p>
+<p>Nice! Now, we have one package in our ELPA.</p>
+<p>Next, build our ELPA to host it with GitHub pages (or your own server).</p>
 <p>First, we need to install dependencies for our project.</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -311,8 +311,8 @@ Installing <span class=m>1</span> package dependency...
 <span class=o>(</span>Total of <span class=m>1</span> dependency installed, <span class=m>0</span> skipped<span class=o>)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Once all dependencies have been installed, we can build our ELPA with following
-command:</p>
+</div><p>Once all dependencies have been installed, we can build our ELPA with the
+following command:</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -367,15 +367,15 @@ Built jcs-modeline in 0.655s, finished at 2023-09-16T03:29:36+0000
 </code></pre></td></tr></table>
 </div>
 </div><p>Congratulations! 🎉 Now you have your own ELPA!</p>
-<p>Next you would just need to push to a GitHub repo and enable GitHub Pages
+<p>Next, you would just need to push to a GitHub repo and enable GitHub Pages
 for that repo. See <a href=https://github.com/10sr/github-elpa#3-change-repository-setting target=_blank rel="noopener noreffer">github-elpa#3-change-repository-setting</a>
 for more information!</p>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>Updated on 2023-09-15&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/db0c4ff934ec4d299077222f4b305f6039d2db29 target=_blank title="commit by JenChieh(jcs090218@gmail.com) db0c4ff934ec4d299077222f4b305f6039d2db29: fix(static): Use absolute path">
-<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>db0c4ff</a></span>
+<span>Updated on 2023-09-15&nbsp;<a class=git-hash href=https://github.com/jcs090218/blog/commit/e67f756656996859babdebec35c2e6471cf03c97 target=_blank title="commit by JenChieh(jcs090218@gmail.com) e67f756656996859babdebec35c2e6471cf03c97: correct grammar">
+<i class="fas fa-hashtag fa-fw" aria-hidden=true></i>e67f756</a></span>
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>

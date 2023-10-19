@@ -3,7 +3,6 @@
 # blog
 
 [![Docs](https://github.com/jcs090218/blog/actions/workflows/docs.yml/badge.svg)](https://github.com/jcs090218/blog/actions/workflows/docs.yml)
-[![pages-build-deployment](https://github.com/jcs090218/blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/jcs090218/blog/actions/workflows/pages/pages-build-deployment)
 
 My blog.
 

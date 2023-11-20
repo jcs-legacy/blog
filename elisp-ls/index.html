@@ -3,20 +3,22 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title>Emacs vs Vim - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Emacs vs Vim">
-<meta property="og:description" content="Precisely that I am neither an Emacs nor Vim expert. I am just an amateur that knows about the two editors with just amount of knowledge. If you check out two of my Emacs and Vim repo, this could be the worst experience of all time. I hold onto an idea that the editors are just a tool. Unless there are issues that hamper or paster my workflow, I will avoid changing the configuration to my editor.">
+<title>Elisp Language Server - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Elisp Language Server">
+<meta property="og:description" content="Repo link: https://github.com/jcs090218/ellsp
+ I’ve recently created a language server for Emacs Lisp. It’s interesting since people don’t think a language server for Emacs Lisp will provide any value. The statement is correct, and so do I. Emacs Lisp is only used within the Emacs editor, and Emacs itself is an Emacs Lisp interpreter. Therefore, a language server for Emacs Lisp would hardly bring any benefits to Emacs users.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://example.com/blog/emacs-vs-vim/"><meta property="og:image" content="http://example.com/blog/emacs-vs-vim/featured-image.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2017-12-10T21:00:00+00:00">
+<meta property="og:url" content="http://example.com/blog/elisp-ls/"><meta property="og:image" content="http://example.com/blog/elisp-ls/featured-image.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-11-19T21:00:00+00:00">
 <meta property="article:modified_time" content="2023-11-20T07:30:23-08:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="http://example.com/blog/emacs-vs-vim/featured-image.png">
-<meta name=twitter:title content="Emacs vs Vim">
-<meta name=twitter:description content="Precisely that I am neither an Emacs nor Vim expert. I am just an amateur that knows about the two editors with just amount of knowledge. If you check out two of my Emacs and Vim repo, this could be the worst experience of all time. I hold onto an idea that the editors are just a tool. Unless there are issues that hamper or paster my workflow, I will avoid changing the configuration to my editor.">
+<meta name=twitter:image content="http://example.com/blog/elisp-ls/featured-image.png">
+<meta name=twitter:title content="Elisp Language Server">
+<meta name=twitter:description content="Repo link: https://github.com/jcs090218/ellsp
+ I’ve recently created a language server for Emacs Lisp. It’s interesting since people don’t think a language server for Emacs Lisp will provide any value. The statement is correct, and so do I. Emacs Lisp is only used within the Emacs editor, and Emacs itself is an Emacs Lisp interpreter. Therefore, a language server for Emacs Lisp would hardly bring any benefits to Emacs users.">
 <meta name=application-name content="Jen-Chieh's Blog">
-<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=https://www.jcs-profile.com/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/emacs-vs-vim/><link rel=prev href=http://example.com/blog/best-editor-ever/><link rel=next href=http://example.com/blog/overview/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=https://www.jcs-profile.com/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/elisp-ls/><link rel=prev href=http://example.com/blog/build-elpa/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Emacs vs Vim","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/emacs-vs-vim\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/emacs-vs-vim\/featured-image.png","width":1280,"height":720}],"genre":"posts","keywords":"Editor, Emacs, Vim","wordcount":792,"url":"http:\/\/example.com\/blog\/emacs-vs-vim\/","datePublished":"2017-12-10T21:00:00+00:00","dateModified":"2023-11-20T07:30:23-08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Elisp Language Server","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/elisp-ls\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/elisp-ls\/featured-image.png","width":1162,"height":538}],"genre":"posts","keywords":"Editor","wordcount":428,"url":"http:\/\/example.com\/blog\/elisp-ls\/","datePublished":"2023-11-19T21:00:00+00:00","dateModified":"2023-11-20T07:30:23-08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -25,7 +27,7 @@
 </div>
 <div class=menu>
 <div class=menu-inner><a class=menu-item href=/blog/posts/> Posts </a><a class=menu-item href=/blog/tags/> Tags </a><a class=menu-item href=/blog/categories/> Categories </a><a class=menu-item href=/blog/about/> About </a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i> </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/emacs-vs-vim/ selected>English</option><option value=/blog/zh-tw/emacs-vs-vim/>正體中文</option></select>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/elisp-ls/ selected>English</option><option value=/blog/zh-tw/elisp-ls/>正體中文</option></select>
 </a><span class="menu-item search" id=search-desktop>
 <input type=text placeholder="Search titles or contents..." id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
@@ -72,7 +74,7 @@ Cancel
 </div><a class=menu-item href=/blog/posts/ title>Posts</a><a class=menu-item href=/blog/tags/ title>Tags</a><a class=menu-item href=/blog/categories/ title>Categories</a><a class=menu-item href=/blog/about/ title>About</a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i>
 </a><a href=javascript:void(0); class=menu-item title="Select Language">English<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select onchange="location=this.value"><option value=/blog/emacs-vs-vim/ selected>English</option><option value=/blog/zh-tw/emacs-vs-vim/>正體中文</option></select>
+<select class=language-select onchange="location=this.value"><option value=/blog/elisp-ls/ selected>English</option><option value=/blog/zh-tw/elisp-ls/>正體中文</option></select>
 </a></div>
 </div>
 </header><div class="search-dropdown desktop">
@@ -84,95 +86,131 @@ Cancel
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>Contents</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Emacs vs Vim</h1><div class=post-meta>
+</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Elisp Language Server</h1><div class=post-meta>
 <div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>included in <a href=/blog/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2017-12-10>2017-12-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;792 words&nbsp;
-<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;4 minutes&nbsp;<span id=/blog/emacs-vs-vim/ class=leancloud_visitors data-flag-title="Emacs vs Vim">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-11-19>2023-11-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;428 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;3 minutes&nbsp;<span id=/blog/elisp-ls/ class=leancloud_visitors data-flag-title="Elisp Language Server">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
 </span>&nbsp;</div>
-</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/emacs-vs-vim/featured-image.png data-srcset="/blog/emacs-vs-vim/featured-image.png, /blog/emacs-vs-vim/featured-image.png 1.5x, /blog/emacs-vs-vim/featured-image.png 2x" data-sizes=auto alt=/blog/emacs-vs-vim/featured-image.png title=/blog/emacs-vs-vim/featured-image.png></div><div class="details toc" id=toc-static data-kept>
+</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/elisp-ls/featured-image.png data-srcset="/blog/elisp-ls/featured-image.png, /blog/elisp-ls/featured-image.png 1.5x, /blog/elisp-ls/featured-image.png 2x" data-sizes=auto alt=/blog/elisp-ls/featured-image.png title=/blog/elisp-ls/featured-image.png></div><div class="details toc" id=toc-static data-kept>
 <div class="details-summary toc-title">
 <span>Contents</span>
 <span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span>
 </div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents></nav></div>
-</div><div class=content id=content><p>Precisely that I am neither an Emacs nor Vim expert. I am
-just an amateur that knows about the two editors with just
-amount of knowledge. If you check out two of my
-<a href=https://github.com/jcs090218/jcs-emacs target=_blank rel="noopener noreffer">Emacs</a>
-and
-<a href=https://github.com/jcs090218/jcs-vim target=_blank rel="noopener noreffer">Vim</a>
-repo, this could be the worst experience of all time. I hold
-onto an idea that the editors are just a tool. Unless there
-are issues that hamper or paster my workflow, I will avoid
-changing the configuration to my editor. Only because I am
-not going to remake the wheel, indeed, I am not going judge
-either Emacs over Vim or Vim over Emacs.</p>
-<p>Lead to the conclusion; I use Emacs more often than Vim.
-Before Vim users left the website, I would like to hold
-onto the basis, why I chose Emacs for my most frequently
-used text editor. First and foremost, I organized the editor
-users into two groups. Base on my own experiences, people
-who use Emacs are most likely work in the software development
-industry. On the other hand, the majority of Vim users works
-either in cybersecurity or a free hacker. The reasons are pretty
-much straightforward, as a software engineer, I would much
-appreciate Emacs' design. Emacs' architecture brings a lot more
-spaces and flexibilities to the software development workflow,
-and it maximizes the changing possibilities to the software
-engineer. Most of the software development is most likely to
-stay in a program that could likeliest achieve most of the
-tasks. Does it sound familiar to you? Yes, it is just another
-way of saying the Integrated Development Environment (IDE). Of
-course, Vim could possibly do what Emacs does, extends to Vim&rsquo;s
-original design, I found that conflict Vim is an editor design
-for fast editing file in terminal. Comparing the two editors,
-Emacs had been built the way what software developer wants; Vim
-would most likely lose in this battle on this aspect. Vice versa,
-Vim are very popular to those who do not need an IDE to do their
-job and often require to exit text editor to jump to other
-software, do not even argues that Vim is moving towards to Emacs'
-design. Well, this leads to a problem that I could not find a
-good reason for having the conflict between the original design
-fast editing file in terminal and having multiple plugins or
-configurations in Vim. Though, if Vim starts moving towards to
-Emacs&rsquo;s design, does that mean Vim will lose the advantage on
-fast editing file in terminal? Many of Vim users complains Emacs
-was too big and cost so much of its' starting time, but now they
-want more plugins or configurations to their Vim settings? Emacs
-was designed between the lightweight text editor and heavyweight
-IDE, resulting Emacs could not going to be faster than Vim on the
-starting time, but it brings benefits to people who will like a
-&lsquo;lightweight IDE&rsquo;, it retains most functionalities from any IDE,
-or even better, program yourself one!</p>
-<p>If Emacs is that good why still not many people using it? The
-reason could be straightforward, I learned Emacs from scratch
-without any in-between supports like Spacemacs or Doom-emacs.
-I found that Emacs main website is not that friendly compared
-to other many sites. Plus, you could barely saw videos online
-that are about Emacs. Furthermore, compares to Vim&rsquo;s shortcuts
-design, Emacs have less cognitive shortcuts consequent people
-having a hard time learning Emacs' shortcuts comparing learning
-Vim&rsquo;s shortcuts. I would doubt anyone would likely to learn Emacs
-by having all these kind of challenges or difficulties in front
-of them. The learning curve is steep, and the cost of learning a
-new language for editing Emacs' configuration, which is EmacsLisp,
-could be an extra cost of time. If you notice programming language
-Lisp, then maybe this would be too obscure to you. In my case, I
-have no experience with programming language Lisp which leads me
-many hassles while learning EmacsLisp. I have been using Emacs
-for 4 years, and I still could not say that I am an expert to
-Emacs. I am not trying to, and I reckon developing routine is
-most likely imperative comparing to fixing the editor&rsquo;s
-configuration.</p>
-<p>Lastly, I would say these are just my personal experiences;
-this means all of these are just my subjective thoughts. Some
-could be right, and some could be wrong. Emacs have its' own
-benefits, which Vim also does. I often use Vim editing files
-while I connect to the remote server. Indeed, one more advantage
-to Vim is that Vim is pre-installed on the most system. This
-lead to the conclusion that there is no best editor, the only
-wise man knows how to use the right tool on the right circumstance.</p>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#-start-from-scratch>🔰 Start from scratch</a>
+<ul>
+<li><a href=#-issue-1-read-from-minibuffer-and-rn>💫 Issue 1: <code>read-from-minibuffer</code> and <code>\r</code>/<code>\n</code></a></li>
+<li><a href=#-issue-2-specification-error>💫 Issue 2: Specification&mldr; error?</a></li>
+</ul>
+</li>
+<li><a href=#-conclusion>⚜ Conclusion</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><blockquote>
+<p>Repo link: <a href=https://github.com/jcs090218/ellsp target=_blank rel="noopener noreffer">https://github.com/jcs090218/ellsp</a></p>
+</blockquote>
+<p>I’ve recently created a language server for Emacs Lisp. It’s interesting
+since people don’t think a language server for Emacs Lisp will provide
+any value. The statement is correct, and so do I. Emacs Lisp is only used
+within the Emacs editor, and Emacs itself is an Emacs Lisp interpreter.
+Therefore, a language server for Emacs Lisp would hardly bring any benefits
+to Emacs users.</p>
+<p>But imagine you can code elisp (short for Emacs Lisp) outside of Emacs.
+That sounds interesting, huh? 🤔</p>
+<h2 id=-start-from-scratch>🔰 Start from scratch</h2>
+<p>Okay, I didn&rsquo;t start entirely from scratch. I did use some libraries to help
+me set up things faster. Here are the important one:</p>
+<ul>
+<li><a href=https://github.com/emacs-lsp/lsp-mode target=_blank rel="noopener noreffer">lsp-mode</a></li>
+<li><a href=https://github.com/emacs-elsa/Elsa target=_blank rel="noopener noreffer">elsa</a> - I&rsquo;ve used some of their code</li>
+</ul>
+<p>What I&rsquo;ve started from scratch is the <code>stdio</code> solution. It&rsquo;s incredible how
+simple stdio can be within Emacs' <code>batch</code> mode.</p>
+<h3 id=-issue-1-read-from-minibuffer-and-rn>💫 Issue 1: <code>read-from-minibuffer</code> and <code>\r</code>/<code>\n</code></h3>
+<p>The function <code>read-from-minibuffer</code> is one way to receive standard input
+within Emacs' <code>batch</code> mode. There is one issue with this method. It doesn&rsquo;t
+receive input until there is a <code>\r</code> or <code>\n</code> character at the end. That&rsquo;s
+annoying since the language server would never receive the complete packet.
+Here is what I would receive from the language client:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Content-Length: 8203\r\n
+\r\n
+{json}
+</code></pre></td></tr></table>
+</div>
+</div><p>And, this is what I hope to see:</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Content-Length: 8203\r\n
+\r\n
+{json}\r\n
+</code></pre></td></tr></table>
+</div>
+</div><p>I’ve spent a couple of hours searching for a solution. Unfortunately,
+I’m not able to find one. Then, I decided to create a proxy stdio
+application using node.js and JavaScript that forwards an extra
+<code>\r\n</code> at the end of the packet.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=kd>let</span> <span class=nx>proc</span> <span class=o>=</span> <span class=nx>startEmacs</span><span class=p>();</span>  <span class=c1>// Create process Emacs
+</span><span class=c1></span>
+<span class=nx>process</span><span class=p>.</span><span class=nx>stdin</span><span class=p>.</span><span class=nx>on</span><span class=p>(</span><span class=s1>&#39;data&#39;</span><span class=p>,</span> <span class=kd>function</span><span class=p>(</span><span class=nx>data</span><span class=p>)</span> <span class=p>{</span>
+  <span class=kd>let</span> <span class=nx>input</span> <span class=o>=</span> <span class=nx>data</span><span class=p>.</span><span class=nx>toString</span><span class=p>();</span>
+  <span class=nx>proc</span><span class=p>.</span><span class=nx>stdin</span><span class=p>.</span><span class=nx>write</span><span class=p>(</span><span class=nx>input</span> <span class=o>+</span> <span class=s1>&#39;\r\n&#39;</span><span class=p>);</span>  <span class=c1>// Forward with an extra `\r\n`!
+</span><span class=c1></span><span class=p>});</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Wola, now I am able to receive data from the language client! 🚀</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>method: initialize
+&lt;&lt; {&#34;jsonrpc&#34;:&#34;2.0&#34;,&#34;id&#34;:0,&#34;result&#34;:{&#34;server-info&#34;:{&#34;name&#34;:&#34;ellsp&#34;,&#34;version&#34;:&#34;0.1.0&#34;},&#34;capabilities&#34;:{&#34;hoverProvider&#34;:true,&#34;textDocumentSync&#34;:{&#34;openClose&#34;:true,&#34;save&#34;:true,&#34;change&#34;:1},&#34;completionProvider&#34;:{&#34;resolveProvider&#34;:false},&#34;signatureHelpProvider&#34;:{&#34;triggerCharacters&#34;:[&#34; &#34;]}}}}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=-issue-2-specification-error>💫 Issue 2: Specification&mldr; error?</h3>
+<p>According to <a href=https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/ target=_blank rel="noopener noreffer">LSP Specification</a>, we should send two <code>\r\n</code> between the <code>Content-Length</code> and
+the content itself (JSON body). However, for some reason, the language client never gets initialized&mldr;</p>
+<p>The solution here is to just use <code>\n</code> instead. (Don&rsquo;t ask me why; I have no idea.) 🤔</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>method: initialized
+&lt;&lt; no response
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=-conclusion>⚜ Conclusion</h2>
+<p>I apologize; this post isn’t about the implementation details.
+The implementation is quite simple. It only took me a couple of hours
+to implement it. If you are interested in the implementation, please
+check out the repository directly. The link is at the beginning of this page.</p>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
@@ -182,21 +220,20 @@ wise man knows how to use the right tool on the right circumstance.</p>
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>
-<a class=link-to-markdown href=/blog/emacs-vs-vim/index.md target=_blank>Read Markdown</a>
+<a class=link-to-markdown href=/blog/elisp-ls/index.md target=_blank>Read Markdown</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.com/blog/emacs-vs-vim/ data-title="Emacs vs Vim" data-via=jenchieh94 data-hashtags=Editor,Emacs,Vim><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.com/blog/emacs-vs-vim/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.com/blog/emacs-vs-vim/ data-title="Emacs vs Vim"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.com/blog/emacs-vs-vim/ data-title="Emacs vs Vim"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.com/blog/emacs-vs-vim/ data-title="Emacs vs Vim"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
+<span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.com/blog/elisp-ls/ data-title="Elisp Language Server" data-via=jenchieh94 data-hashtags=Editor><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.com/blog/elisp-ls/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.com/blog/elisp-ls/ data-title="Elisp Language Server"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.com/blog/elisp-ls/ data-title="Elisp Language Server"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.com/blog/elisp-ls/ data-title="Elisp Language Server"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/tags/editor/>Editor</a>,&nbsp;<a href=/blog/tags/emacs/>Emacs</a>,&nbsp;<a href=/blog/tags/vim/>Vim</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/tags/editor/>Editor</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/blog/>Home</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/blog/best-editor-ever/ class=prev rel=prev title="Best Editor Ever"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Best Editor Ever</a>
-<a href=/blog/overview/ class=next rel=next title="JCSUnity Overview">JCSUnity Overview<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div>
+<div class=post-nav><a href=/blog/build-elpa/ class=prev rel=prev title="How to build your own ELPA with Eask?"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>How to build your own ELPA with Eask?</a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

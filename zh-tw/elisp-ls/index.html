@@ -3,20 +3,20 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=robots content="noodp">
-<title>Game Jam - 8月 2022 - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Game Jam - 8月 2022">
-<meta property="og:description" content="時間為2022的夏季, 在7月中旬, 我一位大學朋友 (@henrykuh) 邀請我一同參與他所主辦的 Game Jam, 在其活動的主題為驚喜 Surprise. 同時他也邀請我回 火柴共作坊 擔任程式區塊的">
+<title>Elisp 語言服務器 - Jen-Chieh's Blog</title><meta name=Description content="Hugo theme - LoveIt"><meta property="og:title" content="Elisp 語言服務器">
+<meta property="og:description" content="代碼庫連結: https://github.com/jcs090218/ellsp 我最近為 Emacs Lisp 創建了一個語言伺服器。這很有趣，因為人們認為 Emacs Lisp 的語言伺服器不會提供任何價值。這個說法是正確的，我也是如此。Ema">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://example.com/blog/zh-tw/game-jam-aug-2022/"><meta property="og:image" content="http://example.com/blog/zh-tw/game-jam-aug-2022/featured-image.png"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2022-08-29T00:00:00+00:00">
+<meta property="og:url" content="http://example.com/blog/zh-tw/elisp-ls/"><meta property="og:image" content="http://example.com/blog/zh-tw/elisp-ls/featured-image.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-11-19T21:00:00+00:00">
 <meta property="article:modified_time" content="2023-11-20T07:30:23-08:00"><meta property="og:site_name" content="jcs090218">
 <meta name=twitter:card content="summary_large_image">
-<meta name=twitter:image content="http://example.com/blog/zh-tw/game-jam-aug-2022/featured-image.png">
-<meta name=twitter:title content="Game Jam - 8月 2022">
-<meta name=twitter:description content="時間為2022的夏季, 在7月中旬, 我一位大學朋友 (@henrykuh) 邀請我一同參與他所主辦的 Game Jam, 在其活動的主題為驚喜 Surprise. 同時他也邀請我回 火柴共作坊 擔任程式區塊的">
+<meta name=twitter:image content="http://example.com/blog/zh-tw/elisp-ls/featured-image.png">
+<meta name=twitter:title content="Elisp 語言服務器">
+<meta name=twitter:description content="代碼庫連結: https://github.com/jcs090218/ellsp 我最近為 Emacs Lisp 創建了一個語言伺服器。這很有趣，因為人們認為 Emacs Lisp 的語言伺服器不會提供任何價值。這個說法是正確的，我也是如此。Ema">
 <meta name=application-name content="Jen-Chieh's Blog">
-<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=https://www.jcs-profile.com/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/zh-tw/game-jam-aug-2022/><link rel=prev href=http://example.com/blog/zh-tw/emacs-eask/><link rel=next href=http://example.com/blog/zh-tw/first-server-migration/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
+<meta name=apple-mobile-web-app-title content="Jen-Chieh's Blog"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=https://www.jcs-profile.com/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.com/blog/zh-tw/elisp-ls/><link rel=prev href=http://example.com/blog/zh-tw/build-elpa/><link rel=stylesheet href=/blog/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
 <noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload="this.onload=null,this.rel='stylesheet'">
-<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Game Jam - 8月 2022","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/game-jam-aug-2022\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/game-jam-aug-2022\/featured-image.png","width":1858,"height":977}],"genre":"posts","keywords":"Game Dev","wordcount":1031,"url":"http:\/\/example.com\/blog\/zh-tw\/game-jam-aug-2022\/","datePublished":"2022-08-29T00:00:00+00:00","dateModified":"2023-11-20T07:30:23-08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Elisp 語言服務器","inLanguage":"zh-TW","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.com\/blog\/zh-tw\/elisp-ls\/"},"image":[{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/zh-tw\/elisp-ls\/featured-image.png","width":1162,"height":538}],"genre":"posts","keywords":"Editor","wordcount":730,"url":"http:\/\/example.com\/blog\/zh-tw\/elisp-ls\/","datePublished":"2023-11-19T21:00:00+00:00","dateModified":"2023-11-20T07:30:23-08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"http:\/\/example.com\/blog\/images\/avatar.png","width":438,"height":438}},"author":{"@type":"Person","name":"Jen-Chieh Shen"},"description":""}</script></head>
 <body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':'auto'==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:'auto'==='dark')&&document.body.setAttribute('theme','dark')</script>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
 <div class=header-wrapper>
@@ -25,7 +25,7 @@
 </div>
 <div class=menu>
 <div class=menu-inner><a class=menu-item href=/blog/zh-tw/posts/> 所有文章 </a><a class=menu-item href=/blog/zh-tw/tags/> 標籤 </a><a class=menu-item href=/blog/zh-tw/categories/> 分類 </a><a class=menu-item href=/blog/zh-tw/about/> 關於 </a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i> </a><span class="menu-item delimiter"></span><a href=javascript:void(0); class="menu-item language" title=選擇語言>正體中文<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/game-jam-aug-2022/>English</option><option value=/blog/zh-tw/game-jam-aug-2022/ selected>正體中文</option></select>
+<select class=language-select id=language-select-desktop onchange="location=this.value"><option value=/blog/elisp-ls/>English</option><option value=/blog/zh-tw/elisp-ls/ selected>正體中文</option></select>
 </a><span class="menu-item search" id=search-desktop>
 <input type=text placeholder=搜索文章標題或內容... id=search-input-desktop>
 <a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=搜索>
@@ -72,7 +72,7 @@
 </div><a class=menu-item href=/blog/zh-tw/posts/ title>所有文章</a><a class=menu-item href=/blog/zh-tw/tags/ title>標籤</a><a class=menu-item href=/blog/zh-tw/categories/ title>分類</a><a class=menu-item href=/blog/zh-tw/about/ title>關於</a><a class=menu-item href=https://github.com/jcs090218/blog title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); class="menu-item theme-switch" title=切換主題>
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i>
 </a><a href=javascript:void(0); class=menu-item title=選擇語言>正體中文<i class="fas fa-chevron-right fa-fw" aria-hidden=true></i>
-<select class=language-select onchange="location=this.value"><option value=/blog/game-jam-aug-2022/>English</option><option value=/blog/zh-tw/game-jam-aug-2022/ selected>正體中文</option></select>
+<select class=language-select onchange="location=this.value"><option value=/blog/elisp-ls/>English</option><option value=/blog/zh-tw/elisp-ls/ selected>正體中文</option></select>
 </a></div>
 </div>
 </header><div class="search-dropdown desktop">
@@ -84,82 +84,117 @@
 <div class=container><div class=toc id=toc-auto>
 <h2 class=toc-title>目錄</h2>
 <div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Game Jam - 8月 2022</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>收錄於 <a href=/blog/zh-tw/categories/game-dev/><i class="far fa-folder fa-fw" aria-hidden=true></i>Game Dev</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2022-08-29>2022-08-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 1031 字&nbsp;
-<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;預計閱讀 3 分鐘&nbsp;<span id=/blog/zh-tw/game-jam-aug-2022/ class=leancloud_visitors data-flag-title="Game Jam - 8月 2022">
+</div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Elisp 語言服務器</h1><div class=post-meta>
+<div class=post-meta-line><span class=post-author><a href=https://www.jcs-profile.com/ title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Jen-Chieh Shen</a></span>&nbsp;<span class=post-category>收錄於 <a href=/blog/zh-tw/categories/editor/><i class="far fa-folder fa-fw" aria-hidden=true></i>Editor</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-11-19>2023-11-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;約 730 字&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;預計閱讀 2 分鐘&nbsp;<span id=/blog/zh-tw/elisp-ls/ class=leancloud_visitors data-flag-title="Elisp 語言服務器">
 <i class="far fa-eye fa-fw" aria-hidden=true></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次閱讀
 </span>&nbsp;</div>
-</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/game-jam-aug-2022/featured-image.png data-srcset="/blog/zh-tw/game-jam-aug-2022/featured-image.png, /blog/zh-tw/game-jam-aug-2022/featured-image.png 1.5x, /blog/zh-tw/game-jam-aug-2022/featured-image.png 2x" data-sizes=auto alt=/blog/zh-tw/game-jam-aug-2022/featured-image.png title=/blog/zh-tw/game-jam-aug-2022/featured-image.png></div><div class="details toc" id=toc-static data-kept>
+</div><div class=featured-image><img class=lazyload src=/blog/svg/loading.min.svg data-src=/blog/zh-tw/elisp-ls/featured-image.png data-srcset="/blog/zh-tw/elisp-ls/featured-image.png, /blog/zh-tw/elisp-ls/featured-image.png 1.5x, /blog/zh-tw/elisp-ls/featured-image.png 2x" data-sizes=auto alt=/blog/zh-tw/elisp-ls/featured-image.png title=/blog/zh-tw/elisp-ls/featured-image.png></div><div class="details toc" id=toc-static data-kept>
 <div class="details-summary toc-title">
 <span>目錄</span>
 <span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span>
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
-<li>
+<li><a href=#-重頭開始建立>🔰 重頭開始建立</a>
 <ul>
-<li><a href=#-關於game-jam>❓ 關於Game Jam</a></li>
-<li><a href=#-加入-認識團隊>🔰 加入! 認識團隊</a></li>
-<li><a href=#-企劃發想-程序製作>💡 企劃發想, 程序製作</a></li>
-<li><a href=#-成品展示>🖼️ 成品展示</a></li>
-<li><a href=#-結語>💬 結語</a></li>
-<li><a href=#-相關連結>🔗 相關連結</a></li>
+<li><a href=#-問題-1-read-from-minibuffer-和-rn>💫 問題 1: <code>read-from-minibuffer</code> 和 <code>\r</code>/<code>\n</code></a></li>
+<li><a href=#-問題-2-規格-錯誤>💫 問題 2: 規格&mldr; 錯誤?</a></li>
 </ul>
 </li>
+<li><a href=#-conclusion>⚜ Conclusion</a></li>
 </ul>
 </nav></div>
-</div><div class=content id=content><p>時間為2022的夏季, 在7月中旬, 我一位大學朋友 (<a href=https://github.com/henrykuh target=_blank rel="noopener noreffer">@henrykuh</a>)
-邀請我一同參與他所主辦的 Game Jam, 在其活動的主題為<code>驚喜 Surprise</code>. 同時他也邀請我回 <a href=https://github.com/MatchWorkshop target=_blank rel="noopener noreffer">火柴共作坊</a>
-擔任<code>程式區塊的負責人</code>. 所以實質上, 這個 Game Jam 是用來讓我與其他在同個社群裡面的指導員
-互相熟識, 以及交流的一個媒介. 這時候的我, 剛好完成了我上一份專案的開發計畫, 在沒有其他特別安排的
-時期, 所以也沒有推辭, 就此決定參加很久沒參加的 Game Jam.</p>
-<h3 id=-關於game-jam>❓ 關於Game Jam</h3>
-<p>這個 Game Jam 的全名為 <a href=https://itch.io/jam/20220829 target=_blank rel="noopener noreffer">第五屆 DIY Game Jam: 驚喜 Surprise</a>.
-主辦單位為 <a href=https://diygm2021.weebly.com/ target=_blank rel="noopener noreffer">自製遊戲公會</a>. 時間是<code>一個月</code>, 比一般的 COVID-19
-前的 Game Jam 的時間來的長上許多. 以往 Game Jam 時間都是 <code>24 - 48 小時</code>, 也就是一到兩天的時間
-限制. 這是這個 Game Jam 相對比較特別的地方.</p>
-<p>主題很明顯的, 名稱已經洩漏了, 是<code>驚喜</code>.</p>
-<h3 id=-加入-認識團隊>🔰 加入! 認識團隊</h3>
-<p>雖然以前我也曾短暫的待過在這 <a href rel>火柴共作坊</a> 社群, 但對於其成員並不熟識. 所以這對我是個好時機
-來建立一下人派. 並且可以順便訓練溝通/協作的能力. 團隊為<code>5</code>人成員, <code>1</code>名企劃, <code>3</code>名美術,
-<code>1</code>名程序. 列表如下:</p>
+</div><div class=content id=content><blockquote>
+<p>代碼庫連結: <a href=https://github.com/jcs090218/ellsp target=_blank rel="noopener noreffer">https://github.com/jcs090218/ellsp</a></p>
+</blockquote>
+<p>我最近為 Emacs Lisp 創建了一個語言伺服器。這很有趣，因為人們認為 Emacs Lisp
+的語言伺服器不會提供任何價值。這個說法是正確的，我也是如此。Emacs Lisp 僅在
+Emacs 編輯器內使用，Emacs 本身是一個 Emacs Lisp 解釋器。因此，Emacs Lisp
+的語言伺服器很難為 Emacs 用戶帶來任何好處。</p>
+<p>但想像一下您可以在 Emacs 之外編寫 elisp（Emacs Lisp 的縮寫）。聽起來很有趣，對吧？ 🤔</p>
+<h2 id=-重頭開始建立>🔰 重頭開始建立</h2>
+<p>好吧，我並不是完全從頭開始。我確實使用了一些庫來幫助我更快地設定東西。以下是重要的一點：</p>
 <ul>
-<li>Kyrie （企劃）</li>
-<li>Yi （3D美術）</li>
-<li>黑攻 （2D美術、音樂）</li>
-<li>特里斯卡 （2D美術）</li>
-<li>Jen-Chieh Shen （程式） <strong>&lt;- 這是我! 😎</strong></li>
+<li><a href=https://github.com/emacs-lsp/lsp-mode target=_blank rel="noopener noreffer">lsp-mode</a></li>
+<li><a href=https://github.com/emacs-elsa/Elsa target=_blank rel="noopener noreffer">elsa</a> - 我用過他們的一些程式碼</li>
 </ul>
-<p>想要小聊一下各位負責的區塊, 我認為專案最大的功臣是<code>Yi</code>, 再來是<code>Kyrie</code>. Yi 的實力我自己非常認可.
-不管在專業態度, 專業實力, 都是一比一的強大. Kyrie 雖然有些缺乏經驗, 不過在專案的製作過程中,
-展現出了熱情 💯, 和專業範圍的溝通能力, 這也在我的期望之中. 其餘美術也是非常厲害, 不過莫過於
-溝通時間比較短, 所以沒能理解其他兩位的真實實力, 所以這裡就不提及! 😅</p>
-<h3 id=-企劃發想-程序製作>💡 企劃發想, 程序製作</h3>
-<p>遊戲企劃本身我自己是沒有參與到, 加入之前, 好像已經由美術和企劃那邊搞定了. 不過在程序的製作過程中,
-是有點難度的, 我們企劃在製作細節上是相較於<strong>缺乏</strong>經驗的, 我這邊大概整合了幾個我認為的問題,</p>
-<ul>
-<li>GDD並不夠完整, 且清新</li>
-<li>專案發想人, 不明確? (結案之後我還是不知道是誰)</li>
-<li>沒有核心思想, 建構的點子拿不定主意</li>
-</ul>
-<p>在這裡強調一下, 我並不是要找「誰誰是戰犯」. 單純的把問題點出來, 以吸取經驗為主. 不過最終還是把遊戲
-給做出來了! 可喜可賀! 🎉🎊 製作過程總是辛苦的, 但是製作出來的結果總是讓人非常興奮! ✨</p>
-<h3 id=-成品展示>🖼️ 成品展示</h3>
-<img src=./1.png>
-<img src=./2.png>
-<img src=./3.png>
-<h3 id=-結語>💬 結語</h3>
-<p>最後總結一下, 我認為這專案在 Game Jam 的作品來講算是非常出色的. 雖然並不是個<strong>完整</strong>的遊戲.
-不過該有的都有, 細節上的把控也都有出來. 所以我是相對非常自豪的! 👍 唯一美中不足的地方, 除了
-沒能騰出更多的 debug 時間以外, 就是參數的調整, 還有非常多地方並沒能調整, 說實有點可惜了! 🙏</p>
-<h3 id=-相關連結>🔗 相關連結</h3>
-<ul>
-<li><a href=https://kuhhenry.itch.io/alice-in-surprise target=_blank rel="noopener noreffer">作品: Alice In Surprise</a></li>
-<li><a href=https://itch.io/jam/2022082 target=_blank rel="noopener noreffer">Game Jam</a></li>
-<li><a href=https://diygm2021.weebly.com/ target=_blank rel="noopener noreffer">自製遊戲公會</a></li>
-<li><a href=https://github.com/MatchWorkshop target=_blank rel="noopener noreffer">火柴共作坊</a></li>
-</ul>
+<p>我從頭開始的是 stdio 解決方案。令人難以置信的是，stdio 在 Emacs 的 <code>batch</code> 模式中是如此簡單。</p>
+<h3 id=-問題-1-read-from-minibuffer-和-rn>💫 問題 1: <code>read-from-minibuffer</code> 和 <code>\r</code>/<code>\n</code></h3>
+<p><code>read-from-minibuffer</code> 函數是在 Emacs <code>batch</code> 模式下接收標準輸入的一種方法。
+這種方法有一個問題。它不會接收輸入，直到末尾有 <code>\r</code> 或 <code>\n</code> 字元。
+這很煩人，因為語言伺服器永遠不會收到完整的資料包。這是我從語言客戶端收到的內容：</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Content-Length: 8203\r\n
+\r\n
+{json}
+</code></pre></td></tr></table>
+</div>
+</div><p>而，這是我希望看到的：</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>Content-Length: 8203\r\n
+\r\n
+{json}\r\n
+</code></pre></td></tr></table>
+</div>
+</div><p>我花了幾個小時尋找解決方案。不幸的是，我找不到一個。然後，我決定使用 node.js 和 JavaScript 創建一個代理 stdio 應用程序，在資料包末尾轉發額外的 <code>\r\n</code> 。</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=kd>let</span> <span class=nx>proc</span> <span class=o>=</span> <span class=nx>startEmacs</span><span class=p>();</span>  <span class=c1>// Create process Emacs
+</span><span class=c1></span>
+<span class=nx>process</span><span class=p>.</span><span class=nx>stdin</span><span class=p>.</span><span class=nx>on</span><span class=p>(</span><span class=s1>&#39;data&#39;</span><span class=p>,</span> <span class=kd>function</span><span class=p>(</span><span class=nx>data</span><span class=p>)</span> <span class=p>{</span>
+  <span class=kd>let</span> <span class=nx>input</span> <span class=o>=</span> <span class=nx>data</span><span class=p>.</span><span class=nx>toString</span><span class=p>();</span>
+  <span class=nx>proc</span><span class=p>.</span><span class=nx>stdin</span><span class=p>.</span><span class=nx>write</span><span class=p>(</span><span class=nx>input</span> <span class=o>+</span> <span class=s1>&#39;\r\n&#39;</span><span class=p>);</span>  <span class=c1>// Forward with an extra `\r\n`!
+</span><span class=c1></span><span class=p>});</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>現在我可以從語言客戶端接收資料了！ 🚀</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>method: initialize
+&lt;&lt; {&#34;jsonrpc&#34;:&#34;2.0&#34;,&#34;id&#34;:0,&#34;result&#34;:{&#34;server-info&#34;:{&#34;name&#34;:&#34;ellsp&#34;,&#34;version&#34;:&#34;0.1.0&#34;},&#34;capabilities&#34;:{&#34;hoverProvider&#34;:true,&#34;textDocumentSync&#34;:{&#34;openClose&#34;:true,&#34;save&#34;:true,&#34;change&#34;:1},&#34;completionProvider&#34;:{&#34;resolveProvider&#34;:false},&#34;signatureHelpProvider&#34;:{&#34;triggerCharacters&#34;:[&#34; &#34;]}}}}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=-問題-2-規格-錯誤>💫 問題 2: 規格&mldr; 錯誤?</h3>
+<p>根據 <a href=https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/ target=_blank rel="noopener noreffer">LSP規範</a>，我們應該在Content-Length和內容本身（JSON主體）之間發送兩個\r\n。然而，由於某種原因，語言客戶端永遠不會被初始化&mldr;&mldr;</p>
+<p>這裡的解決方案是只使用<code>\n</code>。 （別問我為什麼，我也不知道。）🤔</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>method: initialized
+&lt;&lt; no response
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=-conclusion>⚜ Conclusion</h2>
+<p>我道歉;這篇文章不是關於實作細節的。實作非常簡單。我只花了幾個小時就實現了它。如果您對實作感興趣，請直接查看儲存庫。該連結位於本頁的開頭。</p>
 </div><div class=post-footer id=post-footer>
 <div class=post-info>
 <div class=post-info-line>
@@ -169,21 +204,20 @@
 </div></div>
 <div class=post-info-line>
 <div class=post-info-md><span>
-<a class=link-to-markdown href=/blog/zh-tw/game-jam-aug-2022/index.md target=_blank>閱讀原始文檔</a>
+<a class=link-to-markdown href=/blog/zh-tw/elisp-ls/index.md target=_blank>閱讀原始文檔</a>
 </span></div>
 <div class=post-info-share>
-<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=http://example.com/blog/zh-tw/game-jam-aug-2022/ data-title="Game Jam - 8月 2022" data-via=jenchieh94 data-hashtags="Game Dev"><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=http://example.com/blog/zh-tw/game-jam-aug-2022/ data-hashtag="Game Dev"><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=http://example.com/blog/zh-tw/game-jam-aug-2022/ data-title="Game Jam - 8月 2022"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=http://example.com/blog/zh-tw/game-jam-aug-2022/ data-title="Game Jam - 8月 2022"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=http://example.com/blog/zh-tw/game-jam-aug-2022/ data-title="Game Jam - 8月 2022"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
+<span><a href=javascript:void(0); title="分享到 Twitter" data-sharer=twitter data-url=http://example.com/blog/zh-tw/elisp-ls/ data-title="Elisp 語言服務器" data-via=jenchieh94 data-hashtags=Editor><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Facebook" data-sharer=facebook data-url=http://example.com/blog/zh-tw/elisp-ls/ data-hashtag=Editor><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Hacker News" data-sharer=hackernews data-url=http://example.com/blog/zh-tw/elisp-ls/ data-title="Elisp 語言服務器"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 Line" data-sharer=line data-url=http://example.com/blog/zh-tw/elisp-ls/ data-title="Elisp 語言服務器"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@6.20.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="分享到 微博" data-sharer=weibo data-url=http://example.com/blog/zh-tw/elisp-ls/ data-title="Elisp 語言服務器"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span>
 </div>
 </div>
 </div>
 <div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/zh-tw/tags/game-dev/>Game Dev</a></section>
+<section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/blog/zh-tw/tags/editor/>Editor</a></section>
 <section>
 <span><a href=javascript:void(0); onclick=window.history.back()>返回</a></span>&nbsp;|&nbsp;<span><a href=/blog/zh-tw/>主頁</a></span>
 </section>
 </div>
-<div class=post-nav><a href=/blog/zh-tw/emacs-eask/ class=prev rel=prev title="Emacs Eask - Emacs Cask替代方案"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Emacs Eask - Emacs Cask替代方案</a>
-<a href=/blog/zh-tw/first-server-migration/ class=next rel=next title=第一次遷移服務器>第一次遷移服務器<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div>
+<div class=post-nav><a href=/blog/zh-tw/build-elpa/ class=prev rel=prev title="如何使用 Eask 構建自己的 ELPA？"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>如何使用 Eask 構建自己的 ELPA？</a></div>
 </div>
 <div id=comments><div id=valine class=comment></div><noscript>
 Please enable JavaScript to view the comments powered by <a href=https://valine.js.org/>Valine</a>.

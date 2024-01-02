@@ -23,7 +23,7 @@ $ hugo server
 
 Then in your browser, navigate to http://localhost:1313/blog/!
 
-## License
+## ⚜️ License
 
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].

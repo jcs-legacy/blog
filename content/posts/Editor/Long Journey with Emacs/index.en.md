@@ -20,8 +20,8 @@ lightgallery: true
 
 **⚠️ The intention of this post is to remind myself why Emacs isn't worth my time anymore.**
 
-I've been using Emacs since 2015. I have developed more than 150 elisp packages,
-and maintained over 200 packages (including my packages). It's been a long
+I've been using Emacs since 2015. I have developed more than 180 elisp packages,
+and maintained over 300 packages (including my packages). It's been a long
 journey staying in the Emacs community, I think it's a good for me to slow
 myself down and step back a little and think what I've accomplished through
 out these years.
